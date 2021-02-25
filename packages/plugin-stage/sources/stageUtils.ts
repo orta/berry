@@ -1,4 +1,4 @@
-import {xfs, Filename, PortablePath, ppath} from '@yarnpkg/fslib';
+import {xfs, Filename, PortablePath, ppath} from '@orta/yarn-fslib';
 
 export enum ActionType {
   CREATE,

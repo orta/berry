@@ -1,15 +1,15 @@
-import {Configuration, Descriptor, Project, ResolveOptions, ThrowReport, structUtils, Locator, Cache, LocatorHash} from '@yarnpkg/core';
-import {PortablePath, xfs, ppath, Filename}                                                                        from '@yarnpkg/fslib';
-import NpmPlugin                                                                                                   from '@yarnpkg/plugin-npm';
-import PatchPlugin                                                                                                 from '@yarnpkg/plugin-patch';
+import {Configuration, Descriptor, Project, ResolveOptions, ThrowReport, structUtils, Locator, Cache, LocatorHash} from '@orta/yarn-core';
+import {PortablePath, xfs, ppath, Filename}                                                                        from '@orta/yarn-fslib';
+import NpmPlugin                                                                                                   from '@orta/yarn-plugin-npm';
+import PatchPlugin                                                                                                 from '@orta/yarn-plugin-patch';
 
 import CompatPlugin                                                                                                from '../sources/index';
 
 function getConfiguration(p: PortablePath) {
   return Configuration.create(p, p, new Map([
-    [`@yarnpkg/plugin-compat`, CompatPlugin],
-    [`@yarnpkg/plugin-npm`, NpmPlugin],
-    [`@yarnpkg/plugin-patch`, PatchPlugin],
+    [`@orta/yarn-plugin-compat`, CompatPlugin],
+    [`@orta/yarn-plugin-npm`, NpmPlugin],
+    [`@orta/yarn-plugin-patch`, PatchPlugin],
   ]));
 }
 

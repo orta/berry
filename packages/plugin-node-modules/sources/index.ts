@@ -1,10 +1,10 @@
-import {Plugin, SettingsType}      from '@yarnpkg/core';
-import {NodeModulesHoistingLimits} from '@yarnpkg/pnpify';
+import {Plugin, SettingsType}      from '@orta/yarn-core';
+import {NodeModulesHoistingLimits} from '@orta/yarn-pnpify';
 
 import {NodeModulesLinker}         from './NodeModulesLinker';
 import {PnpLooseLinker}            from './PnpLooseLinker';
 
-declare module '@yarnpkg/core' {
+declare module '@orta/yarn-core' {
   interface ConfigurationValueMap {
     nmHoistingLimits: NodeModulesHoistingLimits;
   }

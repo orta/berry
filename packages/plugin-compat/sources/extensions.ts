@@ -2,7 +2,7 @@
 // the same fields as you add here and prefix your changes with the relevant
 // PR url.
 
-import {PackageExtensionData} from '@yarnpkg/core';
+import {PackageExtensionData} from '@orta/yarn-core';
 
 const optionalPeerDep = {
   optional: true,

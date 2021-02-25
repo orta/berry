@@ -1,4 +1,4 @@
-import {Filename, npath, ppath, xfs}        from '@yarnpkg/fslib';
+import {Filename, npath, ppath, xfs}        from '@orta/yarn-fslib';
 import chalk                                from 'chalk';
 import {Command, Option, Usage, UsageError} from 'clipanion';
 import path                                 from 'path';
@@ -35,7 +35,7 @@ export default class NewPluginCommand extends Command {
     await xfs.mkdirPromise(ppath.join(target, `sources` as Filename), {recursive: true});
 
     await xfs.writeFilePromise(ppath.join(target, `sources/index.ts` as Filename), [
-      `import {CommandContext, Plugin} from '@yarnpkg/core';\n`,
+      `import {CommandContext, Plugin} from '@orta/yarn-core';\n`,
       `import {Command} from 'clipanion';\n`,
       `\n`,
       `class HelloWorldCommand extends Command<CommandContext> {\n`,
@@ -70,11 +70,11 @@ export default class NewPluginCommand extends Command {
       name: `yarn-plugin-helloworld`,
       main: `./sources/index.ts`,
       dependencies: {
-        [`@yarnpkg/core`]: require(`@yarnpkg/builder/package.json`).dependencies[`@yarnpkg/core`],
-        [`@yarnpkg/builder`]: `^${require(`@yarnpkg/builder/package.json`).version}`,
+        [`@orta/yarn-core`]: require(`@orta/yarn-builder/package.json`).dependencies[`@orta/yarn-core`],
+        [`@orta/yarn-builder`]: `^${require(`@orta/yarn-builder/package.json`).version}`,
         [`@types/node`]: `^${process.versions.node.split(`.`)[0]}.0.0`,
-        [`clipanion`]: require(`@yarnpkg/builder/package.json`).dependencies.clipanion,
-        [`typescript`]: require(`@yarnpkg/builder/package.json`).devDependencies.typescript,
+        [`clipanion`]: require(`@orta/yarn-builder/package.json`).dependencies.clipanion,
+        [`typescript`]: require(`@orta/yarn-builder/package.json`).devDependencies.typescript,
       },
       scripts: {
         build: `builder build plugin`,

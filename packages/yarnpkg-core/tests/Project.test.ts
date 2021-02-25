@@ -1,12 +1,12 @@
-import {Cache, Configuration, Project, ThrowReport, structUtils, LocatorHash, Package} from '@yarnpkg/core';
-import {Filename, PortablePath, ppath, xfs}                                            from '@yarnpkg/fslib';
-import LinkPlugin                                                                      from '@yarnpkg/plugin-link';
-import PnpPlugin                                                                       from '@yarnpkg/plugin-pnp';
+import {Cache, Configuration, Project, ThrowReport, structUtils, LocatorHash, Package} from '@orta/yarn-core';
+import {Filename, PortablePath, ppath, xfs}                                            from '@orta/yarn-fslib';
+import LinkPlugin                                                                      from '@orta/yarn-plugin-link';
+import PnpPlugin                                                                       from '@orta/yarn-plugin-pnp';
 
 const getConfiguration = (p: PortablePath) => {
   return Configuration.create(p, p, new Map([
-    [`@yarnpkg/plugin-link`, LinkPlugin],
-    [`@yarnpkg/plugin-pnp`, PnpPlugin],
+    [`@orta/yarn-plugin-link`, LinkPlugin],
+    [`@orta/yarn-plugin-pnp`, PnpPlugin],
   ]));
 };
 

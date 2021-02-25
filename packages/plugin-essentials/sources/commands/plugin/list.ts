@@ -1,6 +1,6 @@
-import {BaseCommand}                            from '@yarnpkg/cli';
-import {Configuration, StreamReport, httpUtils} from '@yarnpkg/core';
-import {parseSyml}                              from '@yarnpkg/parsers';
+import {BaseCommand}                            from '@orta/yarn-cli';
+import {Configuration, StreamReport, httpUtils} from '@orta/yarn-core';
+import {parseSyml}                              from '@orta/yarn-parsers';
 import {Command, Option, Usage}                 from 'clipanion';
 
 const REMOTE_REGISTRY = `https://raw.githubusercontent.com/yarnpkg/berry/master/plugins.yml`;

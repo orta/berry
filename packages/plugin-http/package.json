@@ -1,17 +1,17 @@
 {
-  "name": "@yarnpkg/plugin-http",
+  "name": "@orta/yarn-plugin-http",
   "version": "2.1.2",
   "license": "BSD-2-Clause",
   "main": "./sources/index.ts",
   "dependencies": {
-    "@yarnpkg/fslib": "workspace:^2.4.0",
+    "@orta/yarn-fslib": "workspace:^2.4.0",
     "tslib": "^1.13.0"
   },
   "peerDependencies": {
-    "@yarnpkg/core": "^2.4.0"
+    "@orta/yarn-core": "^2.4.0"
   },
   "devDependencies": {
-    "@yarnpkg/core": "workspace:^2.4.0"
+    "@orta/yarn-core": "workspace:^2.4.0"
   },
   "repository": {
     "type": "git",

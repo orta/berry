@@ -1,5 +1,5 @@
-import {StreamReport, MessageName, Configuration, formatUtils, structUtils} from '@yarnpkg/core';
-import {npath}                                                              from '@yarnpkg/fslib';
+import {StreamReport, MessageName, Configuration, formatUtils, structUtils} from '@orta/yarn-core';
+import {npath}                                                              from '@orta/yarn-fslib';
 import {Command, Option, Usage, UsageError}                                 from 'clipanion';
 import fs                                                                   from 'fs';
 import path                                                                 from 'path';
@@ -10,14 +10,14 @@ import {isDynamicLib}                                                       from
 import {makeConfig, WebpackPlugin}                                          from '../../tools/makeConfig';
 
 // The name gets normalized so that everyone can override some plugins by
-// their own (@arcanis/yarn-plugin-foo would override @yarnpkg/plugin-foo
+// their own (@arcanis/yarn-plugin-foo would override @orta/yarn-plugin-foo
 // as well as @mael/yarn-plugin-foo)
 const getNormalizedName = (name: string) => {
-  const parsing = name.match(/^(?:@yarnpkg\/|(?:@[^/]+\/)?yarn-)(plugin-[^/]+)/);
+  const parsing = name.match(/^(?:@orta\/|(?:@[^/]+\/)?yarn-)(plugin-[^/]+)/);
   if (parsing === null)
     throw new UsageError(`Invalid plugin name "${name}" - it should be "yarn-plugin-<something>"`);
 
-  return `@yarnpkg/${parsing[1]}`;
+  return `@orta/yarn-${parsing[1]}`;
 };
 
 // eslint-disable-next-line arca/no-default-export

@@ -1,4 +1,4 @@
-# `@yarnpkg/plugin-github`
+# `@orta/yarn-plugin-github`
 
 This plugin improves the performances when cloning packages from Git by making use of the [hosted GitHub API](https://stackoverflow.com/a/6466993/880703).
 

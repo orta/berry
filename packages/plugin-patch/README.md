@@ -1,4 +1,4 @@
-# `@yarnpkg/plugin-patch`
+# `@orta/yarn-plugin-patch`
 
 This plugin adds support for the `patch:` protocol.
 

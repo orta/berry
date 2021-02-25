@@ -1,7 +1,7 @@
-import {BaseCommand}                                        from '@yarnpkg/cli';
-import {Configuration, MessageName, miscUtils, structUtils} from '@yarnpkg/core';
-import {StreamReport}                                       from '@yarnpkg/core';
-import {npmConfigUtils}                                     from '@yarnpkg/plugin-npm';
+import {BaseCommand}                                        from '@orta/yarn-cli';
+import {Configuration, MessageName, miscUtils, structUtils} from '@orta/yarn-core';
+import {StreamReport}                                       from '@orta/yarn-core';
+import {npmConfigUtils}                                     from '@orta/yarn-plugin-npm';
 import {Command, Option, Usage}                             from 'clipanion';
 
 import {getRegistry}                                        from './login';

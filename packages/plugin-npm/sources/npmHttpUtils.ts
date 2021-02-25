@@ -1,5 +1,5 @@
-import {Configuration, Ident, httpUtils} from '@yarnpkg/core';
-import {MessageName, ReportError}        from '@yarnpkg/core';
+import {Configuration, Ident, httpUtils} from '@orta/yarn-core';
+import {MessageName, ReportError}        from '@orta/yarn-core';
 import {prompt}                          from 'enquirer';
 import {URL}                             from 'url';
 

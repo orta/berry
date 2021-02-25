@@ -45,7 +45,7 @@ The Git protocol, while fairly old, has been significantly improved starting fro
 - You can explicitly request a tag, commit, branch, or semver tag, by using one of those keywords (if you're missing the keyword, Yarn will look for the first thing that seems to match, as in prior versions):
 
 ```
-git@github.com:yarnpkg/berry.git#tag=@yarnpkg/cli/2.2.0
+git@github.com:yarnpkg/berry.git#tag=@orta/yarn-cli/2.2.0
 git@github.com:yarnpkg/berry.git#commit=a806c88
 git@github.com:yarnpkg/berry.git#head=master
 ```
@@ -55,7 +55,7 @@ git@github.com:yarnpkg/berry.git#head=master
 - Workspaces can be cloned as long as the remote repository uses Yarn (we can't support pnpm because it doesn't have equivalent for the [`workspace` command](/cli/workspace)). Just reference the workspace by name in your range (you can optionally enforce the tag as well):
 
 ```
-git@github.com:yarnpkg/berry.git#workspace=@yarnpkg/shell&tag=@yarnpkg/shell/2.1.0
+git@github.com:yarnpkg/berry.git#workspace=@orta/yarn-shell&tag=@orta/yarn-shell/2.1.0
 ```
   
 ### Patch

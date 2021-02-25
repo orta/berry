@@ -1,4 +1,4 @@
-import {npath, ppath, Filename, xfs} from '@yarnpkg/fslib';
+import {npath, ppath, Filename, xfs} from '@orta/yarn-fslib';
 import ForkTsCheckerWebpackPlugin    from 'fork-ts-checker-webpack-plugin';
 import tsLoader                      from 'ts-loader';
 import merge                         from 'webpack-merge';

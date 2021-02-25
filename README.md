@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://github.com/yarnpkg/berry"><img alt="GitHub Actions status" src="https://github.com/yarnpkg/berry/workflows/Integration/badge.svg"></a>
   <a href="https://discord.gg/yarnpkg"><img alt="Discord Chat" src="https://img.shields.io/discord/226791405589233664.svg"></a>
-  <a href="https://github.com/yarnpkg/berry"><img alt="Latest CLI Release" src="https://img.shields.io/npm/v/@yarnpkg/cli/latest?label=latest"></a>
+  <a href="https://github.com/yarnpkg/berry"><img alt="Latest CLI Release" src="https://img.shields.io/npm/v/@orta/yarn-cli/latest?label=latest"></a>
 </p>
 
 ---
@@ -22,7 +22,7 @@ Yarn is a modern package manager split into various packages. Its novel architec
 - Yarn supports Node by default but isn't limited to it - plugins can add support for other languages
 - Yarn supports [workspaces](https://yarnpkg.com/features/workspaces) natively, and its CLI takes advantage of that
 - Yarn uses a bash-like [portable shell](https://github.com/yarnpkg/berry/tree/master/packages/yarnpkg-shell#yarnpkgshell) to execute package scripts, guaranteeing they work the same way on Windows, Linux, and macOS
-- Yarn is first and foremost a [Node API](https://yarnpkg.com/api/) that can be used programmatically (via [@yarnpkg/core](packages/yarnpkg-core))
+- Yarn is first and foremost a [Node API](https://yarnpkg.com/api/) that can be used programmatically (via [@orta/yarn-core](packages/yarnpkg-core))
 - Yarn is written in [TypeScript](https://www.typescriptlang.org/) and is fully type-checked
 
 ## Our supports
@@ -176,7 +176,7 @@ Those plugins typically come bundled with Yarn. You don't need to do anything sp
 
 ### Contrib plugins
 
-Although developed on the same repository as Yarn itself, those plugins are optional and need to be explicitly installed through `yarn plugin import @yarnpkg/<plugin-name>`.
+Although developed on the same repository as Yarn itself, those plugins are optional and need to be explicitly installed through `yarn plugin import @orta/yarn-<plugin-name>`.
 
 - [☆ plugin-constraints](packages/plugin-constraints) adds support for [constraints](https://yarnpkg.com/features/constraints) to Yarn.
 - [☆ plugin-exec](packages/plugin-exec) adds support for using the [`exec:`](https://github.com/yarnpkg/berry/tree/master/packages/plugin-exec#documentation) protocol within your dependencies.
@@ -198,19 +198,19 @@ To create your own plugin, please refer to the [documentation](https://yarnpkg.c
 
 The following packages are generic and can be used in a variety of purposes (including to implement other package managers, but not only):
 
-- [@yarnpkg/core](packages/yarnpkg-core) allows any application to manipulate a project programmatically.
-- [@yarnpkg/fslib](packages/yarnpkg-fslib) is a set of tools to abstract the filesystem through type-safe primitives.
-- [@yarnpkg/json-proxy](packages/yarnpkg-json-proxy) allows to temporarily convert any POD object to an immutable object.
-- [@yarnpkg/libzip](packages/yarnpkg-libzip) contains zlib+libzip bindings compiled to WebAssembly.
-- [@yarnpkg/parsers](packages/yarnpkg-parsers) can be used to parse the language used by [@yarnpkg/shell](packages/yarnpkg-shell).
-- [@yarnpkg/pnp](packages/yarnpkg-pnp) can be used to generate [Plug'n'Play](https://yarnpkg.com/features/pnp)-compatible hooks.
-- [@yarnpkg/pnpify](packages/yarnpkg-pnpify) is a CLI tool to transparently add PnP support to various tools.
-- [@yarnpkg/shell](packages/yarnpkg-shell) is a portable bash-like shell interpreter.
+- [@orta/yarn-core](packages/yarnpkg-core) allows any application to manipulate a project programmatically.
+- [@orta/yarn-fslib](packages/yarnpkg-fslib) is a set of tools to abstract the filesystem through type-safe primitives.
+- [@orta/yarn-json-proxy](packages/yarnpkg-json-proxy) allows to temporarily convert any POD object to an immutable object.
+- [@orta/yarn-libzip](packages/yarnpkg-libzip) contains zlib+libzip bindings compiled to WebAssembly.
+- [@orta/yarn-parsers](packages/yarnpkg-parsers) can be used to parse the language used by [@orta/yarn-shell](packages/yarnpkg-shell).
+- [@orta/yarn-pnp](packages/yarnpkg-pnp) can be used to generate [Plug'n'Play](https://yarnpkg.com/features/pnp)-compatible hooks.
+- [@orta/yarn-pnpify](packages/yarnpkg-pnpify) is a CLI tool to transparently add PnP support to various tools.
+- [@orta/yarn-shell](packages/yarnpkg-shell) is a portable bash-like shell interpreter.
 
 ## Yarn packages
 
 The following packages are meant to be used by Yarn itself, and probably won't be useful to other applications:
 
-- [@yarnpkg/builder](packages/yarnpkg-builder) contains a CLI tool to package berry and its plugins.
-- [@yarnpkg/cli](packages/yarnpkg-cli) is a CLI entry point built on top of [@yarnpkg/core](packages/yarnpkg-core).
+- [@orta/yarn-builder](packages/yarnpkg-builder) contains a CLI tool to package berry and its plugins.
+- [@orta/yarn-cli](packages/yarnpkg-cli) is a CLI entry point built on top of [@orta/yarn-core](packages/yarnpkg-core).
 

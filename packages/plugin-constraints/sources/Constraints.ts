@@ -1,8 +1,8 @@
 /// <reference path="./tauProlog.d.ts"/>
 
-import {Ident, MessageName, Project, ReportError, Workspace} from '@yarnpkg/core';
-import {miscUtils, structUtils}                              from '@yarnpkg/core';
-import {xfs, ppath, PortablePath}                            from '@yarnpkg/fslib';
+import {Ident, MessageName, Project, ReportError, Workspace} from '@orta/yarn-core';
+import {miscUtils, structUtils}                              from '@orta/yarn-core';
+import {xfs, ppath, PortablePath}                            from '@orta/yarn-fslib';
 // @ts-expect-error
 import plLists                                               from 'tau-prolog/modules/lists';
 import pl                                                    from 'tau-prolog';

@@ -1,12 +1,12 @@
 // @ts-expect-error
-import packageJson           from '@yarnpkg/cli/package.json';
-import {PluginConfiguration} from '@yarnpkg/core';
+import packageJson           from '@orta/yarn-cli/package.json';
+import {PluginConfiguration} from '@orta/yarn-core';
 
 import {getDynamicLibs}      from './getDynamicLibs';
 
 export function getPluginConfiguration(): PluginConfiguration {
   const plugins = new Set<string>();
-  for (const dependencyName of packageJson[`@yarnpkg/builder`].bundles.standard)
+  for (const dependencyName of packageJson[`@orta/yarn-builder`].bundles.standard)
     plugins.add(dependencyName);
 
   const modules = getDynamicLibs();

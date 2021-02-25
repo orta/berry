@@ -1,7 +1,7 @@
-import {CwdFS, Filename, NativePath, PortablePath, ZipOpenFS} from '@yarnpkg/fslib';
-import {xfs, npath, ppath, toFilename}                        from '@yarnpkg/fslib';
-import {getLibzipPromise}                                     from '@yarnpkg/libzip';
-import {execute}                                              from '@yarnpkg/shell';
+import {CwdFS, Filename, NativePath, PortablePath, ZipOpenFS} from '@orta/yarn-fslib';
+import {xfs, npath, ppath, toFilename}                        from '@orta/yarn-fslib';
+import {getLibzipPromise}                                     from '@orta/yarn-libzip';
+import {execute}                                              from '@orta/yarn-shell';
 import capitalize                                             from 'lodash/capitalize';
 import pLimit                                                 from 'p-limit';
 import {PassThrough, Readable, Writable}                      from 'stream';
@@ -122,7 +122,7 @@ export async function makeScriptEnv({project, locator, binFolder, lifecycleScrip
 
   const version = YarnVersion !== null
     ? `yarn/${YarnVersion}`
-    : `yarn/${miscUtils.dynamicRequire(`@yarnpkg/core`).version}-core`;
+    : `yarn/${miscUtils.dynamicRequire(`@orta/yarn-core`).version}-core`;
 
   scriptEnv.npm_config_user_agent = `${version} npm/? node/${process.versions.node} ${process.platform} ${process.arch}`;
 

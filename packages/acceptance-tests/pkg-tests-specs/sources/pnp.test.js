@@ -1,4 +1,4 @@
-const {npath, ppath, xfs} = require(`@yarnpkg/fslib`);
+const {npath, ppath, xfs} = require(`@orta/yarn-fslib`);
 const cp = require(`child_process`);
 const {satisfies} = require(`semver`);
 

@@ -1,4 +1,4 @@
-import {Plugin} from '@yarnpkg/core';
+import {Plugin} from '@orta/yarn-core';
 
 import create   from './commands/create';
 import dlx      from './commands/dlx';

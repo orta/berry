@@ -1,6 +1,6 @@
-import {Resolver, ResolveOptions, MinimalResolveOptions, DescriptorHash, hashUtils} from '@yarnpkg/core';
-import {Descriptor, Locator, Package}                                               from '@yarnpkg/core';
-import {structUtils}                                                                from '@yarnpkg/core';
+import {Resolver, ResolveOptions, MinimalResolveOptions, DescriptorHash, hashUtils} from '@orta/yarn-core';
+import {Descriptor, Locator, Package}                                               from '@orta/yarn-core';
+import {structUtils}                                                                from '@orta/yarn-core';
 
 import * as patchUtils                                                              from './patchUtils';
 

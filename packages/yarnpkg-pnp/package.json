@@ -1,17 +1,17 @@
 {
-  "name": "@yarnpkg/pnp",
+  "name": "@orta/yarn-pnp",
   "version": "2.3.2",
   "license": "BSD-2-Clause",
   "main": "./sources/index.ts",
   "dependencies": {
+    "@orta/yarn-fslib": "workspace:^2.4.0",
     "@types/node": "^13.7.0",
-    "@yarnpkg/fslib": "workspace:^2.4.0",
     "tslib": "^1.13.0"
   },
   "devDependencies": {
-    "@yarnpkg/builder": "workspace:^2.1.3",
-    "@yarnpkg/libzip": "workspace:^2.2.1",
-    "@yarnpkg/monorepo": "workspace:0.0.0",
+    "@orta/yarn-builder": "workspace:^2.1.3",
+    "@orta/yarn-libzip": "workspace:^2.2.1",
+    "@orta/yarn-monorepo": "workspace:0.0.0",
     "typescript": "4.1.0-beta",
     "webpack": "^5.1.1",
     "webpack-cli": "^4.0.0-beta.8"

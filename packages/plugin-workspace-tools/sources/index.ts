@@ -1,4 +1,4 @@
-import {Plugin} from '@yarnpkg/core';
+import {Plugin} from '@orta/yarn-core';
 
 import focus    from './commands/focus';
 import foreach  from './commands/foreach';

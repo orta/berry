@@ -1,4 +1,4 @@
-import {CwdFS, PortablePath}   from '@yarnpkg/fslib';
+import {CwdFS, PortablePath}   from '@orta/yarn-fslib';
 
 import {Fetcher, FetchOptions} from './Fetcher';
 import {WorkspaceResolver}     from './WorkspaceResolver';

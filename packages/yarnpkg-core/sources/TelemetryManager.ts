@@ -1,4 +1,4 @@
-import {Filename, xfs, PortablePath, ppath} from '@yarnpkg/fslib';
+import {Filename, xfs, PortablePath, ppath} from '@orta/yarn-fslib';
 
 import {Configuration}                      from './Configuration';
 import * as httpUtils                       from './httpUtils';
@@ -143,11 +143,11 @@ export class TelemetryManager {
 
       const rawUrl = `https://browser-http-intake.logs.datadoghq.eu/v1/input/${accountId}?ddsource=yarn`;
 
-      httpUtils.post(rawUrl, upload, {
-        configuration: this.configuration,
-      }).catch(() => {
-        // Nothing we can do
-      });
+      // httpUtils.post(rawUrl, upload, {
+      //   configuration: this.configuration,
+      // }).catch(() => {
+      //   // Nothing we can do
+      // });
     }
   }
 

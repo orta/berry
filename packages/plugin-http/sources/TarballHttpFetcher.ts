@@ -1,6 +1,6 @@
-import {Fetcher, FetchOptions, MinimalFetchOptions} from '@yarnpkg/core';
-import {Locator}                                    from '@yarnpkg/core';
-import {httpUtils, structUtils, tgzUtils}           from '@yarnpkg/core';
+import {Fetcher, FetchOptions, MinimalFetchOptions} from '@orta/yarn-core';
+import {Locator}                                    from '@orta/yarn-core';
+import {httpUtils, structUtils, tgzUtils}           from '@orta/yarn-core';
 
 import {TARBALL_REGEXP, PROTOCOL_REGEXP}            from './constants';
 

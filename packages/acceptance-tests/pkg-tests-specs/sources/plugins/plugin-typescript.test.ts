@@ -1,5 +1,5 @@
-import {Manifest}     from '@yarnpkg/core';
-import {PortablePath} from '@yarnpkg/fslib';
+import {Manifest}     from '@orta/yarn-core';
+import {PortablePath} from '@orta/yarn-fslib';
 import {merge}        from 'lodash';
 import {fs, yarn}     from 'pkg-tests-core';
 
@@ -12,7 +12,7 @@ describe(`Plugins`, () => {
       test(
         `it should automatically add @types to devDependencies when package doesn't provide types`,
         makeTemporaryEnv({}, async ({path, run, source}) => {
-          await writeConfiguration(path, {plugins: [require.resolve(`@yarnpkg/monorepo/scripts/plugin-typescript.js`)]});
+          await writeConfiguration(path, {plugins: [require.resolve(`@orta/yarn-monorepo/scripts/plugin-typescript.js`)]});
           await run(`add`, `is-number`);
 
           await expect(readManifest(path)).resolves.toMatchObject({
@@ -29,7 +29,7 @@ describe(`Plugins`, () => {
       test(
         `it should not add @types when package provides its own types`,
         makeTemporaryEnv({}, async ({path, run, source}) => {
-          await writeConfiguration(path, {plugins: [require.resolve(`@yarnpkg/monorepo/scripts/plugin-typescript.js`)]});
+          await writeConfiguration(path, {plugins: [require.resolve(`@orta/yarn-monorepo/scripts/plugin-typescript.js`)]});
           await run(`add`, `left-pad`);
 
           await expect(readManifest(path)).resolves.toMatchObject({
@@ -43,7 +43,7 @@ describe(`Plugins`, () => {
       test(
         `it should automatically add @types for scoped packages`,
         makeTemporaryEnv({}, async ({path, run, source}) => {
-          await writeConfiguration(path, {plugins: [require.resolve(`@yarnpkg/monorepo/scripts/plugin-typescript.js`)]});
+          await writeConfiguration(path, {plugins: [require.resolve(`@orta/yarn-monorepo/scripts/plugin-typescript.js`)]});
           await run(`add`, `@iarna/toml`);
 
           await expect(readManifest(path)).resolves.toMatchObject({
@@ -60,7 +60,7 @@ describe(`Plugins`, () => {
       test(
         `it should not generate a @types dependency if @types package doesn't exist`,
         makeTemporaryEnv({}, async ({path, run, source}) => {
-          await writeConfiguration(path, {plugins: [require.resolve(`@yarnpkg/monorepo/scripts/plugin-typescript.js`)]});
+          await writeConfiguration(path, {plugins: [require.resolve(`@orta/yarn-monorepo/scripts/plugin-typescript.js`)]});
           await run(`add`, `resolve`);
 
           await expect(readManifest(path)).resolves.toMatchObject({
@@ -74,7 +74,7 @@ describe(`Plugins`, () => {
       test(
         `it should not add @types for transient dependencies`,
         makeTemporaryEnv({}, async ({path, run, source}) => {
-          await writeConfiguration(path, {plugins: [require.resolve(`@yarnpkg/monorepo/scripts/plugin-typescript.js`)]});
+          await writeConfiguration(path, {plugins: [require.resolve(`@orta/yarn-monorepo/scripts/plugin-typescript.js`)]});
           await run(`add`, `one-fixed-dep-with-types`);
 
           await expect(readManifest(path)).resolves.toMatchObject({
@@ -88,7 +88,7 @@ describe(`Plugins`, () => {
       test(
         `it should add @types with the range '^<original-major>' by default`,
         makeTemporaryEnv({}, async ({path, run, source}) => {
-          await writeConfiguration(path, {plugins: [require.resolve(`@yarnpkg/monorepo/scripts/plugin-typescript.js`)]});
+          await writeConfiguration(path, {plugins: [require.resolve(`@orta/yarn-monorepo/scripts/plugin-typescript.js`)]});
           await run(`add`, `is-number@^1.0.0`);
 
           await expect(readManifest(path)).resolves.toMatchObject({
@@ -116,7 +116,7 @@ describe(`Plugins`, () => {
             },
           },
         }, async ({path, run, source}) => {
-          await writeConfiguration(path, {plugins: [require.resolve(`@yarnpkg/monorepo/scripts/plugin-typescript.js`)]});
+          await writeConfiguration(path, {plugins: [require.resolve(`@orta/yarn-monorepo/scripts/plugin-typescript.js`)]});
 
           await run(`add`, `is-number@^2.0.0`);
 
@@ -148,7 +148,7 @@ describe(`Plugins`, () => {
             },
           },
         }, async ({path, run, source}) => {
-          await writeConfiguration(path, {plugins: [require.resolve(`@yarnpkg/monorepo/scripts/plugin-typescript.js`)]});
+          await writeConfiguration(path, {plugins: [require.resolve(`@orta/yarn-monorepo/scripts/plugin-typescript.js`)]});
 
           await run(`add`, `is-number@^2.0.0`);
 
@@ -177,7 +177,7 @@ describe(`Plugins`, () => {
             },
           },
         }, async ({path, run, source}) => {
-          await writeConfiguration(path, {plugins: [require.resolve(`@yarnpkg/monorepo/scripts/plugin-typescript.js`)]});
+          await writeConfiguration(path, {plugins: [require.resolve(`@orta/yarn-monorepo/scripts/plugin-typescript.js`)]});
 
           await run(`add`, `is-number@^2.0.0`);
 
@@ -203,7 +203,7 @@ describe(`Plugins`, () => {
             },
           },
         }, async ({path, run, source}) => {
-          await writeConfiguration(path, {plugins: [require.resolve(`@yarnpkg/monorepo/scripts/plugin-typescript.js`)]});
+          await writeConfiguration(path, {plugins: [require.resolve(`@orta/yarn-monorepo/scripts/plugin-typescript.js`)]});
 
           await run(`add`, `is-number@^1.0.0`);
 
@@ -237,7 +237,7 @@ describe(`Plugins`, () => {
             },
           },
         }, async ({path, run, source}) => {
-          await writeConfiguration(path, {plugins: [require.resolve(`@yarnpkg/monorepo/scripts/plugin-typescript.js`)]});
+          await writeConfiguration(path, {plugins: [require.resolve(`@orta/yarn-monorepo/scripts/plugin-typescript.js`)]});
 
           await run(`add`, `is-number@^2.0.0`);
 
@@ -266,7 +266,7 @@ describe(`Plugins`, () => {
               [`@types/is-number`]: `1.0.0`,
             },
           }), async ({path, run, source}) => {
-            await writeConfiguration(path, {plugins: [require.resolve(`@yarnpkg/monorepo/scripts/plugin-typescript.js`)]});
+            await writeConfiguration(path, {plugins: [require.resolve(`@orta/yarn-monorepo/scripts/plugin-typescript.js`)]});
             await run(`remove`, `is-number`);
 
             await expect(readManifest(path)).resolves.not.toHaveProperty(`${type}.@types/is-number`);
@@ -284,7 +284,7 @@ describe(`Plugins`, () => {
             [`@types/iarna__toml`]: `1.0.0`,
           },
         }, async ({path, run, source}) => {
-          await writeConfiguration(path, {plugins: [require.resolve(`@yarnpkg/monorepo/scripts/plugin-typescript.js`)]});
+          await writeConfiguration(path, {plugins: [require.resolve(`@orta/yarn-monorepo/scripts/plugin-typescript.js`)]});
           await run(`remove`, `@iarna/toml`);
 
           await expect(readManifest(path)).resolves.not.toHaveProperty(`devDependencies.@types/iarna__toml`);
@@ -303,7 +303,7 @@ describe(`Plugins`, () => {
             typings: `./published-typings.d.ts`,
           },
         }, async ({path, run, source}) => {
-          await writeConfiguration(path, {plugins: [require.resolve(`@yarnpkg/monorepo/scripts/plugin-typescript.js`)]});
+          await writeConfiguration(path, {plugins: [require.resolve(`@orta/yarn-monorepo/scripts/plugin-typescript.js`)]});
 
           await run(`install`);
           await run(`pack`);

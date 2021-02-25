@@ -1,10 +1,10 @@
-import {xfs} from '@yarnpkg/fslib';
+import {xfs} from '@orta/yarn-fslib';
 
 const {
   tests: {getPackageDirectoryPath},
   yarn: {readManifest},
 } = require(`pkg-tests-core`);
-const {parseSyml} = require(`@yarnpkg/parsers`);
+const {parseSyml} = require(`@orta/yarn-parsers`);
 
 describe(`Commands`, () => {
   describe(`add`, () => {

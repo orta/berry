@@ -1,20 +1,20 @@
 {
-  "name": "@yarnpkg/plugin-git",
+  "name": "@orta/yarn-plugin-git",
   "version": "2.3.0",
   "license": "BSD-2-Clause",
   "main": "./sources/index.ts",
   "dependencies": {
+    "@orta/yarn-fslib": "workspace:^2.4.0",
     "@types/semver": "^7.1.0",
-    "@yarnpkg/fslib": "workspace:^2.4.0",
     "git-url-parse": "11.1.2",
     "semver": "^7.1.2",
     "tslib": "^1.13.0"
   },
   "peerDependencies": {
-    "@yarnpkg/core": "^2.4.0"
+    "@orta/yarn-core": "^2.4.0"
   },
   "devDependencies": {
-    "@yarnpkg/core": "workspace:^2.4.0"
+    "@orta/yarn-core": "workspace:^2.4.0"
   },
   "repository": {
     "type": "git",

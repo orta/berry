@@ -1,7 +1,7 @@
-import {BaseCommand}                                                                       from '@yarnpkg/cli';
-import {Configuration, MessageName, Project, ReportError, StreamReport, miscUtils, Report} from '@yarnpkg/core';
-import {formatUtils, httpUtils, structUtils}                                               from '@yarnpkg/core';
-import {PortablePath, npath, ppath, xfs}                                                   from '@yarnpkg/fslib';
+import {BaseCommand}                                                                       from '@orta/yarn-cli';
+import {Configuration, MessageName, Project, ReportError, StreamReport, miscUtils, Report} from '@orta/yarn-core';
+import {formatUtils, httpUtils, structUtils}                                               from '@orta/yarn-core';
+import {PortablePath, npath, ppath, xfs}                                                   from '@orta/yarn-fslib';
 import {Command, Option, Usage}                                                            from 'clipanion';
 import {URL}                                                                               from 'url';
 import {runInNewContext}                                                                   from 'vm';
@@ -26,13 +26,13 @@ export default class PluginDlCommand extends BaseCommand {
       - Third-party plugins can be referenced directly through their public urls.
       - Local plugins can be referenced by their path on the disk.
 
-      Plugins cannot be downloaded from the npm registry, and aren't allowed to have dependencies (they need to be bundled into a single file, possibly thanks to the \`@yarnpkg/builder\` package).
+      Plugins cannot be downloaded from the npm registry, and aren't allowed to have dependencies (they need to be bundled into a single file, possibly thanks to the \`@orta/yarn-builder\` package).
     `,
     examples: [[
-      `Download and activate the "@yarnpkg/plugin-exec" plugin`,
-      `$0 plugin import @yarnpkg/plugin-exec`,
+      `Download and activate the "@orta/yarn-plugin-exec" plugin`,
+      `$0 plugin import @orta/yarn-plugin-exec`,
     ], [
-      `Download and activate the "@yarnpkg/plugin-exec" plugin (shorthand)`,
+      `Download and activate the "@orta/yarn-plugin-exec" plugin (shorthand)`,
       `$0 plugin import exec`,
     ], [
       `Download and activate a community plugin`,
@@ -75,7 +75,7 @@ export default class PluginDlCommand extends BaseCommand {
           pluginSpec = this.name;
           pluginUrl = this.name;
         } else {
-          const ident = structUtils.parseIdent(this.name.replace(/^((@yarnpkg\/)?plugin-)?/, `@yarnpkg/plugin-`));
+          const ident = structUtils.parseIdent(this.name.replace(/^((@orta\/)?plugin-)?/, `@orta/yarn-plugin-`));
           const identStr = structUtils.stringifyIdent(ident);
           const data = await getAvailablePlugins(configuration);
 

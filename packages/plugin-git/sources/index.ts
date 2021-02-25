@@ -1,4 +1,4 @@
-import {FetchOptions, FetchResult, Locator, Plugin, SettingsType} from '@yarnpkg/core';
+import {FetchOptions, FetchResult, Locator, Plugin, SettingsType} from '@orta/yarn-core';
 
 import {GitFetcher}                                               from './GitFetcher';
 import {GitResolver}                                              from './GitResolver';
@@ -12,7 +12,7 @@ export interface Hooks {
   ) => Promise<FetchResult | null>,
 }
 
-declare module '@yarnpkg/core' {
+declare module '@orta/yarn-core' {
   interface ConfigurationValueMap {
     cloneConcurrency: number;
   }

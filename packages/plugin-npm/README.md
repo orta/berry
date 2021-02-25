@@ -1,4 +1,4 @@
-# `@yarnpkg/plugin-npm`
+# `@orta/yarn-plugin-npm`
 
 This plugin adds support for downloading packages from the npm registry.
 

@@ -10,7 +10,7 @@ import NewPluginCommand   from './commands/new/plugin';
 const cli = new Cli({
   binaryLabel: `Yarn Builder`,
   binaryName: `builder`,
-  binaryVersion: require(`@yarnpkg/builder/package.json`).version,
+  binaryVersion: require(`@orta/yarn-builder/package.json`).version,
 });
 
 cli.register(NewPluginCommand);

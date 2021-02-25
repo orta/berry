@@ -62,22 +62,22 @@ gen_enforced_field(WorkspaceCwd, 'repository.directory', WorkspaceCwd).
 % be called as part of our release process (to rebuild them in the context of our repository)
 gen_enforced_field(WorkspaceCwd, 'scripts.update-local', '<any value>') :-
   % Obtain the path for the CLI
-    workspace_ident(CliCwd, '@yarnpkg/cli'),
-  % Iterates over all workspaces whose name is prefixed with "@yarnpkg/plugin-"
+    workspace_ident(CliCwd, '@orta/yarn-cli'),
+  % Iterates over all workspaces whose name is prefixed with "@orta/yarn-plugin-"
     workspace_ident(WorkspaceCwd, WorkspaceIdent),
-    atom_concat('@yarnpkg/plugin-', _, WorkspaceIdent),
+    atom_concat('@orta/yarn-plugin-', _, WorkspaceIdent),
   % Select those that are not included in the CLI bundle array
-    \+ workspace_field_test(CliCwd, '@yarnpkg/builder.bundles.standard', '$$.includes($0)', [WorkspaceIdent]),
+    \+ workspace_field_test(CliCwd, '@orta/yarn-builder.bundles.standard', '$$.includes($0)', [WorkspaceIdent]),
   % Only if they don't have a script set
     \+ workspace_field(WorkspaceCwd, 'scripts.update-local', _).
 
-inline_compile('@yarnpkg/eslint-config').
-inline_compile('@yarnpkg/libui').
+inline_compile('@orta/yarn-eslint-config').
+inline_compile('@orta/yarn-libui').
 
 gen_enforced_field(WorkspaceCwd, 'scripts.prepack', 'run build:compile "$(pwd)"') :-
   workspace(WorkspaceCwd),
   % This package is built using Webpack, so we allow it to configure its build scripts itself
-    \+ workspace_ident(WorkspaceCwd, '@yarnpkg/pnp'),
+    \+ workspace_ident(WorkspaceCwd, '@orta/yarn-pnp'),
   % Those packages use a different build
     \+ (workspace_ident(WorkspaceCwd, WorkspaceIdent), inline_compile(WorkspaceIdent)),
   % Private packages aren't covered
@@ -86,7 +86,7 @@ gen_enforced_field(WorkspaceCwd, 'scripts.prepack', 'run build:compile "$(pwd)"'
 gen_enforced_field(WorkspaceCwd, 'scripts.postpack', 'rm -rf lib') :-
   workspace(WorkspaceCwd),
   % This package is built using Webpack, so we allow it to configure its build scripts itself
-    \+ workspace_ident(WorkspaceCwd, '@yarnpkg/pnp'),
+    \+ workspace_ident(WorkspaceCwd, '@orta/yarn-pnp'),
   % Those packages use a different build
     \+ (workspace_ident(WorkspaceCwd, WorkspaceIdent), inline_compile(WorkspaceIdent)),
   % Private packages aren't covered

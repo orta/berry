@@ -1,11 +1,11 @@
-# `@yarnpkg/shell`
+# `@orta/yarn-shell`
 
-A JavaScript implementation of a bash-like shell (we use it in Yarn 2 to provide cross-platform scripting). This package exposes an API that abstracts both the parser and the interpreter; should you only need the parser you can check out `@yarnpkg/parsers`, but you probably won't need it.
+A JavaScript implementation of a bash-like shell (we use it in Yarn 2 to provide cross-platform scripting). This package exposes an API that abstracts both the parser and the interpreter; should you only need the parser you can check out `@orta/yarn-parsers`, but you probably won't need it.
 
 ## Usage
 
 ```ts
-import {execute} from '@yarnpkg/shell';
+import {execute} from '@orta/yarn-shell';
 
 process.exitCode = await execute(`ls "$1" | wc -l`, [process.cwd()]);
 ```

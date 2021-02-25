@@ -1,4 +1,4 @@
-# `@yarnpkg/libui`
+# `@orta/yarn-libui`
 
 This library is used to power parts of the UI in our interactive plugins.
 

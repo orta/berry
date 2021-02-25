@@ -1,4 +1,4 @@
-# `@yarnpkg/fslib`
+# `@orta/yarn-fslib`
 
 A TypeScript library abstracting the Node filesystem APIs. We use it for three main reasons:
 

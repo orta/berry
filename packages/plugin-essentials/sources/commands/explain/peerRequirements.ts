@@ -1,5 +1,5 @@
-import {BaseCommand}                                                                                                          from '@yarnpkg/cli';
-import {Configuration, MessageName, miscUtils, Project, StreamReport, structUtils, semverUtils, formatUtils, PeerRequirement} from '@yarnpkg/core';
+import {BaseCommand}                                                                                                          from '@orta/yarn-cli';
+import {Configuration, MessageName, miscUtils, Project, StreamReport, structUtils, semverUtils, formatUtils, PeerRequirement} from '@orta/yarn-core';
 import {Command, Option}                                                                                                      from 'clipanion';
 import {Writable}                                                                                                             from 'stream';
 import * as t                                                                                                                 from 'typanion';

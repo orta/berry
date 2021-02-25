@@ -1,5 +1,5 @@
-import {ZipOpenFS, VirtualFS, PosixFS, npath} from '@yarnpkg/fslib';
-import {getLibzipSync}                        from '@yarnpkg/libzip';
+import {ZipOpenFS, VirtualFS, PosixFS, npath} from '@orta/yarn-fslib';
+import {getLibzipSync}                        from '@orta/yarn-libzip';
 import * as vscode                            from 'vscode';
 
 export class ZipFSProvider implements vscode.FileSystemProvider {

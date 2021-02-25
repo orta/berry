@@ -1,4 +1,4 @@
-# `@yarnpkg/plugin-pnp`
+# `@orta/yarn-plugin-pnp`
 
 This plugin adds support for installing packages according to the [Plug'n'Play specification](https://yarnpkg.com/features/pnp).
 

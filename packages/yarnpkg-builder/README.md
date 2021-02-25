@@ -1,4 +1,4 @@
-# @yarnpkg/builder
+# @orta/yarn-builder
 
 A CLI tool designed for creating, building, and managing complex plugins.
 
@@ -12,7 +12,7 @@ A CLI tool designed for creating, building, and managing complex plugins.
 
 ## Installation
 
-`yarn add -D @yarnpkg/builder typescript`
+`yarn add -D @orta/yarn-builder typescript`
 
 ## Commands
 

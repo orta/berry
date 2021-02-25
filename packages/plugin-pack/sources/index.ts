@@ -1,5 +1,5 @@
-import {Hooks as CoreHooks, Plugin, Workspace, structUtils} from '@yarnpkg/core';
-import {MessageName, ReportError}                           from '@yarnpkg/core';
+import {Hooks as CoreHooks, Plugin, Workspace, structUtils} from '@orta/yarn-core';
+import {MessageName, ReportError}                           from '@orta/yarn-core';
 
 import pack                                                 from './commands/pack';
 import * as packUtils                                       from './packUtils';

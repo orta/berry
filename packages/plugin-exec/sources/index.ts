@@ -1,4 +1,4 @@
-import {Plugin}               from '@yarnpkg/core';
+import {Plugin}               from '@orta/yarn-core';
 
 import {ExecFetcher, ExecEnv} from './ExecFetcher';
 import {ExecResolver}         from './ExecResolver';

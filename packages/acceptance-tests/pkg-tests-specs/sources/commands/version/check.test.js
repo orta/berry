@@ -151,7 +151,7 @@ function makeVersionCheckEnv(cb) {
     workspaces: [`packages/*`],
   }, {
     plugins: [
-      require.resolve(`@yarnpkg/monorepo/scripts/plugin-version.js`),
+      require.resolve(`@orta/yarn-monorepo/scripts/plugin-version.js`),
     ],
   }, async ({path, run, ...rest}) => {
     const git = (...args) => execFile(`git`, args, {cwd: path});

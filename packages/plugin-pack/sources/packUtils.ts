@@ -1,6 +1,6 @@
-import {Report, Workspace, scriptUtils}                            from '@yarnpkg/core';
-import {FakeFS, JailFS, xfs, PortablePath, ppath, Filename, npath} from '@yarnpkg/fslib';
-import {Hooks as StageHooks}                                       from '@yarnpkg/plugin-stage';
+import {Report, Workspace, scriptUtils}                            from '@orta/yarn-core';
+import {FakeFS, JailFS, xfs, PortablePath, ppath, Filename, npath} from '@orta/yarn-fslib';
+import {Hooks as StageHooks}                                       from '@orta/yarn-plugin-stage';
 import mm                                                          from 'micromatch';
 import tar                                                         from 'tar-stream';
 import {createGzip}                                                from 'zlib';

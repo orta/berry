@@ -1,6 +1,6 @@
-import {FakeFS, LazyFS, NodeFS, ZipFS, PortablePath, Filename, AliasFS} from '@yarnpkg/fslib';
-import {ppath, xfs, DEFAULT_COMPRESSION_LEVEL}                          from '@yarnpkg/fslib';
-import {getLibzipPromise}                                               from '@yarnpkg/libzip';
+import {FakeFS, LazyFS, NodeFS, ZipFS, PortablePath, Filename, AliasFS} from '@orta/yarn-fslib';
+import {ppath, xfs, DEFAULT_COMPRESSION_LEVEL}                          from '@orta/yarn-fslib';
+import {getLibzipPromise}                                               from '@orta/yarn-libzip';
 import fs                                                               from 'fs';
 
 import {Configuration}                                                  from './Configuration';

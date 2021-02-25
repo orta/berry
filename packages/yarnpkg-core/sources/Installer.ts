@@ -1,4 +1,4 @@
-import {PortablePath}                              from '@yarnpkg/fslib';
+import {PortablePath}                              from '@orta/yarn-fslib';
 
 import {FetchResult}                               from './Fetcher';
 import {Descriptor, Locator, Package, LocatorHash} from './types';

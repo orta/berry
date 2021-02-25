@@ -1,4 +1,4 @@
-import {Plugin}              from '@yarnpkg/core';
+import {Plugin}              from '@orta/yarn-core';
 
 import {FileFetcher}         from './FileFetcher';
 import {FileResolver}        from './FileResolver';

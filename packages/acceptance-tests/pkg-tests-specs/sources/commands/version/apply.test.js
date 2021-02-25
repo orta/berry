@@ -1,4 +1,4 @@
-import {xfs, ppath} from '@yarnpkg/fslib';
+import {xfs, ppath} from '@orta/yarn-fslib';
 
 describe(`Commands`, () => {
   describe(`version apply`, () => {
@@ -10,7 +10,7 @@ describe(`Commands`, () => {
         },
         {
           plugins: [
-            require.resolve(`@yarnpkg/monorepo/scripts/plugin-version.js`),
+            require.resolve(`@orta/yarn-monorepo/scripts/plugin-version.js`),
           ],
         },
         async ({path, run}) => {
@@ -40,7 +40,7 @@ describe(`Commands`, () => {
         },
         {
           plugins: [
-            require.resolve(`@yarnpkg/monorepo/scripts/plugin-version.js`),
+            require.resolve(`@orta/yarn-monorepo/scripts/plugin-version.js`),
           ],
         },
         async ({path, run}) => {
@@ -88,7 +88,7 @@ describe(`Commands`, () => {
         },
         {
           plugins: [
-            require.resolve(`@yarnpkg/monorepo/scripts/plugin-version.js`),
+            require.resolve(`@orta/yarn-monorepo/scripts/plugin-version.js`),
           ],
         },
         async ({path, run}) => {
@@ -148,7 +148,7 @@ describe(`Commands`, () => {
           },
           {
             plugins: [
-              require.resolve(`@yarnpkg/monorepo/scripts/plugin-version.js`),
+              require.resolve(`@orta/yarn-monorepo/scripts/plugin-version.js`),
             ],
           },
           async ({path, run}) => {

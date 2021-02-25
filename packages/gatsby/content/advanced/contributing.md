@@ -120,7 +120,7 @@ yarn version check --interactive
 
 If it fails and you have no idea why, feel free to ping a maintainer and we'll do our best to help you.
 
-**Note:** If you modify one of the [default plugins](https://github.com/yarnpkg/berry#default-plugins), you will also need to bump `@yarnpkg/cli`.
+**Note:** If you modify one of the [default plugins](https://github.com/yarnpkg/berry#default-plugins), you will also need to bump `@orta/yarn-cli`.
 
 ## Writing documentation
 

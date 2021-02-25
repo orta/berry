@@ -1,4 +1,4 @@
-import {FakeFS, PortablePath} from '@yarnpkg/fslib';
+import {FakeFS, PortablePath} from '@orta/yarn-fslib';
 
 import {Cache}                from './Cache';
 import {Project}              from './Project';

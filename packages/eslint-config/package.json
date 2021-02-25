@@ -1,5 +1,5 @@
 {
-  "name": "@yarnpkg/eslint-config",
+  "name": "@orta/yarn-eslint-config",
   "version": "0.2.0",
   "license": "BSD-2-Clause",
   "peerDependencies": {

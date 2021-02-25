@@ -1,8 +1,8 @@
-import {Fetcher, FetchOptions, MinimalFetchOptions, ReportError, MessageName} from '@yarnpkg/core';
-import {Locator}                                                              from '@yarnpkg/core';
-import {miscUtils, structUtils}                                               from '@yarnpkg/core';
-import {ppath, xfs, ZipFS, Filename, CwdFS, PortablePath}                     from '@yarnpkg/fslib';
-import {getLibzipPromise}                                                     from '@yarnpkg/libzip';
+import {Fetcher, FetchOptions, MinimalFetchOptions, ReportError, MessageName} from '@orta/yarn-core';
+import {Locator}                                                              from '@orta/yarn-core';
+import {miscUtils, structUtils}                                               from '@orta/yarn-core';
+import {ppath, xfs, ZipFS, Filename, CwdFS, PortablePath}                     from '@orta/yarn-fslib';
+import {getLibzipPromise}                                                     from '@orta/yarn-libzip';
 
 import * as patchUtils                                                        from './patchUtils';
 import {UnmatchedHunkError}                                                   from './tools/UnmatchedHunkError';

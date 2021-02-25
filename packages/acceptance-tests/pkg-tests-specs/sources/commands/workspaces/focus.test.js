@@ -1,4 +1,4 @@
-import {ppath, xfs} from '@yarnpkg/fslib';
+import {ppath, xfs} from '@orta/yarn-fslib';
 
 describe(`Commands`, () => {
   describe(`workspaces focus`, () => {
@@ -162,7 +162,7 @@ describe(`Commands`, () => {
 });
 
 async function setupProject(path) {
-  await xfs.writeFilePromise(ppath.join(path, `.yarnrc.yml`), `plugins:\n  - ${JSON.stringify(require.resolve(`@yarnpkg/monorepo/scripts/plugin-workspace-tools.js`))}\n`);
+  await xfs.writeFilePromise(ppath.join(path, `.yarnrc.yml`), `plugins:\n  - ${JSON.stringify(require.resolve(`@orta/yarn-monorepo/scripts/plugin-workspace-tools.js`))}\n`);
 
   const pkg = async (name, dependencies, devDependencies, scripts) => {
     await xfs.mkdirpPromise(ppath.join(path, `packages/${name}`));

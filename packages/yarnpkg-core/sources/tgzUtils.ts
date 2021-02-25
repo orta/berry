@@ -1,5 +1,5 @@
-import {Filename, FakeFS, PortablePath, ZipCompression, ZipFS, NodeFS, ppath, xfs, npath} from '@yarnpkg/fslib';
-import {getLibzipPromise}                                                                 from '@yarnpkg/libzip';
+import {Filename, FakeFS, PortablePath, ZipCompression, ZipFS, NodeFS, ppath, xfs, npath} from '@orta/yarn-fslib';
+import {getLibzipPromise}                                                                 from '@orta/yarn-libzip';
 import {PassThrough, Readable}                                                            from 'stream';
 import tar                                                                                from 'tar';
 

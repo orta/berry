@@ -13,9 +13,9 @@ Starting from the Yarn 2, Yarn now supports plugins. For more information about 
 
 ## What does a plugin look like?
 
-Plugins are scripts that get loaded at runtime by Yarn, and that can inject new behaviors into it. They also can require some packages provided by Yarn itself, such as `@yarnpkg/core`. This allows you to use the exact same core API as the Yarn binary currently in use, kinda like if it was a peer dependency!
+Plugins are scripts that get loaded at runtime by Yarn, and that can inject new behaviors into it. They also can require some packages provided by Yarn itself, such as `@orta/yarn-core`. This allows you to use the exact same core API as the Yarn binary currently in use, kinda like if it was a peer dependency!
 
-> **Important:** Since plugins are loaded before Yarn starts (and thus before you make your first install), it's strongly advised to write your plugins in such a way that they work without dependencies. If that becomes difficult, know that we provide a powerful tool ([`@yarnpkg/builder`](#builder)) that can bundle your plugins into a single Javascript file, ready to be published.
+> **Important:** Since plugins are loaded before Yarn starts (and thus before you make your first install), it's strongly advised to write your plugins in such a way that they work without dependencies. If that becomes difficult, know that we provide a powerful tool ([`@orta/yarn-builder`](#builder)) that can bundle your plugins into a single Javascript file, ready to be published.
 
 ## Writing our first plugin
 
@@ -27,7 +27,7 @@ module.exports = {
   factory: require => ({
     // What is this `require` function, you ask? It's a `require`
     // implementation provided by Yarn core that allows you to
-    // access various packages (such as @yarnpkg/core) without
+    // access various packages (such as @orta/yarn-core) without
     // having to list them in your own dependencies - hence
     // lowering your plugin bundle size, and making sure that
     // you'll use the exact same core modules as the rest of the
@@ -51,7 +51,7 @@ That's it! You have your first plugin, congratulations! Of course it doesn't do 
 
 ## All-in-one plugin builder
 
-As we saw, plugins are meant to be standalone JavaScript source files. It's very possible to author them by hand, especially if you only need a small one, but once you start adding multiple commands it can become a bit more complicated. To make this process easyer, we maintain a package called `@yarnpkg/builder`. This builder is to Yarn what Next.js is to web development - it's a tool designed to help creating, building, and managing complex plugins written in TypeScript.
+As we saw, plugins are meant to be standalone JavaScript source files. It's very possible to author them by hand, especially if you only need a small one, but once you start adding multiple commands it can become a bit more complicated. To make this process easyer, we maintain a package called `@orta/yarn-builder`. This builder is to Yarn what Next.js is to web development - it's a tool designed to help creating, building, and managing complex plugins written in TypeScript.
 
 Its documentation can be found on the [dedicated page](https://github.com/yarnpkg/berry/blob/master/packages/yarnpkg-builder/README.md), but remember that you're not required to use it. Sometimes good old scripts are just fine!
 
@@ -158,7 +158,7 @@ Hooks are numerous, and we're still working on them. Some might be added, remove
 
 ## Using a the Yarn API
 
-Most Yarn's hooks are called with various arguments that tell you more about the context under which the hook is being called. The exact argument list is different for each hook, but in general they are of the types defined in the [`@yarnpkg/core` library](/api).
+Most Yarn's hooks are called with various arguments that tell you more about the context under which the hook is being called. The exact argument list is different for each hook, but in general they are of the types defined in the [`@orta/yarn-core` library](/api).
 
 In this example, we will integrate with the `afterAllInstalled` hook in order to print some basic information about the dependency tree after each install. This hook gets invoked with an additional parameter that is the public [`Project`](/api/classes/yarnpkg_core.project.html) instance where lie most of the information Yarn has collected about the project: dependencies, package manifests, workspace information, and so on.
 
@@ -169,7 +169,7 @@ const util = require(`util`);
 module.exports = {
   name: `plugin-project-info`,
   factory: require => {
-    const {structUtils} = require(`@yarnpkg/core`);
+    const {structUtils} = require(`@orta/yarn-core`);
 
     return {
       default: {

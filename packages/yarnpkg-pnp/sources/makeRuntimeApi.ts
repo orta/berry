@@ -1,5 +1,5 @@
-import {Filename, npath, PortablePath} from '@yarnpkg/fslib';
-import {FakeFS}                        from '@yarnpkg/fslib';
+import {Filename, npath, PortablePath} from '@orta/yarn-fslib';
+import {FakeFS}                        from '@orta/yarn-fslib';
 
 import {generateSerializedState}       from './generateSerializedState';
 import {hydrateRuntimeState}           from './loader/hydrateRuntimeState';

@@ -1,4 +1,4 @@
-# `@yarnpkg/plugin-git`
+# `@orta/yarn-plugin-git`
 
 This plugin adds support for cloning packages from Git repositories.
 

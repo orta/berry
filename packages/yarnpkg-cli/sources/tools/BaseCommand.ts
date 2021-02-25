@@ -1,4 +1,4 @@
-import {CommandContext}  from '@yarnpkg/core';
+import {CommandContext}  from '@orta/yarn-core';
 import {Command, Option} from 'clipanion';
 
 export abstract class BaseCommand extends Command<CommandContext> {

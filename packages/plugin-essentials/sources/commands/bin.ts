@@ -1,6 +1,6 @@
-import {BaseCommand}                          from '@yarnpkg/cli';
-import {Configuration, Project, StreamReport} from '@yarnpkg/core';
-import {scriptUtils, structUtils}             from '@yarnpkg/core';
+import {BaseCommand}                          from '@orta/yarn-cli';
+import {Configuration, Project, StreamReport} from '@orta/yarn-core';
+import {scriptUtils, structUtils}             from '@orta/yarn-core';
 import {Command, Option, Usage, UsageError}   from 'clipanion';
 
 // eslint-disable-next-line arca/no-default-export

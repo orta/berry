@@ -1,5 +1,5 @@
-import {execUtils, Manifest, structUtils, IdentHash, Descriptor} from '@yarnpkg/core';
-import {PortablePath, npath, ppath, Filename}                    from '@yarnpkg/fslib';
+import {execUtils, Manifest, structUtils, IdentHash, Descriptor} from '@orta/yarn-core';
+import {PortablePath, npath, ppath, Filename}                    from '@orta/yarn-fslib';
 
 import * as stageUtils                                           from '../stageUtils';
 

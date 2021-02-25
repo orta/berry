@@ -1,4 +1,4 @@
-# `@yarnpkg/plugin-npm-cli`
+# `@orta/yarn-plugin-npm-cli`
 
 This plugin adds support for various npm-specific commands.
 

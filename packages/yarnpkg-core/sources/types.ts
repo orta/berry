@@ -1,4 +1,4 @@
-import {PortablePath}                       from '@yarnpkg/fslib';
+import {PortablePath}                       from '@orta/yarn-fslib';
 
 import {DependencyMeta, PeerDependencyMeta} from './Manifest';
 

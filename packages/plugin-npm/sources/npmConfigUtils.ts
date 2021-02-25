@@ -1,4 +1,4 @@
-import {Configuration, Manifest, Ident} from '@yarnpkg/core';
+import {Configuration, Manifest, Ident} from '@orta/yarn-core';
 
 export enum RegistryType {
   FETCH_REGISTRY = `npmRegistryServer`,

@@ -1,8 +1,8 @@
-import {Plugin, SettingsType} from '@yarnpkg/core';
+import {Plugin, SettingsType} from '@orta/yarn-core';
 
 import init                   from './commands/init';
 
-declare module '@yarnpkg/core' {
+declare module '@orta/yarn-core' {
   interface ConfigurationValueMap {
     initScope: string | null;
     initFields: Map<string, any>;

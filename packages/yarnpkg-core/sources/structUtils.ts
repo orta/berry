@@ -1,4 +1,4 @@
-import {PortablePath, toFilename}               from '@yarnpkg/fslib';
+import {PortablePath, toFilename}               from '@orta/yarn-fslib';
 import querystring                              from 'querystring';
 import semver                                   from 'semver';
 

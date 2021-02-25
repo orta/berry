@@ -1,4 +1,4 @@
-import {xfs} from '@yarnpkg/fslib';
+import {xfs} from '@orta/yarn-fslib';
 import {EOL} from 'os';
 
 describe(`Commands`, () => {

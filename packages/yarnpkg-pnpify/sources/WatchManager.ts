@@ -1,4 +1,4 @@
-import {Filename, PortablePath, Watcher, WatchCallback} from '@yarnpkg/fslib';
+import {Filename, PortablePath, Watcher, WatchCallback} from '@orta/yarn-fslib';
 import {EventEmitter}                                   from 'events';
 
 import {ResolvedPath}                                   from './resolveNodeModulesPath';

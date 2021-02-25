@@ -1,6 +1,6 @@
-import {Filename, PortablePath, npath, ppath, xfs}                                                      from '@yarnpkg/fslib';
-import {DEFAULT_COMPRESSION_LEVEL}                                                                      from '@yarnpkg/fslib';
-import {parseSyml, stringifySyml}                                                                       from '@yarnpkg/parsers';
+import {Filename, PortablePath, npath, ppath, xfs}                                                      from '@orta/yarn-fslib';
+import {DEFAULT_COMPRESSION_LEVEL}                                                                      from '@orta/yarn-fslib';
+import {parseSyml, stringifySyml}                                                                       from '@orta/yarn-parsers';
 import camelcase                                                                                        from 'camelcase';
 import {isCI}                                                                                           from 'ci-info';
 import {UsageError}                                                                                     from 'clipanion';
@@ -887,7 +887,7 @@ export class Configuration {
    *
    * 1. which modules should be made available to plugins when they require a
    *    package (this is the dynamic linking part - for example we want all the
-   *    plugins to use the exact same version of @yarnpkg/core, which also is the
+   *    plugins to use the exact same version of @orta/yarn-core, which also is the
    *    version used by the running Yarn instance).
    *
    * 2. which of those modules are actually plugins that need to be injected

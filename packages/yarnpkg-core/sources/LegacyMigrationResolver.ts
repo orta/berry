@@ -1,5 +1,5 @@
-import {xfs, ppath}                                      from '@yarnpkg/fslib';
-import {parseSyml}                                       from '@yarnpkg/parsers';
+import {xfs, ppath}                                      from '@orta/yarn-fslib';
+import {parseSyml}                                       from '@orta/yarn-parsers';
 import semver                                            from 'semver';
 
 import {MessageName}                                     from './MessageName';

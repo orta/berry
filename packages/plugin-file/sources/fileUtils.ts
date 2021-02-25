@@ -1,5 +1,5 @@
-import {structUtils, FetchOptions, Locator, miscUtils, tgzUtils, Ident} from '@yarnpkg/core';
-import {ppath, PortablePath, npath, CwdFS, ZipFS}                       from '@yarnpkg/fslib';
+import {structUtils, FetchOptions, Locator, miscUtils, tgzUtils, Ident} from '@orta/yarn-core';
+import {ppath, PortablePath, npath, CwdFS, ZipFS}                       from '@orta/yarn-fslib';
 
 export function parseSpec(spec: string) {
   const {params, selector} = structUtils.parseRange(spec);

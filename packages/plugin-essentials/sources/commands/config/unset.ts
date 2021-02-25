@@ -1,5 +1,5 @@
-import {BaseCommand}                              from '@yarnpkg/cli';
-import {Configuration, StreamReport, MessageName} from '@yarnpkg/core';
+import {BaseCommand}                              from '@orta/yarn-cli';
+import {Configuration, StreamReport, MessageName} from '@orta/yarn-core';
 import {Command, Option, Usage, UsageError}       from 'clipanion';
 import cloneDeep                                  from 'lodash/cloneDeep';
 import unsetPath                                  from 'lodash/unset';

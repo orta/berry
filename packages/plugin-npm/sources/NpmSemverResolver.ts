@@ -1,7 +1,7 @@
-import {ReportError, MessageName, Resolver, ResolveOptions, MinimalResolveOptions, Manifest, DescriptorHash, Package, miscUtils} from '@yarnpkg/core';
-import {Descriptor, Locator, semverUtils}                                                                                        from '@yarnpkg/core';
-import {LinkType}                                                                                                                from '@yarnpkg/core';
-import {structUtils}                                                                                                             from '@yarnpkg/core';
+import {ReportError, MessageName, Resolver, ResolveOptions, MinimalResolveOptions, Manifest, DescriptorHash, Package, miscUtils} from '@orta/yarn-core';
+import {Descriptor, Locator, semverUtils}                                                                                        from '@orta/yarn-core';
+import {LinkType}                                                                                                                from '@orta/yarn-core';
+import {structUtils}                                                                                                             from '@orta/yarn-core';
 import semver                                                                                                                    from 'semver';
 
 import {NpmSemverFetcher}                                                                                                        from './NpmSemverFetcher';

@@ -1,5 +1,5 @@
-import {xfs, ppath, Filename, PortablePath} from '@yarnpkg/fslib';
-import {execute, UserOptions}               from '@yarnpkg/shell';
+import {xfs, ppath, Filename, PortablePath} from '@orta/yarn-fslib';
+import {execute, UserOptions}               from '@orta/yarn-shell';
 import {PassThrough}                        from 'stream';
 
 const isNotWin32 = process.platform !== `win32`;

@@ -1,6 +1,6 @@
-import {BaseCommand, WorkspaceRequiredError}                                                                        from '@yarnpkg/cli';
-import {Cache, Configuration, MessageName, Project, StreamReport, Workspace, formatUtils, structUtils, ThrowReport} from '@yarnpkg/core';
-import {Filename, npath, ppath, xfs}                                                                                from '@yarnpkg/fslib';
+import {BaseCommand, WorkspaceRequiredError}                                                                        from '@orta/yarn-cli';
+import {Cache, Configuration, MessageName, Project, StreamReport, Workspace, formatUtils, structUtils, ThrowReport} from '@orta/yarn-core';
+import {Filename, npath, ppath, xfs}                                                                                from '@orta/yarn-fslib';
 import {Command, Option, Usage}                                                                                     from 'clipanion';
 
 import * as packUtils                                                                                               from '../packUtils';

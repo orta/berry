@@ -1,5 +1,5 @@
-import {miscUtils}                  from '@yarnpkg/core';
-import {PortablePath, npath, ppath} from '@yarnpkg/fslib';
+import {miscUtils}                  from '@orta/yarn-core';
+import {PortablePath, npath, ppath} from '@orta/yarn-fslib';
 
 const HEADER_REGEXP = /^@@ -(\d+)(,(\d+))? \+(\d+)(,(\d+))? @@.*/;
 

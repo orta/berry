@@ -1,4 +1,4 @@
-import {xfs, ppath} from '@yarnpkg/fslib';
+import {xfs, ppath} from '@orta/yarn-fslib';
 
 const {
   fs: {readJson},
@@ -10,7 +10,7 @@ describe(`Commands`, () => {
       `it shouldn't work if the strategy isn't semver and there is no prior version`,
       makeTemporaryEnv({}, {
         plugins: [
-          require.resolve(`@yarnpkg/monorepo/scripts/plugin-version.js`),
+          require.resolve(`@orta/yarn-monorepo/scripts/plugin-version.js`),
         ],
       }, async ({path, run, source}) => {
         await expect(run(`version`, `patch`)).rejects.toThrow();
@@ -23,7 +23,7 @@ describe(`Commands`, () => {
         version: `1.0.0`,
       }, {
         plugins: [
-          require.resolve(`@yarnpkg/monorepo/scripts/plugin-version.js`),
+          require.resolve(`@orta/yarn-monorepo/scripts/plugin-version.js`),
         ],
       }, async ({path, run, source}) => {
         await run(`version`, `1.1.0`, `--deferred`);
@@ -37,7 +37,7 @@ describe(`Commands`, () => {
         version: `1.0.0`,
       }, {
         plugins: [
-          require.resolve(`@yarnpkg/monorepo/scripts/plugin-version.js`),
+          require.resolve(`@orta/yarn-monorepo/scripts/plugin-version.js`),
         ],
       }, async ({path, run, source}) => {
         await run(`version`, `1.1.0`, `--deferred`);
@@ -51,7 +51,7 @@ describe(`Commands`, () => {
         version: `1.0.0`,
       }, {
         plugins: [
-          require.resolve(`@yarnpkg/monorepo/scripts/plugin-version.js`),
+          require.resolve(`@orta/yarn-monorepo/scripts/plugin-version.js`),
         ],
       }, async ({path, run, source}) => {
         await run(`version`, `1.1.0`, `--deferred`);
@@ -69,7 +69,7 @@ describe(`Commands`, () => {
         version: `1.0.0`,
       }, {
         plugins: [
-          require.resolve(`@yarnpkg/monorepo/scripts/plugin-version.js`),
+          require.resolve(`@orta/yarn-monorepo/scripts/plugin-version.js`),
         ],
       }, async ({path, run, source}) => {
         await run(`version`, `1.1.0`, `--deferred`);
@@ -87,7 +87,7 @@ describe(`Commands`, () => {
         version: `1.0.0`,
       }, {
         plugins: [
-          require.resolve(`@yarnpkg/monorepo/scripts/plugin-version.js`),
+          require.resolve(`@orta/yarn-monorepo/scripts/plugin-version.js`),
         ],
       }, async ({path, run, source}) => {
         await run(`version`, `1.1.0`, `--deferred`);
@@ -105,7 +105,7 @@ describe(`Commands`, () => {
         version: `1.0.0`,
       }, {
         plugins: [
-          require.resolve(`@yarnpkg/monorepo/scripts/plugin-version.js`),
+          require.resolve(`@orta/yarn-monorepo/scripts/plugin-version.js`),
         ],
       }, async ({path, run, source}) => {
         await run(`version`, `1.1.0`, `--deferred`);
@@ -123,7 +123,7 @@ describe(`Commands`, () => {
         version: `0.0.0`,
       }, {
         plugins: [
-          require.resolve(`@yarnpkg/monorepo/scripts/plugin-version.js`),
+          require.resolve(`@orta/yarn-monorepo/scripts/plugin-version.js`),
         ],
       }, async ({path, run, source}) => {
         await run(`version`, `patch`);
@@ -140,7 +140,7 @@ describe(`Commands`, () => {
         version: `0.0.0`,
       }, {
         plugins: [
-          require.resolve(`@yarnpkg/monorepo/scripts/plugin-version.js`),
+          require.resolve(`@orta/yarn-monorepo/scripts/plugin-version.js`),
         ],
       }, async ({path, run, source}) => {
         await run(`version`, `patch`, `--deferred`);
@@ -164,7 +164,7 @@ describe(`Commands`, () => {
       }, {
         preferDeferredVersions: true,
         plugins: [
-          require.resolve(`@yarnpkg/monorepo/scripts/plugin-version.js`),
+          require.resolve(`@orta/yarn-monorepo/scripts/plugin-version.js`),
         ],
       }, async ({path, run, source}) => {
         await run(`version`, `patch`);
@@ -188,7 +188,7 @@ describe(`Commands`, () => {
       }, {
         preferDeferredVersions: true,
         plugins: [
-          require.resolve(`@yarnpkg/monorepo/scripts/plugin-version.js`),
+          require.resolve(`@orta/yarn-monorepo/scripts/plugin-version.js`),
         ],
       }, async ({path, run, source}) => {
         await run(`version`, `patch`, `--immediate`);
@@ -210,7 +210,7 @@ describe(`Commands`, () => {
         },
         {
           plugins: [
-            require.resolve(`@yarnpkg/monorepo/scripts/plugin-version.js`),
+            require.resolve(`@orta/yarn-monorepo/scripts/plugin-version.js`),
           ],
         },
         async ({path, run, source}) => {

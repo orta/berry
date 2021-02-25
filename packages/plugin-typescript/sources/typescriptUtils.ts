@@ -1,6 +1,6 @@
 import {Request, Requester, Response} from '@algolia/requester-common';
-import {Configuration, Descriptor}    from '@yarnpkg/core';
-import {httpUtils, structUtils}       from '@yarnpkg/core';
+import {Configuration, Descriptor}    from '@orta/yarn-core';
+import {httpUtils, structUtils}       from '@orta/yarn-core';
 import algoliasearch                  from 'algoliasearch';
 
 // Note that the appId and appKey are specific to Yarn's plugin-typescript - please

@@ -1,6 +1,6 @@
-import {BaseCommand, WorkspaceRequiredError}  from '@yarnpkg/cli';
-import {Configuration, Project, StreamReport} from '@yarnpkg/core';
-import {miscUtils}                            from '@yarnpkg/core';
+import {BaseCommand, WorkspaceRequiredError}  from '@orta/yarn-cli';
+import {Configuration, Project, StreamReport} from '@orta/yarn-core';
+import {miscUtils}                            from '@orta/yarn-core';
 import {inspect}                              from 'util';
 
 // eslint-disable-next-line arca/no-default-export

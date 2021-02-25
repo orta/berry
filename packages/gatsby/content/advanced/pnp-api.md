@@ -287,11 +287,11 @@ Two great options for two different use cases 🙂
 
 The paths returned in the `PackageInformation` structures are in the native format (so Posix on Linux/OSX and Win32 on Windows), but they may reference files outside of the typical filesystem. This is particularly true for Yarn, which references packages directly from within their zip archives.
 
-To access such files, you can use the `@yarnpkg/fslib` project which abstracts the filesystem under a multi-layer architecture. For example, the following code would make it possible to access any path, regardless of whether they're stored within a zip archive or not:
+To access such files, you can use the `@orta/yarn-fslib` project which abstracts the filesystem under a multi-layer architecture. For example, the following code would make it possible to access any path, regardless of whether they're stored within a zip archive or not:
 
 ```ts
-const {PosixFS, ZipOpenFS} = require(`@yarnpkg/fslib`);
-const libzip = require(`@yarnpkg/libzip`).getLibzipSync();
+const {PosixFS, ZipOpenFS} = require(`@orta/yarn-fslib`);
+const libzip = require(`@orta/yarn-libzip`).getLibzipSync();
 
 // This will transparently open zip archives
 const zipOpenFs = new ZipOpenFS({libzip});

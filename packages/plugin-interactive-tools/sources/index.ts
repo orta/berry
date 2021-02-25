@@ -1,4 +1,4 @@
-import {Plugin}           from '@yarnpkg/core';
+import {Plugin}           from '@orta/yarn-core';
 
 import search             from './commands/search';
 import upgradeInteractive from './commands/upgrade-interactive';

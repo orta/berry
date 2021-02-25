@@ -1,11 +1,11 @@
-import {Plugin, SettingsType} from '@yarnpkg/core';
-import {PortablePath}         from '@yarnpkg/fslib';
+import {Plugin, SettingsType} from '@orta/yarn-core';
+import {PortablePath}         from '@orta/yarn-fslib';
 
 import queryConstraints       from './commands/constraints/query';
 import sourceConstraints      from './commands/constraints/source';
 import constraints            from './commands/constraints';
 
-declare module '@yarnpkg/core' {
+declare module '@orta/yarn-core' {
   interface ConfigurationValueMap {
     constraintsPath: PortablePath;
   }

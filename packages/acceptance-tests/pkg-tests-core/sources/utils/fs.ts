@@ -1,5 +1,5 @@
-import {Filename, PortablePath, npath, ppath, xfs} from '@yarnpkg/fslib';
-import {stringifySyml, parseSyml}                  from '@yarnpkg/parsers';
+import {Filename, PortablePath, npath, ppath, xfs} from '@orta/yarn-fslib';
+import {stringifySyml, parseSyml}                  from '@orta/yarn-parsers';
 import klaw                                        from 'klaw';
 import tarFs                                       from 'tar-fs';
 import zlib                                        from 'zlib';

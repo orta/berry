@@ -1,6 +1,6 @@
-import {BaseCommand}                                                                                         from '@yarnpkg/cli';
-import {Configuration, MessageName, StreamReport, execUtils, formatUtils, CommandContext, Report, hashUtils} from '@yarnpkg/core';
-import {Filename, PortablePath, npath, ppath, xfs}                                                           from '@yarnpkg/fslib';
+import {BaseCommand}                                                                                         from '@orta/yarn-cli';
+import {Configuration, MessageName, StreamReport, execUtils, formatUtils, CommandContext, Report, hashUtils} from '@orta/yarn-core';
+import {Filename, PortablePath, npath, ppath, xfs}                                                           from '@orta/yarn-fslib';
 import {Command, Option, Usage}                                                                              from 'clipanion';
 import {tmpdir}                                                                                              from 'os';
 import path                                                                                                  from 'path';

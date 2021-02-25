@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-require(`@yarnpkg/monorepo/scripts/setup-ts-execution`);
+require(`@orta/yarn-monorepo/scripts/setup-ts-execution`);
 
 require(`./cli`);

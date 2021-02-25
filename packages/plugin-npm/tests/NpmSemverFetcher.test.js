@@ -1,4 +1,4 @@
-import {structUtils}       from '@yarnpkg/core';
+import {structUtils}       from '@orta/yarn-core';
 
 import {NpmSemverFetcher}  from '../sources/NpmSemverFetcher';
 

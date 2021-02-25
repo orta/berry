@@ -1,7 +1,7 @@
-import {BaseCommand}                         from '@yarnpkg/cli';
-import {Configuration, Manifest, Project}    from '@yarnpkg/core';
-import {execUtils, scriptUtils, structUtils} from '@yarnpkg/core';
-import {xfs, ppath, Filename}                from '@yarnpkg/fslib';
+import {BaseCommand}                         from '@orta/yarn-cli';
+import {Configuration, Manifest, Project}    from '@orta/yarn-core';
+import {execUtils, scriptUtils, structUtils} from '@orta/yarn-core';
+import {xfs, ppath, Filename}                from '@orta/yarn-fslib';
 import {Command, Option, Usage, UsageError}  from 'clipanion';
 import merge                                 from 'lodash/merge';
 import {inspect}                             from 'util';

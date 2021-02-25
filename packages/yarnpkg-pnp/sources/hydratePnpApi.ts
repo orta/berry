@@ -1,4 +1,4 @@
-import {FakeFS, PortablePath} from '@yarnpkg/fslib';
+import {FakeFS, PortablePath} from '@orta/yarn-fslib';
 import {readFile}             from 'fs';
 import {dirname}              from 'path';
 import {promisify}            from 'util';

@@ -94,7 +94,7 @@ describe(`Commands`, () => {
 
         await writeFile(`${path}/.yarnrc.yml`, [
           `plugins:`,
-          `  - ${JSON.stringify(require.resolve(`@yarnpkg/monorepo/scripts/plugin-version.js`))}`,
+          `  - ${JSON.stringify(require.resolve(`@orta/yarn-monorepo/scripts/plugin-version.js`))}`,
           `npmScopes:`,
           `  private:`,
           `    npmRegistryServer: "${url}"`,
@@ -113,7 +113,7 @@ describe(`Commands`, () => {
       makeTemporaryEnv({}, async ({path, run, source}) => {
         const url = await startPackageServer();
 
-        const relativePluginPath = require.resolve(`@yarnpkg/monorepo/scripts/plugin-version.js`);
+        const relativePluginPath = require.resolve(`@orta/yarn-monorepo/scripts/plugin-version.js`);
 
         await writeFile(`${path}/.yarnrc.yml`, [
           `plugins:`,
@@ -138,8 +138,8 @@ describe(`Commands`, () => {
 
         await writeFile(`${path}/.yarnrc.yml`, [
           `plugins:`,
-          `  - path: ${JSON.stringify(require.resolve(`@yarnpkg/monorepo/scripts/plugin-version.js`))}`,
-          `    spec: "@yarnpkg/plugin-version"`,
+          `  - path: ${JSON.stringify(require.resolve(`@orta/yarn-monorepo/scripts/plugin-version.js`))}`,
+          `    spec: "@orta/yarn-plugin-version"`,
           `npmScopes:`,
           `  private:`,
           `    npmRegistryServer: "${url}"`,

@@ -1,4 +1,4 @@
-import {npath}         from '@yarnpkg/fslib';
+import {npath}         from '@orta/yarn-fslib';
 import * as vscode     from 'vscode';
 
 import {ZipFSProvider} from './ZipFSProvider';

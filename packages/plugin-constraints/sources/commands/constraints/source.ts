@@ -1,5 +1,5 @@
-import {BaseCommand}            from '@yarnpkg/cli';
-import {Configuration, Project} from '@yarnpkg/core';
+import {BaseCommand}            from '@orta/yarn-cli';
+import {Configuration, Project} from '@orta/yarn-core';
 import {Command, Option, Usage} from 'clipanion';
 
 import {Constraints}            from '../../Constraints';

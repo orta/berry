@@ -1,11 +1,11 @@
-import {Plugin, SettingsType} from '@yarnpkg/core';
-import {PortablePath}         from '@yarnpkg/fslib';
+import {Plugin, SettingsType} from '@orta/yarn-core';
+import {PortablePath}         from '@orta/yarn-fslib';
 
 import versionApply           from './commands/version/apply';
 import versionCheck           from './commands/version/check';
 import version                from './commands/version';
 
-declare module '@yarnpkg/core' {
+declare module '@orta/yarn-core' {
   interface ConfigurationValueMap {
     changesetBaseRefs: Array<string>;
     changesetIgnorePatterns: Array<string>;

@@ -1,4 +1,4 @@
-import {Plugin}              from '@yarnpkg/core';
+import {Plugin}              from '@orta/yarn-core';
 
 import {TarballHttpFetcher}  from './TarballHttpFetcher';
 import {TarballHttpResolver} from './TarballHttpResolver';

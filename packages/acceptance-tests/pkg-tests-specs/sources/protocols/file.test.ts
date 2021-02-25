@@ -1,4 +1,4 @@
-import {xfs, PortablePath} from '@yarnpkg/fslib';
+import {xfs, PortablePath} from '@orta/yarn-fslib';
 
 describe(`Protocols`, () => {
   describe(`file:`, () => {

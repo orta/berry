@@ -1,10 +1,10 @@
-import {BaseCommand}                         from '@yarnpkg/cli';
-import {Configuration, structUtils}          from '@yarnpkg/core';
-import {Gem}                                 from '@yarnpkg/libui/sources/components/Gem';
-import {ScrollableItems}                     from '@yarnpkg/libui/sources/components/ScrollableItems';
-import {useKeypress}                         from '@yarnpkg/libui/sources/hooks/useKeypress';
-import {useMinistore}                        from '@yarnpkg/libui/sources/hooks/useMinistore';
-import {renderForm, SubmitInjectedComponent} from '@yarnpkg/libui/sources/misc/renderForm';
+import {BaseCommand}                         from '@orta/yarn-cli';
+import {Configuration, structUtils}          from '@orta/yarn-core';
+import {Gem}                                 from '@orta/yarn-libui/sources/components/Gem';
+import {ScrollableItems}                     from '@orta/yarn-libui/sources/components/ScrollableItems';
+import {useKeypress}                         from '@orta/yarn-libui/sources/hooks/useKeypress';
+import {useMinistore}                        from '@orta/yarn-libui/sources/hooks/useMinistore';
+import {renderForm, SubmitInjectedComponent} from '@orta/yarn-libui/sources/misc/renderForm';
 import {Command, Usage}                      from 'clipanion';
 import InkTextInput                          from 'ink-text-input';
 import {Box, Text}                           from 'ink';

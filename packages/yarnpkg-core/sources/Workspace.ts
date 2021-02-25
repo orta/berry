@@ -1,4 +1,4 @@
-import {PortablePath, npath, ppath, xfs, Filename} from '@yarnpkg/fslib';
+import {PortablePath, npath, ppath, xfs, Filename} from '@orta/yarn-fslib';
 import globby                                      from 'globby';
 import semver                                      from 'semver';
 

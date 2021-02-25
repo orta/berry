@@ -1,6 +1,6 @@
-import {PortablePath, npath, ppath, FakeFS, NodeFS}                                  from '@yarnpkg/fslib';
-import {Argument, ArgumentSegment, CommandChain, CommandLine, ShellLine, parseShell} from '@yarnpkg/parsers';
-import {EnvSegment, ArithmeticExpression, ArithmeticPrimary}                         from '@yarnpkg/parsers';
+import {PortablePath, npath, ppath, FakeFS, NodeFS}                                  from '@orta/yarn-fslib';
+import {Argument, ArgumentSegment, CommandChain, CommandLine, ShellLine, parseShell} from '@orta/yarn-parsers';
+import {EnvSegment, ArithmeticExpression, ArithmeticPrimary}                         from '@orta/yarn-parsers';
 import {homedir}                                                                     from 'os';
 import {PassThrough, Readable, Writable}                                             from 'stream';
 

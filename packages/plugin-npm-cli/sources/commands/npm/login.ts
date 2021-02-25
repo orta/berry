@@ -1,8 +1,8 @@
-import {BaseCommand, openWorkspace}                    from '@yarnpkg/cli';
-import {Configuration, MessageName, Report, miscUtils} from '@yarnpkg/core';
-import {StreamReport}                                  from '@yarnpkg/core';
-import {PortablePath}                                  from '@yarnpkg/fslib';
-import {npmConfigUtils, npmHttpUtils}                  from '@yarnpkg/plugin-npm';
+import {BaseCommand, openWorkspace}                    from '@orta/yarn-cli';
+import {Configuration, MessageName, Report, miscUtils} from '@orta/yarn-core';
+import {StreamReport}                                  from '@orta/yarn-core';
+import {PortablePath}                                  from '@orta/yarn-fslib';
+import {npmConfigUtils, npmHttpUtils}                  from '@orta/yarn-plugin-npm';
 import {Command, Option, Usage}                        from 'clipanion';
 import {prompt}                                        from 'enquirer';
 

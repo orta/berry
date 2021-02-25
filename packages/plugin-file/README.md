@@ -1,4 +1,4 @@
-# `@yarnpkg/plugin-file`
+# `@orta/yarn-plugin-file`
 
 This plugin adds support for the `file:` protocol.
 

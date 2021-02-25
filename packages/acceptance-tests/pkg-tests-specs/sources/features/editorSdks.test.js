@@ -1,4 +1,4 @@
-import {npath, ppath, xfs} from '@yarnpkg/fslib';
+import {npath, ppath, xfs} from '@orta/yarn-fslib';
 import {spawn}             from 'child_process';
 
 describe(`Features`, () => {
@@ -87,8 +87,8 @@ describe(`Features`, () => {
     test(
       `it should patch message into VSCode typescript language extension for zip schemes`,
       async () => {
-        const child = spawn(process.execPath, [require.resolve(`@yarnpkg/monorepo/.yarn/sdks/typescript/lib/tsserver.js`)], {
-          cwd: npath.dirname(require.resolve(`@yarnpkg/monorepo/package.json`)),
+        const child = spawn(process.execPath, [require.resolve(`@orta/yarn-monorepo/.yarn/sdks/typescript/lib/tsserver.js`)], {
+          cwd: npath.dirname(require.resolve(`@orta/yarn-monorepo/package.json`)),
           stdio: `pipe`,
           encoding: `utf8`,
         });
@@ -217,7 +217,7 @@ const noPnpNode = async (args, cwd) => {
 
 const pnpify = async (args, cwd) => {
   return new Promise((resolve, reject) => {
-    const child = spawn(process.execPath, [require.resolve(`@yarnpkg/monorepo/scripts/run-pnpify.js`), ...args], {
+    const child = spawn(process.execPath, [require.resolve(`@orta/yarn-monorepo/scripts/run-pnpify.js`), ...args], {
       cwd: npath.fromPortablePath(cwd),
       stdio: `ignore`,
     });

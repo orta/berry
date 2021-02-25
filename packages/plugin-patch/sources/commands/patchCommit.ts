@@ -1,6 +1,6 @@
-import {BaseCommand, WorkspaceRequiredError} from '@yarnpkg/cli';
-import {Configuration, Project, structUtils} from '@yarnpkg/core';
-import {npath, xfs, ppath, PortablePath}     from '@yarnpkg/fslib';
+import {BaseCommand, WorkspaceRequiredError} from '@orta/yarn-cli';
+import {Configuration, Project, structUtils} from '@orta/yarn-core';
+import {npath, xfs, ppath, PortablePath}     from '@orta/yarn-fslib';
 import {Command, Option, Usage, UsageError}  from 'clipanion';
 
 import * as patchUtils                       from '../patchUtils';

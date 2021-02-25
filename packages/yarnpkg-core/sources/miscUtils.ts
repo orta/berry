@@ -1,4 +1,4 @@
-import {PortablePath, npath} from '@yarnpkg/fslib';
+import {PortablePath, npath} from '@orta/yarn-fslib';
 import {UsageError}          from 'clipanion';
 import micromatch            from 'micromatch';
 import {Readable, Transform} from 'stream';

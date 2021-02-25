@@ -1,4 +1,4 @@
-# `@yarnpkg/plugin-typescript`
+# `@orta/yarn-plugin-typescript`
 
 ## Features
 

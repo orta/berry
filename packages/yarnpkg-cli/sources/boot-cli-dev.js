@@ -4,10 +4,10 @@ const fs = require(`fs`);
 require(`../../../.pnp.cjs`).setup();
 
 // Adds TS support to Node
-require(`@yarnpkg/monorepo/scripts/setup-ts-execution`);
+require(`@orta/yarn-monorepo/scripts/setup-ts-execution`);
 
 // Exposes the CLI version as like for the bundle
-global.YARN_VERSION = `${require(`@yarnpkg/cli/package.json`).version}.dev`;
+global.YARN_VERSION = `${require(`@orta/yarn-cli/package.json`).version}.dev`;
 
 // Inject the plugins in the runtime. With Webpack that would be through
 // val-loader which would execute pluginConfiguration.raw.js, so in Node
@@ -51,8 +51,8 @@ function getPluginConfiguration() {
   };
 
   for (const folder of pluginFolders) {
-    pluginConfiguration.plugins.add(`@yarnpkg/${folder}`);
-    pluginConfiguration.modules.set(`@yarnpkg/${folder}`, require(`../../${folder}`));
+    pluginConfiguration.plugins.add(`@orta/yarn-${folder}`);
+    pluginConfiguration.modules.set(`@orta/yarn-${folder}`, require(`../../${folder}`));
   }
 
   const {getDynamicLibs} = require(`./tools/getDynamicLibs`);

@@ -1,7 +1,7 @@
-import {BaseCommand}                                      from '@yarnpkg/cli';
-import {Configuration, StreamReport, MessageName, Report} from '@yarnpkg/core';
-import {execUtils, formatUtils, httpUtils, semverUtils}   from '@yarnpkg/core';
-import {Filename, PortablePath, ppath, xfs, npath}        from '@yarnpkg/fslib';
+import {BaseCommand}                                      from '@orta/yarn-cli';
+import {Configuration, StreamReport, MessageName, Report} from '@orta/yarn-core';
+import {execUtils, formatUtils, httpUtils, semverUtils}   from '@orta/yarn-core';
+import {Filename, PortablePath, ppath, xfs, npath}        from '@orta/yarn-fslib';
 import {Command, Option, Usage, UsageError}               from 'clipanion';
 import semver                                             from 'semver';
 

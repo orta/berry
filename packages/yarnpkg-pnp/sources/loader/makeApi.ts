@@ -1,5 +1,5 @@
-import {ppath, Filename}                                                                                    from '@yarnpkg/fslib';
-import {FakeFS, NativePath, PortablePath, VirtualFS, npath}                                                 from '@yarnpkg/fslib';
+import {ppath, Filename}                                                                                    from '@orta/yarn-fslib';
+import {FakeFS, NativePath, PortablePath, VirtualFS, npath}                                                 from '@orta/yarn-fslib';
 import {Module}                                                                                             from 'module';
 import {inspect}                                                                                            from 'util';
 

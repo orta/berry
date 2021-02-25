@@ -1,4 +1,4 @@
-# `@yarnpkg/plugin-dlx`
+# `@orta/yarn-plugin-dlx`
 
 This plugin adds support for [yarn dlx](https://yarnpkg.com/cli/dlx) to Yarn.
 

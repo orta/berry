@@ -1,4 +1,4 @@
-# `@yarnpkg/esbuild-plugin-pnp`
+# `@orta/yarn-esbuild-plugin-pnp`
 
 This plugin lets you use Yarn with esbuild. We use it in order to build Yarn itself!
 
@@ -7,13 +7,13 @@ This plugin lets you use Yarn with esbuild. We use it in order to build Yarn its
 Add the plugin to your dependencies:
 
 ```
-yarn add @yarnpkg/esbuild-plugin-pnp
+yarn add @orta/yarn-esbuild-plugin-pnp
 ```
 
 Reference it via your esbuild configuration ([build API only](https://esbuild.github.io/plugins/)):
 
 ```ts
-import {pnpPlugin} from '@yarnpkg/esbuild-plugin-pnp';
+import {pnpPlugin} from '@orta/yarn-esbuild-plugin-pnp';
 
 await build({
   plugins: [pnpPlugin()],

@@ -7,7 +7,7 @@ import EntryCommand    from './commands/entry';
 const cli = new Cli({
   binaryLabel: `Yarn Shell`,
   binaryName: `yarn shell`,
-  binaryVersion: require(`@yarnpkg/shell/package.json`).version || `<unknown>`,
+  binaryVersion: require(`@orta/yarn-shell/package.json`).version || `<unknown>`,
 });
 
 cli.register(EntryCommand);

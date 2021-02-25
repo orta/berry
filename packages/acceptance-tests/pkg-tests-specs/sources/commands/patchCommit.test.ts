@@ -1,4 +1,4 @@
-import {Filename, npath, ppath, xfs} from '@yarnpkg/fslib';
+import {Filename, npath, ppath, xfs} from '@orta/yarn-fslib';
 
 describe(`Commands`, () => {
   describe(`patch-commit`, () => {

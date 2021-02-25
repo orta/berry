@@ -1,5 +1,5 @@
 module.exports = {
-  name: `@yarnpkg/plugin-hello-universe`,
+  name: `@orta/yarn-plugin-hello-universe`,
   factory: require => {
     const {Command, Option} = require(`clipanion`);
     const t = require(`typanion`);

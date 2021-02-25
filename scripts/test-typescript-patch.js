@@ -3,7 +3,7 @@ const path = require(`path`);
 const ts = require(`typescript`);
 
 const tsconfigFile = ts.readJsonConfigFile(
-  require.resolve(`@yarnpkg/monorepo/package.json`),
+  require.resolve(`@orta/yarn-monorepo/package.json`),
   ts.sys.readFile,
 );
 
@@ -16,14 +16,14 @@ const compilerOptions = ts.parseJsonSourceFileConfigFileContent(
 const compilerHost = ts.createCompilerHost(compilerOptions,);
 const program = ts.createProgram(compilerOptions.fileNames, compilerOptions, compilerHost);
 const moduleSpecifierResolutionHost = ts.createModuleSpecifierResolutionHost(program, compilerHost);
-const rootSourceFile = program.getSourceFile(require.resolve(`@yarnpkg/core/sources/Project.ts`));
+const rootSourceFile = program.getSourceFile(require.resolve(`@orta/yarn-core/sources/Project.ts`));
 
 const TESTS = [
-  [`@yarnpkg/core/sources/Configuration.ts`, `./Configuration`],
-  [`@yarnpkg/fslib/README.md`, `@yarnpkg/fslib/README.md`],
-  [`@yarnpkg/fslib/package.json`, `@yarnpkg/fslib/package`],
-  [`@yarnpkg/fslib/sources/ZipFS.ts`, `@yarnpkg/fslib/sources/ZipFS`],
-  [`@yarnpkg/fslib/sources/index.ts`, `@yarnpkg/fslib`],
+  [`@orta/yarn-core/sources/Configuration.ts`, `./Configuration`],
+  [`@orta/yarn-fslib/README.md`, `@orta/yarn-fslib/README.md`],
+  [`@orta/yarn-fslib/package.json`, `@orta/yarn-fslib/package`],
+  [`@orta/yarn-fslib/sources/ZipFS.ts`, `@orta/yarn-fslib/sources/ZipFS`],
+  [`@orta/yarn-fslib/sources/index.ts`, `@orta/yarn-fslib`],
 ];
 
 const requireFactory = createRequire

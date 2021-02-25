@@ -1,4 +1,4 @@
-import {xfs, ppath, Filename, npath} from '@yarnpkg/fslib';
+import {xfs, ppath, Filename, npath} from '@orta/yarn-fslib';
 import {fs, yarn}                    from 'pkg-tests-core';
 
 describe(`Commands`, () => {
@@ -6,15 +6,15 @@ describe(`Commands`, () => {
     test(
       `it should support removing a plugin via its name`,
       makeTemporaryEnv({}, async ({path, run, source}) => {
-        const helloWorldSource = require.resolve(`@yarnpkg/monorepo/scripts/plugin-hello-world.js`);
-        const helloUniverseSource = require.resolve(`@yarnpkg/monorepo/scripts/plugin-hello-universe.js`);
+        const helloWorldSource = require.resolve(`@orta/yarn-monorepo/scripts/plugin-hello-world.js`);
+        const helloUniverseSource = require.resolve(`@orta/yarn-monorepo/scripts/plugin-hello-universe.js`);
 
         // Note: we assume that `plugin import` works, since it has its own tests
         await run(`plugin`, `import`, helloWorldSource);
         await run(`plugin`, `import`, helloUniverseSource);
 
-        const helloWorldPlugin = yarn.getPluginPath(path, `@yarnpkg/plugin-hello-world`);
-        const helloUniversePlugin = yarn.getPluginPath(path, `@yarnpkg/plugin-hello-universe`);
+        const helloWorldPlugin = yarn.getPluginPath(path, `@orta/yarn-plugin-hello-world`);
+        const helloUniversePlugin = yarn.getPluginPath(path, `@orta/yarn-plugin-hello-universe`);
 
         await expect(xfs.existsPromise(helloWorldPlugin)).resolves.toEqual(true);
         await expect(fs.readSyml(ppath.join(path, Filename.rc))).resolves.toEqual({
@@ -27,7 +27,7 @@ describe(`Commands`, () => {
           }],
         });
 
-        await run(`plugin`, `remove`, `@yarnpkg/plugin-hello-world`);
+        await run(`plugin`, `remove`, `@orta/yarn-plugin-hello-world`);
 
         await expect(xfs.existsPromise(helloWorldPlugin)).resolves.toEqual(false);
         await expect(fs.readSyml(ppath.join(path, Filename.rc))).resolves.toEqual({
@@ -42,12 +42,12 @@ describe(`Commands`, () => {
     test(
       `it should completely remove the key when removing the last plugin`,
       makeTemporaryEnv({}, async ({path, run, source}) => {
-        const helloWorldSource = require.resolve(`@yarnpkg/monorepo/scripts/plugin-hello-world.js`);
+        const helloWorldSource = require.resolve(`@orta/yarn-monorepo/scripts/plugin-hello-world.js`);
 
         await run(`plugin`, `import`, helloWorldSource);
-        await run(`plugin`, `remove`, `@yarnpkg/plugin-hello-world`);
+        await run(`plugin`, `remove`, `@orta/yarn-plugin-hello-world`);
 
-        const helloWorldPlugin = yarn.getPluginPath(path, `@yarnpkg/plugin-hello-world`);
+        const helloWorldPlugin = yarn.getPluginPath(path, `@orta/yarn-plugin-hello-world`);
         expect(xfs.existsSync(helloWorldPlugin)).toBeFalsy();
 
         const rcContent = await fs.readSyml(ppath.join(path, Filename.rc));

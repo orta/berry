@@ -1,4 +1,4 @@
-# `@yarnpkg/plugin-stage`
+# `@orta/yarn-plugin-stage`
 
 This plugin adds support for the [`yarn stage`](https://yarnpkg.com/cli/stage) command.
 

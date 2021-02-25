@@ -1,6 +1,6 @@
-import {BaseCommand, WorkspaceRequiredError}                                                                               from '@yarnpkg/cli';
-import {Cache, Configuration, Project, StreamReport, Package, MessageName, formatUtils, LocatorHash, Workspace, miscUtils} from '@yarnpkg/core';
-import {structUtils, semverUtils}                                                                                          from '@yarnpkg/core';
+import {BaseCommand, WorkspaceRequiredError}                                                                               from '@orta/yarn-cli';
+import {Cache, Configuration, Project, StreamReport, Package, MessageName, formatUtils, LocatorHash, Workspace, miscUtils} from '@orta/yarn-core';
+import {structUtils, semverUtils}                                                                                          from '@orta/yarn-core';
 import {Command, Option, Usage, UsageError}                                                                                from 'clipanion';
 import micromatch                                                                                                          from 'micromatch';
 import semver                                                                                                              from 'semver';

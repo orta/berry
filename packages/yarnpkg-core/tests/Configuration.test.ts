@@ -1,5 +1,5 @@
-import {xfs, PortablePath}     from '@yarnpkg/fslib';
-import NpmPlugin               from '@yarnpkg/plugin-npm';
+import {xfs, PortablePath}     from '@orta/yarn-fslib';
+import NpmPlugin               from '@orta/yarn-plugin-npm';
 
 import {Configuration, SECRET} from '../sources/Configuration';
 
@@ -22,8 +22,8 @@ describe(`Configuration`, () => {
       },
     }, async dir => {
       const configuration = await Configuration.find(dir, {
-        modules: new Map([[`@yarnpkg/plugin-npm`, NpmPlugin]]),
-        plugins: new Set([`@yarnpkg/plugin-npm`]),
+        modules: new Map([[`@orta/yarn-plugin-npm`, NpmPlugin]]),
+        plugins: new Set([`@orta/yarn-plugin-npm`]),
       });
 
       const firstToken = configuration.getSpecial(`npmAuthToken`, {
@@ -76,8 +76,8 @@ describe(`Configuration`, () => {
         },
       }, async dir => {
         const configuration = await Configuration.find(dir, {
-          modules: new Map([[`@yarnpkg/plugin-npm`, NpmPlugin]]),
-          plugins: new Set([`@yarnpkg/plugin-npm`]),
+          modules: new Map([[`@orta/yarn-plugin-npm`, NpmPlugin]]),
+          plugins: new Set([`@orta/yarn-plugin-npm`]),
         });
 
         const getToken = (scope: string) => configuration.get(`npmScopes`).get(scope)!.get(`npmAuthToken`);
@@ -113,8 +113,8 @@ describe(`Configuration`, () => {
         },
       }, async dir => {
         await expect(Configuration.find(dir, {
-          modules: new Map([[`@yarnpkg/plugin-npm`, NpmPlugin]]),
-          plugins: new Set([`@yarnpkg/plugin-npm`]),
+          modules: new Map([[`@orta/yarn-plugin-npm`, NpmPlugin]]),
+          plugins: new Set([`@orta/yarn-plugin-npm`]),
         })).rejects.toThrow();
       });
     });
@@ -131,8 +131,8 @@ describe(`Configuration`, () => {
         },
       }, async dir => {
         const configuration = await Configuration.find(dir, {
-          modules: new Map([[`@yarnpkg/plugin-npm`, NpmPlugin]]),
-          plugins: new Set([`@yarnpkg/plugin-npm`]),
+          modules: new Map([[`@orta/yarn-plugin-npm`, NpmPlugin]]),
+          plugins: new Set([`@orta/yarn-plugin-npm`]),
         });
 
         configuration.useWithSource(`second file`, {
@@ -167,8 +167,8 @@ describe(`Configuration`, () => {
         },
       }, async dir => {
         const configuration = await Configuration.find(dir, {
-          modules: new Map([[`@yarnpkg/plugin-npm`, NpmPlugin]]),
-          plugins: new Set([`@yarnpkg/plugin-npm`]),
+          modules: new Map([[`@orta/yarn-plugin-npm`, NpmPlugin]]),
+          plugins: new Set([`@orta/yarn-plugin-npm`]),
         });
 
         configuration.useWithSource(`second file`, {

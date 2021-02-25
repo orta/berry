@@ -1,4 +1,4 @@
-import {PortablePath, npath} from '@yarnpkg/fslib';
+import {PortablePath, npath} from '@orta/yarn-fslib';
 import {ChildProcess}        from 'child_process';
 import crossSpawn            from 'cross-spawn';
 import {Readable, Writable}  from 'stream';

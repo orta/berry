@@ -1,6 +1,6 @@
-import {BaseCommand}                        from '@yarnpkg/cli';
-import {Configuration, Project}             from '@yarnpkg/core';
-import {PortablePath, npath, ppath, xfs}    from '@yarnpkg/fslib';
+import {BaseCommand}                        from '@orta/yarn-cli';
+import {Configuration, Project}             from '@orta/yarn-core';
+import {PortablePath, npath, ppath, xfs}    from '@orta/yarn-fslib';
 import {Command, Option, Usage, UsageError} from 'clipanion';
 
 import {Driver as GitDriver}                from '../drivers/GitDriver';

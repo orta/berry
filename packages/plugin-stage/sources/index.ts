@@ -1,5 +1,5 @@
-import {Plugin, Project} from '@yarnpkg/core';
-import {PortablePath}    from '@yarnpkg/fslib';
+import {Plugin, Project} from '@orta/yarn-core';
+import {PortablePath}    from '@orta/yarn-fslib';
 
 import stage             from './commands/stage';
 

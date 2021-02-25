@@ -30,7 +30,7 @@ describe(`Commands`, () => {
         test(`test (${environmentDescription} / ${scriptDescription})`,
           makeTemporaryEnv({}, {
             plugins: [
-              require.resolve(`@yarnpkg/monorepo/scripts/plugin-constraints.js`),
+              require.resolve(`@orta/yarn-monorepo/scripts/plugin-constraints.js`),
             ],
           }, async ({path, run, source}) => {
             await environment(path);

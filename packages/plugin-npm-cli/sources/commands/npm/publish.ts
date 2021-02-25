@@ -1,7 +1,7 @@
-import {BaseCommand, WorkspaceRequiredError}                                                    from '@yarnpkg/cli';
-import {Configuration, MessageName, Project, ReportError, StreamReport, scriptUtils, miscUtils} from '@yarnpkg/core';
-import {npmConfigUtils, npmHttpUtils, npmPublishUtils}                                          from '@yarnpkg/plugin-npm';
-import {packUtils}                                                                              from '@yarnpkg/plugin-pack';
+import {BaseCommand, WorkspaceRequiredError}                                                    from '@orta/yarn-cli';
+import {Configuration, MessageName, Project, ReportError, StreamReport, scriptUtils, miscUtils} from '@orta/yarn-core';
+import {npmConfigUtils, npmHttpUtils, npmPublishUtils}                                          from '@orta/yarn-plugin-npm';
+import {packUtils}                                                                              from '@orta/yarn-plugin-pack';
 import {Command, Option, Usage, UsageError}                                                     from 'clipanion';
 
 // eslint-disable-next-line arca/no-default-export

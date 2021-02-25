@@ -7,10 +7,10 @@
     "pkg-tests-specs"
   ],
   "dependencies": {
-    "@yarnpkg/cli": "workspace:^2.4.0",
-    "@yarnpkg/core": "workspace:^2.4.0",
-    "@yarnpkg/fslib": "workspace:^2.4.0",
-    "@yarnpkg/monorepo": "workspace:0.0.0",
+    "@orta/yarn-cli": "workspace:^2.4.0",
+    "@orta/yarn-core": "workspace:^2.4.0",
+    "@orta/yarn-fslib": "workspace:^2.4.0",
+    "@orta/yarn-monorepo": "workspace:0.0.0",
     "is-wsl": "^2.1.1",
     "pkg-tests-core": "workspace:0.0.0"
   },

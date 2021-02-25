@@ -1,9 +1,9 @@
-import {LinkOptions, structUtils}                      from '@yarnpkg/core';
-import {VirtualFS, ZipOpenFS, ppath, Filename}         from '@yarnpkg/fslib';
-import {getLibzipPromise}                              from '@yarnpkg/libzip';
-import {PnpInstaller, PnpLinker}                       from '@yarnpkg/plugin-pnp';
-import {NodeModulesPackageNode, buildNodeModulesTree}  from '@yarnpkg/pnpify';
-import {PnpSettings, makeRuntimeApi, DependencyTarget} from '@yarnpkg/pnp';
+import {LinkOptions, structUtils}                      from '@orta/yarn-core';
+import {VirtualFS, ZipOpenFS, ppath, Filename}         from '@orta/yarn-fslib';
+import {getLibzipPromise}                              from '@orta/yarn-libzip';
+import {PnpInstaller, PnpLinker}                       from '@orta/yarn-plugin-pnp';
+import {NodeModulesPackageNode, buildNodeModulesTree}  from '@orta/yarn-pnpify';
+import {PnpSettings, makeRuntimeApi, DependencyTarget} from '@orta/yarn-pnp';
 
 export class PnpLooseLinker extends PnpLinker {
   protected mode = `loose`;

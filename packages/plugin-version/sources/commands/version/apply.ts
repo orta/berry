@@ -1,6 +1,6 @@
-import {BaseCommand, WorkspaceRequiredError} from '@yarnpkg/cli';
-import {Cache, Configuration}                from '@yarnpkg/core';
-import {Project, StreamReport}               from '@yarnpkg/core';
+import {BaseCommand, WorkspaceRequiredError} from '@orta/yarn-cli';
+import {Cache, Configuration}                from '@orta/yarn-core';
+import {Project, StreamReport}               from '@orta/yarn-core';
 import {Command, Option, Usage}              from 'clipanion';
 
 import * as versionUtils                     from '../../versionUtils';

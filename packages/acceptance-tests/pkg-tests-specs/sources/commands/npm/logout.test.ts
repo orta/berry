@@ -1,4 +1,4 @@
-import {Filename, xfs} from '@yarnpkg/fslib';
+import {Filename, xfs} from '@orta/yarn-fslib';
 import {yarn}          from 'pkg-tests-core';
 
 const SPEC_RC_FILENAME = `.spec-yarnrc` as Filename;

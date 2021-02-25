@@ -1,4 +1,4 @@
-import {npath, NodeFS}  from '@yarnpkg/fslib';
+import {npath, NodeFS}  from '@orta/yarn-fslib';
 
 import {diffFolders}    from '../sources/patchUtils';
 import {parsePatchFile} from '../sources/tools/parse';

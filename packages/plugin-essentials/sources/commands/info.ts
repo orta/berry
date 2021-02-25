@@ -1,6 +1,6 @@
-import {BaseCommand, WorkspaceRequiredError}                                                                                                                          from '@yarnpkg/cli';
-import {Configuration, Project, structUtils, Workspace, LocatorHash, Package, formatUtils, miscUtils, Locator, Cache, FetchOptions, ThrowReport, Manifest, treeUtils} from '@yarnpkg/core';
-import {xfs}                                                                                                                                                          from '@yarnpkg/fslib';
+import {BaseCommand, WorkspaceRequiredError}                                                                                                                          from '@orta/yarn-cli';
+import {Configuration, Project, structUtils, Workspace, LocatorHash, Package, formatUtils, miscUtils, Locator, Cache, FetchOptions, ThrowReport, Manifest, treeUtils} from '@orta/yarn-core';
+import {xfs}                                                                                                                                                          from '@orta/yarn-fslib';
 import {Command, Option, Usage, UsageError}                                                                                                                           from 'clipanion';
 import mm                                                                                                                                                             from 'micromatch';
 

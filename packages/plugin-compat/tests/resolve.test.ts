@@ -35,15 +35,15 @@ describe(`ResolvePatch`, () => {
   it(`can require dependency in paths`, () => {
     expect(
       resolve.sync(`got`, {
-        paths: [require.resolve(`@yarnpkg/core`)],
+        paths: [require.resolve(`@orta/yarn-core`)],
       })
-    ).toEqual(require.resolve(`got`, {paths: [require.resolve(`@yarnpkg/core`)]}));
+    ).toEqual(require.resolve(`got`, {paths: [require.resolve(`@orta/yarn-core`)]}));
 
     expect(
       resolve.sync(`got`, {
-        paths: [require.resolve(`@yarnpkg/core`)],
+        paths: [require.resolve(`@orta/yarn-core`)],
         __skipPackageIterator: true,
       } as any)
-    ).toEqual(require.resolve(`got`, {paths: [require.resolve(`@yarnpkg/core`)]}));
+    ).toEqual(require.resolve(`got`, {paths: [require.resolve(`@orta/yarn-core`)]}));
   });
 });

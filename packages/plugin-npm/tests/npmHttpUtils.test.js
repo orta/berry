@@ -1,12 +1,12 @@
-import {httpUtils}         from '@yarnpkg/core';
-import {get}               from '@yarnpkg/plugin-npm/sources/npmHttpUtils';
+import {httpUtils}         from '@orta/yarn-core';
+import {get}               from '@orta/yarn-plugin-npm/sources/npmHttpUtils';
 
 import {makeConfiguration} from './_makeConfiguration';
 
-jest.mock(`@yarnpkg/core`, () => ({
-  ...jest.requireActual(`@yarnpkg/core`),
+jest.mock(`@orta/yarn-core`, () => ({
+  ...jest.requireActual(`@orta/yarn-core`),
   httpUtils: {
-    ...jest.requireActual(`@yarnpkg/core`).httpUtils,
+    ...jest.requireActual(`@orta/yarn-core`).httpUtils,
     get: jest.fn(() => Promise.resolve()),
   },
 }));

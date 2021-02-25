@@ -1,4 +1,4 @@
-import {xfs, npath}    from '@yarnpkg/fslib';
+import {xfs, npath}    from '@orta/yarn-fslib';
 import {fs as fsUtils} from 'pkg-tests-core';
 import tar             from 'tar';
 
@@ -475,7 +475,7 @@ describe(`Commands`, () => {
     test(
       `it should make the filename non-descriptive by default`,
       makeTemporaryEnv({
-        name: `@yarnpkg/core`,
+        name: `@orta/yarn-core`,
         version: `0.0.1`,
       }, async ({path, run, source}) => {
         await run(`install`);

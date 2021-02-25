@@ -1,4 +1,4 @@
-import {PortablePath, ppath, Filename} from '@yarnpkg/fslib';
+import {PortablePath, ppath, Filename} from '@orta/yarn-fslib';
 
 import * as fsUtils                    from './fs';
 import {RunFunction}                   from './tests';

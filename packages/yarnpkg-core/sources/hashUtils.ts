@@ -1,4 +1,4 @@
-import {PortablePath, xfs, npath} from '@yarnpkg/fslib';
+import {PortablePath, xfs, npath} from '@orta/yarn-fslib';
 import {createHash, BinaryLike}   from 'crypto';
 import globby                     from 'globby';
 

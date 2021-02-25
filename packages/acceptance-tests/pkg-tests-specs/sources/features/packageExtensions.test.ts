@@ -1,4 +1,4 @@
-import {PortablePath, xfs} from '@yarnpkg/fslib';
+import {PortablePath, xfs} from '@orta/yarn-fslib';
 import {yarn}              from 'pkg-tests-core';
 
 describe(`Features`, () => {

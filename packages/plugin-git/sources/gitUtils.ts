@@ -1,5 +1,5 @@
-import {Configuration, Locator, execUtils, structUtils, httpUtils} from '@yarnpkg/core';
-import {npath, xfs}                                                from '@yarnpkg/fslib';
+import {Configuration, Locator, execUtils, structUtils, httpUtils} from '@orta/yarn-core';
+import {npath, xfs}                                                from '@orta/yarn-fslib';
 import querystring                                                 from 'querystring';
 import semver                                                      from 'semver';
 import urlLib                                                      from 'url';

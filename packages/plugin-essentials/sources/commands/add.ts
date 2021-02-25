@@ -1,8 +1,8 @@
-import {BaseCommand, WorkspaceRequiredError}                        from '@yarnpkg/cli';
-import {Cache, Configuration, Descriptor, LightReport, MessageName} from '@yarnpkg/core';
-import {Project, StreamReport, Workspace, Ident}                    from '@yarnpkg/core';
-import {structUtils}                                                from '@yarnpkg/core';
-import {PortablePath}                                               from '@yarnpkg/fslib';
+import {BaseCommand, WorkspaceRequiredError}                        from '@orta/yarn-cli';
+import {Cache, Configuration, Descriptor, LightReport, MessageName} from '@orta/yarn-core';
+import {Project, StreamReport, Workspace, Ident}                    from '@orta/yarn-core';
+import {structUtils}                                                from '@orta/yarn-core';
+import {PortablePath}                                               from '@orta/yarn-fslib';
 import {Command, Option, Usage, UsageError}                         from 'clipanion';
 import {prompt}                                                     from 'enquirer';
 

@@ -1,4 +1,4 @@
-# `@yarnpkg/plugin-exec`
+# `@orta/yarn-plugin-exec`
 
 > **Experimental**
 >

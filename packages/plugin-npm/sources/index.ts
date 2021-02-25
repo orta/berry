@@ -1,4 +1,4 @@
-import {Plugin, SettingsType, miscUtils} from '@yarnpkg/core';
+import {Plugin, SettingsType, miscUtils} from '@orta/yarn-core';
 
 import {NpmHttpFetcher}                  from './NpmHttpFetcher';
 import {NpmRemapResolver}                from './NpmRemapResolver';
@@ -44,7 +44,7 @@ const registrySettings = {
   },
 };
 
-declare module '@yarnpkg/core' {
+declare module '@orta/yarn-core' {
   interface ConfigurationValueMap {
     npmAlwaysAuth: boolean;
     npmAuthIdent: string | null;

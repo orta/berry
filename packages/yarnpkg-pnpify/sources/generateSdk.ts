@@ -1,7 +1,7 @@
-import {Report, MessageName, miscUtils, Configuration, formatUtils} from '@yarnpkg/core';
-import {Filename, PortablePath, npath, ppath, xfs}                  from '@yarnpkg/fslib';
-import {parseSyml, stringifySyml}                                   from '@yarnpkg/parsers';
-import {PnpApi}                                                     from '@yarnpkg/pnp';
+import {Report, MessageName, miscUtils, Configuration, formatUtils} from '@orta/yarn-core';
+import {Filename, PortablePath, npath, ppath, xfs}                  from '@orta/yarn-fslib';
+import {parseSyml, stringifySyml}                                   from '@orta/yarn-parsers';
+import {PnpApi}                                                     from '@orta/yarn-pnp';
 import chalk                                                        from 'chalk';
 import {UsageError}                                                 from 'clipanion';
 import capitalize                                                   from 'lodash/capitalize';
@@ -148,7 +148,7 @@ const TEMPLATE = (relPnpApiPath: PortablePath, module: string, {setupEnv = false
     `\n`,
     `  let pnpifyResolution;\n`,
     `  try {\n`,
-    `    pnpifyResolution = absRequire.resolve(\`@yarnpkg/pnpify\`);\n`,
+    `    pnpifyResolution = absRequire.resolve(\`@orta/yarn-pnpify\`);\n`,
     `  } catch (err) {}\n`,
     `  \n`,
     `  if (pnpifyResolution) {\n`,

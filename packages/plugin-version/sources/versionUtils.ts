@@ -1,6 +1,6 @@
-import {AllDependencies, execUtils, miscUtils, hashUtils, Workspace, structUtils, Project, Manifest, IdentHash, Report, MessageName, WorkspaceResolver} from '@yarnpkg/core';
-import {Filename, PortablePath, npath, ppath, xfs}                                                                                                      from '@yarnpkg/fslib';
-import {parseSyml, stringifySyml}                                                                                                                       from '@yarnpkg/parsers';
+import {AllDependencies, execUtils, miscUtils, hashUtils, Workspace, structUtils, Project, Manifest, IdentHash, Report, MessageName, WorkspaceResolver} from '@orta/yarn-core';
+import {Filename, PortablePath, npath, ppath, xfs}                                                                                                      from '@orta/yarn-fslib';
+import {parseSyml, stringifySyml}                                                                                                                       from '@orta/yarn-parsers';
 import {UsageError}                                                                                                                                     from 'clipanion';
 import semver                                                                                                                                           from 'semver';
 

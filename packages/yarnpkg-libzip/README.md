@@ -1,4 +1,4 @@
-# `@yarnpkg/libzip`
+# `@orta/yarn-libzip`
 
 This package contains a wasm-compiled version of the libzip.
 

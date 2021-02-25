@@ -1,8 +1,8 @@
-import {Resolver, ResolveOptions, MinimalResolveOptions} from '@yarnpkg/core';
-import {Descriptor, Locator}                             from '@yarnpkg/core';
-import {LinkType}                                        from '@yarnpkg/core';
-import {structUtils}                                     from '@yarnpkg/core';
-import {npath}                                           from '@yarnpkg/fslib';
+import {Resolver, ResolveOptions, MinimalResolveOptions} from '@orta/yarn-core';
+import {Descriptor, Locator}                             from '@orta/yarn-core';
+import {LinkType}                                        from '@orta/yarn-core';
+import {structUtils}                                     from '@orta/yarn-core';
+import {npath}                                           from '@orta/yarn-fslib';
 
 import {RAW_LINK_PROTOCOL}                               from './constants';
 

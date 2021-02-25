@@ -1,10 +1,10 @@
-import {CreateReadStreamOptions, CreateWriteStreamOptions}                                                                         from '@yarnpkg/fslib';
-import {NodeFS, FakeFS, WriteFileOptions, ProxiedFS}                                                                               from '@yarnpkg/fslib';
-import {WatchOptions, WatchCallback, Watcher}                                                                                      from '@yarnpkg/fslib';
-import {FSPath, NativePath, PortablePath, npath, ppath, opendir}                                                                   from '@yarnpkg/fslib';
-import {RmdirOptions}                                                                                                              from '@yarnpkg/fslib';
-import {Dirent, Filename, MkdirOptions, ExtractHintOptions, WatchFileCallback, WatchFileOptions, StatWatcher, OpendirOptions, Dir} from '@yarnpkg/fslib';
-import {PnpApi}                                                                                                                    from '@yarnpkg/pnp';
+import {CreateReadStreamOptions, CreateWriteStreamOptions}                                                                         from '@orta/yarn-fslib';
+import {NodeFS, FakeFS, WriteFileOptions, ProxiedFS}                                                                               from '@orta/yarn-fslib';
+import {WatchOptions, WatchCallback, Watcher}                                                                                      from '@orta/yarn-fslib';
+import {FSPath, NativePath, PortablePath, npath, ppath, opendir}                                                                   from '@orta/yarn-fslib';
+import {RmdirOptions}                                                                                                              from '@orta/yarn-fslib';
+import {Dirent, Filename, MkdirOptions, ExtractHintOptions, WatchFileCallback, WatchFileOptions, StatWatcher, OpendirOptions, Dir} from '@orta/yarn-fslib';
+import {PnpApi}                                                                                                                    from '@orta/yarn-pnp';
 import fs, {BigIntStats, Stats}                                                                                                    from 'fs';
 
 import {WatchManager}                                                                                                              from './WatchManager';

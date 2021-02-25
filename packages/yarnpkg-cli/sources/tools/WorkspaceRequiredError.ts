@@ -1,5 +1,5 @@
-import {Manifest}            from '@yarnpkg/core';
-import {PortablePath, ppath} from '@yarnpkg/fslib';
+import {Manifest}            from '@orta/yarn-core';
+import {PortablePath, ppath} from '@orta/yarn-fslib';
 import {UsageError}          from 'clipanion';
 
 export class WorkspaceRequiredError extends UsageError {

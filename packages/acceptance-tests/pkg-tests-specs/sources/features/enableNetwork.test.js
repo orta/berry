@@ -1,4 +1,4 @@
-const {xfs} = require(`@yarnpkg/fslib`);
+const {xfs} = require(`@orta/yarn-fslib`);
 
 describe(`Features`, () => {
   describe(`enableNetwork`, () => {

@@ -1,6 +1,6 @@
-import {BaseCommand, WorkspaceRequiredError}                                                    from '@yarnpkg/cli';
-import {Configuration, Project, ReportError, MessageName, treeUtils, LightReport, StreamReport} from '@yarnpkg/core';
-import {npmConfigUtils, npmHttpUtils}                                                           from '@yarnpkg/plugin-npm';
+import {BaseCommand, WorkspaceRequiredError}                                                    from '@orta/yarn-cli';
+import {Configuration, Project, ReportError, MessageName, treeUtils, LightReport, StreamReport} from '@orta/yarn-core';
+import {npmConfigUtils, npmHttpUtils}                                                           from '@orta/yarn-plugin-npm';
 import {Command, Option, Usage}                                                                 from 'clipanion';
 import * as t                                                                                   from 'typanion';
 

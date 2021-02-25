@@ -1,4 +1,4 @@
-import {Libzip}                                                                                                                                      from '@yarnpkg/libzip';
+import {Libzip}                                                                                                                                      from '@orta/yarn-libzip';
 import {ReadStream, Stats, WriteStream, constants, BigIntStats}                                                                                      from 'fs';
 import {PassThrough}                                                                                                                                 from 'stream';
 import {isDate}                                                                                                                                      from 'util';

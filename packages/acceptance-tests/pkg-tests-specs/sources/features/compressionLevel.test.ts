@@ -1,4 +1,4 @@
-import {xfs, PortablePath, ppath} from '@yarnpkg/fslib';
+import {xfs, PortablePath, ppath} from '@orta/yarn-fslib';
 
 function computeCacheSize(cacheDir: PortablePath): number {
   let totalSize = 0;

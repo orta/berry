@@ -1,4 +1,4 @@
-import {PortablePath, FakeFS, npath, PosixFS, extendFs} from '@yarnpkg/fslib';
+import {PortablePath, FakeFS, npath, PosixFS, extendFs} from '@orta/yarn-fslib';
 import fastGlob                                         from 'fast-glob';
 import fs                                               from 'fs';
 import micromatch                                       from 'micromatch';

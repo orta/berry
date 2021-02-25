@@ -1,4 +1,4 @@
-import {PortablePath, xfs}     from '@yarnpkg/fslib';
+import {PortablePath, xfs}     from '@orta/yarn-fslib';
 import {createTemporaryFolder} from 'pkg-tests-core/sources/utils/fs';
 import {yarn}                  from 'pkg-tests-core';
 

@@ -1,6 +1,6 @@
-import {BaseCommand}                              from '@yarnpkg/cli';
-import {Configuration, MessageName, StreamReport} from '@yarnpkg/core';
-import {miscUtils}                                from '@yarnpkg/core';
+import {BaseCommand}                              from '@orta/yarn-cli';
+import {Configuration, MessageName, StreamReport} from '@orta/yarn-core';
+import {miscUtils}                                from '@orta/yarn-core';
 import {Command, Option, Usage}                   from 'clipanion';
 import {inspect}                                  from 'util';
 

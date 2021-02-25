@@ -1,4 +1,4 @@
-const {npath, xfs} = require(`@yarnpkg/fslib`);
+const {npath, xfs} = require(`@orta/yarn-fslib`);
 const {
   exec: {execFile},
   fs: {writeFile, writeJson, mkdirp},
@@ -10,7 +10,7 @@ describe(`Commands`, () => {
       `it should stage the initial files`,
       makeTemporaryEnv({}, async ({path, run, source}) => {
         await execFile(`git`, [`init`], {cwd: path});
-        await writeFile(`${path}/.yarnrc.yml`, `plugins:\n  - ${JSON.stringify(require.resolve(`@yarnpkg/monorepo/scripts/plugin-stage.js`))}\n`);
+        await writeFile(`${path}/.yarnrc.yml`, `plugins:\n  - ${JSON.stringify(require.resolve(`@orta/yarn-monorepo/scripts/plugin-stage.js`))}\n`);
 
         await expect(run(`stage`, `-n`, {cwd: path})).resolves.toMatchObject({
           stdout: [
@@ -25,7 +25,7 @@ describe(`Commands`, () => {
       `it should not stage non-yarn files`,
       makeTemporaryEnv({}, async ({path, run, source}) => {
         await execFile(`git`, [`init`], {cwd: path});
-        await writeFile(`${path}/.yarnrc.yml`, `plugins:\n  - ${JSON.stringify(require.resolve(`@yarnpkg/monorepo/scripts/plugin-stage.js`))}\n`);
+        await writeFile(`${path}/.yarnrc.yml`, `plugins:\n  - ${JSON.stringify(require.resolve(`@orta/yarn-monorepo/scripts/plugin-stage.js`))}\n`);
 
         await writeFile(`${path}/index.js`, `module.exports = 42;\n`);
 
@@ -48,7 +48,7 @@ describe(`Commands`, () => {
         await run(`install`);
 
         await execFile(`git`, [`init`], {cwd: path});
-        await writeFile(`${path}/.yarnrc.yml`, `plugins:\n  - ${JSON.stringify(require.resolve(`@yarnpkg/monorepo/scripts/plugin-stage.js`))}\n`);
+        await writeFile(`${path}/.yarnrc.yml`, `plugins:\n  - ${JSON.stringify(require.resolve(`@orta/yarn-monorepo/scripts/plugin-stage.js`))}\n`);
 
         await expect(run(`stage`, `-n`, {cwd: path})).resolves.toMatchObject({
           stdout: [
@@ -74,7 +74,7 @@ describe(`Commands`, () => {
         },
       }, async ({path, run, source}) => {
         await execFile(`git`, [`init`], {cwd: path});
-        await writeFile(`${path}/.yarnrc.yml`, `plugins:\n  - ${JSON.stringify(require.resolve(`@yarnpkg/monorepo/scripts/plugin-stage.js`))}\n`);
+        await writeFile(`${path}/.yarnrc.yml`, `plugins:\n  - ${JSON.stringify(require.resolve(`@orta/yarn-monorepo/scripts/plugin-stage.js`))}\n`);
 
         // Otherwise we can't always commit
         await execFile(`git`, [`config`, `user.name`, `John Doe`], {cwd: path});

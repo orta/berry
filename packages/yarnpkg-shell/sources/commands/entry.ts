@@ -1,4 +1,4 @@
-import {npath}                  from '@yarnpkg/fslib';
+import {npath}                  from '@orta/yarn-fslib';
 import {Command, Option, Usage} from 'clipanion';
 
 import {execute}                from '../index';

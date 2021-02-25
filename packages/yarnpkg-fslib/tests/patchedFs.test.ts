@@ -1,4 +1,4 @@
-import {getLibzipPromise}     from '@yarnpkg/libzip';
+import {getLibzipPromise}     from '@orta/yarn-libzip';
 import fs                     from 'fs';
 import {pathToFileURL}        from 'url';
 import {promisify}            from 'util';

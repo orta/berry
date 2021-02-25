@@ -1,4 +1,4 @@
-# `@yarnpkg/plugin-interactive-tools`
+# `@orta/yarn-plugin-interactive-tools`
 
 This plugin adds support for various interactive commands.
 

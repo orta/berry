@@ -1,6 +1,6 @@
-require(`@yarnpkg/monorepo/scripts/setup-ts-execution`);
+require(`@orta/yarn-monorepo/scripts/setup-ts-execution`);
 
-const {makeConfig} = require(`@yarnpkg/builder/sources/tools/makeConfig`);
+const {makeConfig} = require(`@orta/yarn-builder/sources/tools/makeConfig`);
 const webpack = require(`webpack`);
 const {brotliCompressSync} = require(`zlib`);
 

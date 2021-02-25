@@ -1,7 +1,7 @@
-import {BaseCommand, WorkspaceRequiredError}               from '@yarnpkg/cli';
-import {Configuration, LocatorHash, Project, Workspace}    from '@yarnpkg/core';
-import {DescriptorHash, MessageName, Report, StreamReport} from '@yarnpkg/core';
-import {formatUtils, miscUtils, structUtils}               from '@yarnpkg/core';
+import {BaseCommand, WorkspaceRequiredError}               from '@orta/yarn-cli';
+import {Configuration, LocatorHash, Project, Workspace}    from '@orta/yarn-core';
+import {DescriptorHash, MessageName, Report, StreamReport} from '@orta/yarn-core';
+import {formatUtils, miscUtils, structUtils}               from '@orta/yarn-core';
 import {Command, Option, Usage, UsageError}                from 'clipanion';
 import micromatch                                          from 'micromatch';
 import {cpus}                                              from 'os';

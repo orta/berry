@@ -1,4 +1,4 @@
-import {xfs, PortablePath} from '@yarnpkg/fslib';
+import {xfs, PortablePath} from '@orta/yarn-fslib';
 
 import {makeTracker}       from './makeTracker';
 

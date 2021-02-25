@@ -25,7 +25,7 @@ describe(`Commands`, () => {
       `test without trailing .`,
       makeTemporaryEnv({}, {
         plugins: [
-          require.resolve(`@yarnpkg/monorepo/scripts/plugin-constraints.js`),
+          require.resolve(`@orta/yarn-monorepo/scripts/plugin-constraints.js`),
         ],
       }, async({path, run, source}) => {
         await environments[`one regular dependency`](path);
@@ -48,7 +48,7 @@ describe(`Commands`, () => {
       `test with a syntax error`,
       makeTemporaryEnv({}, {
         plugins: [
-          require.resolve(`@yarnpkg/monorepo/scripts/plugin-constraints.js`),
+          require.resolve(`@orta/yarn-monorepo/scripts/plugin-constraints.js`),
         ],
       }, async({path, run, source}) => {
         await environments[`one regular dependency`](path);
@@ -71,7 +71,7 @@ describe(`Commands`, () => {
       `test with an unknown predicate`,
       makeTemporaryEnv({}, {
         plugins: [
-          require.resolve(`@yarnpkg/monorepo/scripts/plugin-constraints.js`),
+          require.resolve(`@orta/yarn-monorepo/scripts/plugin-constraints.js`),
         ],
       }, async({path, run, source}) => {
         await environments[`one regular dependency`](path);
@@ -94,7 +94,7 @@ describe(`Commands`, () => {
       `test with an empty predicate`,
       makeTemporaryEnv({}, {
         plugins: [
-          require.resolve(`@yarnpkg/monorepo/scripts/plugin-constraints.js`),
+          require.resolve(`@orta/yarn-monorepo/scripts/plugin-constraints.js`),
         ],
       }, async({path, run, source}) => {
         await environments[`one regular dependency`](path);
@@ -119,7 +119,7 @@ describe(`Commands`, () => {
           `test (${environmentDescription} / ${queryDescription})`,
           makeTemporaryEnv({}, {
             plugins: [
-              require.resolve(`@yarnpkg/monorepo/scripts/plugin-constraints.js`),
+              require.resolve(`@orta/yarn-monorepo/scripts/plugin-constraints.js`),
             ],
           }, async ({path, run, source}) => {
             await environment(path);

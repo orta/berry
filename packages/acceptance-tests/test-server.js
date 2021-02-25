@@ -1,4 +1,4 @@
-require(`@yarnpkg/monorepo/scripts/setup-ts-execution`);
+require(`@orta/yarn-monorepo/scripts/setup-ts-execution`);
 
 const {tests: {startPackageServer}} = require(`pkg-tests-core`);
 

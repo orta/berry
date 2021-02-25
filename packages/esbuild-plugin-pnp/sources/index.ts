@@ -1,4 +1,4 @@
-import {PnpApi}                                                                             from '@yarnpkg/pnp';
+import {PnpApi}                                                                             from '@orta/yarn-pnp';
 import type {OnLoadArgs, OnLoadResult, OnResolveArgs, OnResolveResult, Plugin, PluginBuild} from 'esbuild';
 import * as fs                                                                              from 'fs';
 
@@ -36,7 +36,7 @@ export function pnpPlugin({
   onLoad = defaultOnLoad,
 }: PluginOptions = {}): Plugin {
   return {
-    name: `@yarnpkg/esbuild-plugin-pnp`,
+    name: `@orta/yarn-esbuild-plugin-pnp`,
     setup(build: PluginBuild) {
       const {findPnpApi} = require(`module`);
       if (typeof findPnpApi === `undefined`)

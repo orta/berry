@@ -1,6 +1,6 @@
-import {BaseCommand, WorkspaceRequiredError}                                         from '@yarnpkg/cli';
-import {Configuration, Project, structUtils, MessageName, StreamReport, formatUtils} from '@yarnpkg/core';
-import {npmHttpUtils, npmConfigUtils}                                                from '@yarnpkg/plugin-npm';
+import {BaseCommand, WorkspaceRequiredError}                                         from '@orta/yarn-cli';
+import {Configuration, Project, structUtils, MessageName, StreamReport, formatUtils} from '@orta/yarn-core';
+import {npmHttpUtils, npmConfigUtils}                                                from '@orta/yarn-plugin-npm';
 import {Command, Option, Usage, UsageError}                                          from 'clipanion';
 
 import {getDistTags}                                                                 from './list';

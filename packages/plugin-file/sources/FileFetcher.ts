@@ -1,7 +1,7 @@
-import {structUtils}                                from '@yarnpkg/core';
-import {Locator}                                    from '@yarnpkg/core';
-import {Fetcher, FetchOptions, MinimalFetchOptions} from '@yarnpkg/core';
-import {ppath}                                      from '@yarnpkg/fslib';
+import {structUtils}                                from '@orta/yarn-core';
+import {Locator}                                    from '@orta/yarn-core';
+import {Fetcher, FetchOptions, MinimalFetchOptions} from '@orta/yarn-core';
+import {ppath}                                      from '@orta/yarn-fslib';
 
 import {PROTOCOL}                                   from './constants';
 import * as fileUtils                               from './fileUtils';

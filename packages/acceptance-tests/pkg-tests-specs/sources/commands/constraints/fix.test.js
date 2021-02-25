@@ -1,9 +1,9 @@
-import {xfs} from '@yarnpkg/fslib';
+import {xfs} from '@orta/yarn-fslib';
 
 describe(`Commands`, () => {
   const config = {
     plugins: [
-      require.resolve(`@yarnpkg/monorepo/scripts/plugin-constraints.js`),
+      require.resolve(`@orta/yarn-monorepo/scripts/plugin-constraints.js`),
     ],
   };
 

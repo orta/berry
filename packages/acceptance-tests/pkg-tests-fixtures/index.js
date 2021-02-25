@@ -1,3 +1,3 @@
-const {npath} = require(`@yarnpkg/fslib`);
+const {npath} = require(`@orta/yarn-fslib`);
 
 module.exports = npath.toPortablePath(__dirname);

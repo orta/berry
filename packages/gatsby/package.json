@@ -1,5 +1,5 @@
 {
-  "name": "@yarnpkg/gatsby",
+  "name": "@orta/yarn-gatsby",
   "private": true,
   "license": "BSD-2-Clause",
   "dependencies": {
@@ -11,13 +11,13 @@
     "@iconify/icons-logos": "^1.0.10",
     "@iconify/react": "^1.1.3",
     "@loadable/component": "^5.12.0",
+    "@orta/yarn-monorepo": "workspace:0.0.0",
     "@reach/router": "^1.1.1",
     "@rehooks/component-size": "^1.0.3",
     "@strictsoftware/typedoc-plugin-monorepo": "patch:@strictsoftware/typedoc-plugin-monorepo@^0.2.2#./.patches/@strictsoftware/typedoc-plugin-monorepo.patch",
     "@types/marked": "^1.1.0",
     "@types/react": "^16.8.0",
     "@types/react-helmet": "^6.1.0",
-    "@yarnpkg/monorepo": "workspace:0.0.0",
     "algoliasearch": "^4.2.0",
     "ansi-html": "^0.0.7",
     "buffer": "^5.6.0",

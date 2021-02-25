@@ -1,4 +1,4 @@
-import {ppath, xfs} from '@yarnpkg/fslib';
+import {ppath, xfs} from '@orta/yarn-fslib';
 
 describe(`Cache`, () => {
   test(

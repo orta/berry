@@ -1,4 +1,4 @@
-# `@yarnpkg/plugin-workspace-tools`
+# `@orta/yarn-plugin-workspace-tools`
 
 This plugin adds support for various workspace-related commands.
 

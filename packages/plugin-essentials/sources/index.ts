@@ -1,5 +1,5 @@
-import {Descriptor, Plugin, SettingsType, Package, formatUtils} from '@yarnpkg/core';
-import {Workspace}                                              from '@yarnpkg/core';
+import {Descriptor, Plugin, SettingsType, Package, formatUtils} from '@orta/yarn-core';
+import {Workspace}                                              from '@orta/yarn-core';
 
 import add                                                      from './commands/add';
 import bin                                                      from './commands/bin';
@@ -71,7 +71,7 @@ export interface Hooks {
   ) => Promise<void>,
 }
 
-declare module '@yarnpkg/core' {
+declare module '@orta/yarn-core' {
   interface ConfigurationValueMap {
     enableImmutableInstalls: boolean;
     // Can't use Modifier here because there are actually two instances of this module:

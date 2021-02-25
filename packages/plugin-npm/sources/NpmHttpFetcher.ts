@@ -1,6 +1,6 @@
-import {Fetcher, FetchOptions, MinimalFetchOptions} from '@yarnpkg/core';
-import {Locator}                                    from '@yarnpkg/core';
-import {structUtils, tgzUtils}                      from '@yarnpkg/core';
+import {Fetcher, FetchOptions, MinimalFetchOptions} from '@orta/yarn-core';
+import {Locator}                                    from '@orta/yarn-core';
+import {structUtils, tgzUtils}                      from '@orta/yarn-core';
 import semver                                       from 'semver';
 
 import {PROTOCOL}                                   from './constants';

@@ -1,4 +1,4 @@
-import {xfs, ppath, Filename, npath} from '@yarnpkg/fslib';
+import {xfs, ppath, Filename, npath} from '@orta/yarn-fslib';
 import {fs, yarn}                    from 'pkg-tests-core';
 
 describe(`Commands`, () => {
@@ -6,11 +6,11 @@ describe(`Commands`, () => {
     test(
       `it should support adding a plugin via its path`,
       makeTemporaryEnv({}, async ({path, run, source}) => {
-        const helloWorldSource = require.resolve(`@yarnpkg/monorepo/scripts/plugin-hello-world.js`);
+        const helloWorldSource = require.resolve(`@orta/yarn-monorepo/scripts/plugin-hello-world.js`);
 
         await run(`plugin`, `import`, helloWorldSource);
 
-        const helloWorldPlugin = yarn.getPluginPath(path, `@yarnpkg/plugin-hello-world`);
+        const helloWorldPlugin = yarn.getPluginPath(path, `@orta/yarn-plugin-hello-world`);
         await expect(xfs.existsPromise(helloWorldPlugin)).resolves.toEqual(true);
 
         await expect(fs.readSyml(ppath.join(path, Filename.rc))).resolves.toEqual({

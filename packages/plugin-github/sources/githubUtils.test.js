@@ -1,4 +1,4 @@
-import {gitUtils}       from '@yarnpkg/plugin-git';
+import {gitUtils}       from '@orta/yarn-plugin-git';
 
 import * as githubUtils from './githubUtils';
 

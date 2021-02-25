@@ -1,5 +1,5 @@
-import {FakeFS, Filename, NodeFS, PortablePath, ppath}    from '@yarnpkg/fslib';
-import {Resolution, parseResolution, stringifyResolution} from '@yarnpkg/parsers';
+import {FakeFS, Filename, NodeFS, PortablePath, ppath}    from '@orta/yarn-fslib';
+import {Resolution, parseResolution, stringifyResolution} from '@orta/yarn-parsers';
 import semver                                             from 'semver';
 
 import * as miscUtils                                     from './miscUtils';

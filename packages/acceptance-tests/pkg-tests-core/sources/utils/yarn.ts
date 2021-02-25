@@ -1,5 +1,5 @@
-import {DEFAULT_RC_FILENAME, Manifest} from '@yarnpkg/core';
-import {PortablePath, ppath, Filename} from '@yarnpkg/fslib';
+import {DEFAULT_RC_FILENAME, Manifest} from '@orta/yarn-core';
+import {PortablePath, ppath, Filename} from '@orta/yarn-fslib';
 
 import * as fsUtils                    from './fs';
 

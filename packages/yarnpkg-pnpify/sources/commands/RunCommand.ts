@@ -1,5 +1,5 @@
-import {execUtils}       from '@yarnpkg/core';
-import {npath}           from '@yarnpkg/fslib';
+import {execUtils}       from '@orta/yarn-core';
+import {npath}           from '@orta/yarn-fslib';
 import {Command, Option} from 'clipanion';
 
 import {dynamicRequire}  from '../dynamicRequire';
@@ -33,7 +33,7 @@ export default class RunCommand extends Command {
 
   async execute() {
     let {NODE_OPTIONS} = process.env;
-    NODE_OPTIONS = `${NODE_OPTIONS || ``} --require ${dynamicRequire.resolve(`@yarnpkg/pnpify`)}`.trim();
+    NODE_OPTIONS = `${NODE_OPTIONS || ``} --require ${dynamicRequire.resolve(`@orta/yarn-pnpify`)}`.trim();
 
     const {code} = await execUtils.pipevp(this.commandName, this.args, {
       cwd: npath.toPortablePath(this.cwd),

@@ -1,5 +1,5 @@
-import {FakeFS, NodeFS, NativePath, PortablePath, VirtualFS, ZipOpenFS} from '@yarnpkg/fslib';
-import {getLibzipSync}                                                  from '@yarnpkg/libzip';
+import {FakeFS, NodeFS, NativePath, PortablePath, VirtualFS, ZipOpenFS} from '@orta/yarn-fslib';
+import {getLibzipSync}                                                  from '@orta/yarn-libzip';
 import fs                                                               from 'fs';
 import Module                                                           from 'module';
 import StringDecoder                                                    from 'string_decoder';

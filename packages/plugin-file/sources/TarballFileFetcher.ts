@@ -1,7 +1,7 @@
-import {Fetcher, FetchOptions, MinimalFetchOptions} from '@yarnpkg/core';
-import {Locator}                                    from '@yarnpkg/core';
-import {miscUtils, structUtils, tgzUtils}           from '@yarnpkg/core';
-import {PortablePath, ppath, CwdFS}                 from '@yarnpkg/fslib';
+import {Fetcher, FetchOptions, MinimalFetchOptions} from '@orta/yarn-core';
+import {Locator}                                    from '@orta/yarn-core';
+import {miscUtils, structUtils, tgzUtils}           from '@orta/yarn-core';
+import {PortablePath, ppath, CwdFS}                 from '@orta/yarn-fslib';
 
 import {TARBALL_REGEXP, PROTOCOL}                   from './constants';
 

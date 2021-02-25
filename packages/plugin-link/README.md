@@ -1,4 +1,4 @@
-# `@yarnpkg/plugin-link`
+# `@orta/yarn-plugin-link`
 
 This plugin adds support for the `link:` and `portal:` protocols.
 

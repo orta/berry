@@ -1,5 +1,5 @@
-import {BuildDirective, BuildType, Configuration, DependencyMeta, FetchResult, LinkType, Manifest, MessageName, Package, Report, structUtils} from '@yarnpkg/core';
-import {Filename, ppath}                                                                                                                      from '@yarnpkg/fslib';
+import {BuildDirective, BuildType, Configuration, DependencyMeta, FetchResult, LinkType, Manifest, MessageName, Package, Report, structUtils} from '@orta/yarn-core';
+import {Filename, ppath}                                                                                                                      from '@orta/yarn-fslib';
 
 export type ManifestCompatibilityDataRequirements = {
   manifest: Pick<Manifest, 'cpu' | 'os'>,

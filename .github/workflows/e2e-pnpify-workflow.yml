@@ -35,7 +35,7 @@ jobs:
 
         cd berry-angular
 
-        yarn add @yarnpkg/pnpify @angular-devkit/core@next @babel/preset-env @babel/core -D
+        yarn add @orta/yarn-pnpify @angular-devkit/core@next @babel/preset-env @babel/core -D
 
         yarn unplug -AR @angular/platform-browser @angular/core @angular/common @angular/compiler-cli
 

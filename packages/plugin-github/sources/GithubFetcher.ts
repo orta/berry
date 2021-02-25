@@ -1,8 +1,8 @@
-import {Fetcher, FetchOptions, MinimalFetchOptions}    from '@yarnpkg/core';
-import {Locator}                                       from '@yarnpkg/core';
-import {httpUtils, scriptUtils, structUtils, tgzUtils} from '@yarnpkg/core';
-import {PortablePath, CwdFS, ppath, xfs}               from '@yarnpkg/fslib';
-import {gitUtils}                                      from '@yarnpkg/plugin-git';
+import {Fetcher, FetchOptions, MinimalFetchOptions}    from '@orta/yarn-core';
+import {Locator}                                       from '@orta/yarn-core';
+import {httpUtils, scriptUtils, structUtils, tgzUtils} from '@orta/yarn-core';
+import {PortablePath, CwdFS, ppath, xfs}               from '@orta/yarn-fslib';
+import {gitUtils}                                      from '@orta/yarn-plugin-git';
 
 import * as githubUtils                                from './githubUtils';
 

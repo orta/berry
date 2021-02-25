@@ -1,5 +1,5 @@
-import {Configuration, Project} from '@yarnpkg/core';
-import {PortablePath}           from '@yarnpkg/fslib';
+import {Configuration, Project} from '@orta/yarn-core';
+import {PortablePath}           from '@orta/yarn-fslib';
 
 import {WorkspaceRequiredError} from './WorkspaceRequiredError';
 

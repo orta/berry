@@ -12,8 +12,8 @@
  * (which also provides a safe-guard in case virtual descriptors ever make their way into the dedupe algorithm).
  */
 
-import {BaseCommand}                                 from '@yarnpkg/cli';
-import {Configuration, Project, Cache, StreamReport} from '@yarnpkg/core';
+import {BaseCommand}                                 from '@orta/yarn-cli';
+import {Configuration, Project, Cache, StreamReport} from '@orta/yarn-core';
 import {Command, Option}                             from 'clipanion';
 import * as t                                        from 'typanion';
 

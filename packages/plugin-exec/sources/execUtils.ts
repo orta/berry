@@ -1,5 +1,5 @@
-import {structUtils, FetchOptions, Ident, Locator} from '@yarnpkg/core';
-import {ppath, PortablePath, npath, CwdFS}         from '@yarnpkg/fslib';
+import {structUtils, FetchOptions, Ident, Locator} from '@orta/yarn-core';
+import {ppath, PortablePath, npath, CwdFS}         from '@orta/yarn-fslib';
 
 
 export function parseSpec(spec: string) {

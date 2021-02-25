@@ -1,4 +1,4 @@
-# `@yarnpkg/plugin-compat`
+# `@orta/yarn-plugin-compat`
 
 This plugin contains various builtin patches that will be applied to packages that aren't compatible with the Plug'n'Play resolution out-of-the-box.
 

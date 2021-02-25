@@ -1,4 +1,4 @@
-import {npath}                                                              from '@yarnpkg/fslib';
+import {npath}                                                              from '@orta/yarn-fslib';
 import chalk                                                                from 'chalk';
 import stripAnsi                                                            from 'strip-ansi';
 

@@ -1,20 +1,20 @@
 {
-  "name": "@yarnpkg/plugin-compat",
+  "name": "@orta/yarn-plugin-compat",
   "version": "2.2.0",
   "license": "BSD-2-Clause",
   "main": "./sources/index.ts",
   "peerDependencies": {
-    "@yarnpkg/core": "^2.4.0",
-    "@yarnpkg/plugin-patch": "^2.1.2"
+    "@orta/yarn-core": "^2.4.0",
+    "@orta/yarn-plugin-patch": "^2.1.2"
   },
   "devDependencies": {
+    "@orta/yarn-cli": "workspace:^2.4.0",
+    "@orta/yarn-core": "workspace:^2.4.0",
+    "@orta/yarn-fslib": "workspace:^2.4.0",
+    "@orta/yarn-monorepo": "workspace:0.0.0",
+    "@orta/yarn-plugin-npm": "workspace:^2.4.0",
+    "@orta/yarn-plugin-patch": "workspace:^2.1.2",
     "@types/resolve": "^1.17.1",
-    "@yarnpkg/cli": "workspace:^2.4.0",
-    "@yarnpkg/core": "workspace:^2.4.0",
-    "@yarnpkg/fslib": "workspace:^2.4.0",
-    "@yarnpkg/monorepo": "workspace:0.0.0",
-    "@yarnpkg/plugin-npm": "workspace:^2.4.0",
-    "@yarnpkg/plugin-patch": "workspace:^2.1.2",
     "resolve": "^1.17.0",
     "semver": "^7.1.2"
   },
@@ -27,7 +27,7 @@
     "postpack": "rm -rf lib",
     "prepack": "run build:compile \"$(pwd)\"",
     "test:plugin-compat": "run test:unit --config \"$(pwd)/jest.config.js\"",
-    "debug-patch": "node -r @yarnpkg/monorepo/scripts/setup-ts-execution extra/debugPatch \"$INIT_CWD\""
+    "debug-patch": "node -r @orta/yarn-monorepo/scripts/setup-ts-execution extra/debugPatch \"$INIT_CWD\""
   },
   "publishConfig": {
     "main": "./lib/index.js",

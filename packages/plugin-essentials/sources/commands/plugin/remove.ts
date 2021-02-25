@@ -1,6 +1,6 @@
-import {BaseCommand}                                                                 from '@yarnpkg/cli';
-import {Configuration, MessageName, Project, StreamReport, formatUtils, structUtils} from '@yarnpkg/core';
-import {PortablePath, ppath, xfs}                                                    from '@yarnpkg/fslib';
+import {BaseCommand}                                                                 from '@orta/yarn-cli';
+import {Configuration, MessageName, Project, StreamReport, formatUtils, structUtils} from '@orta/yarn-core';
+import {PortablePath, ppath, xfs}                                                    from '@orta/yarn-fslib';
 import {Command, Option, Usage, UsageError}                                          from 'clipanion';
 
 // eslint-disable-next-line arca/no-default-export
@@ -19,7 +19,7 @@ export default class PluginRemoveCommand extends BaseCommand {
    `,
     examples: [[
       `Remove a plugin imported from the Yarn repository`,
-      `$0 plugin remove @yarnpkg/plugin-typescript`,
+      `$0 plugin remove @orta/yarn-plugin-typescript`,
     ], [
       `Remove a plugin imported from a local file`,
       `$0 plugin remove my-local-plugin`,

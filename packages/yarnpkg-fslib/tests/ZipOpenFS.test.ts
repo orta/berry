@@ -1,4 +1,4 @@
-import {getLibzipSync}          from '@yarnpkg/libzip';
+import {getLibzipSync}          from '@orta/yarn-libzip';
 
 import {ppath, npath, Filename} from '../sources/path';
 import {ZipOpenFS}              from '../sources';

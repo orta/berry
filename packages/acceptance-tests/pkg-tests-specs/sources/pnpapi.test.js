@@ -1,4 +1,4 @@
-import {ppath, npath, xfs} from '@yarnpkg/fslib';
+import {ppath, npath, xfs} from '@orta/yarn-fslib';
 
 const {
   fs: {writeFile, writeJson},

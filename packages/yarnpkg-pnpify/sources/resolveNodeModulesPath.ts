@@ -1,5 +1,5 @@
-import {PortablePath, Filename}    from '@yarnpkg/fslib';
-import {toFilename, npath, ppath}  from '@yarnpkg/fslib';
+import {PortablePath, Filename}    from '@orta/yarn-fslib';
+import {toFilename, npath, ppath}  from '@orta/yarn-fslib';
 
 import {NodeModulesTree, LinkType} from './buildNodeModulesTree';
 

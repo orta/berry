@@ -1,6 +1,6 @@
-import {ReportError, MessageName, Resolver, ResolveOptions, MinimalResolveOptions, TAG_REGEXP} from '@yarnpkg/core';
-import {structUtils}                                                                           from '@yarnpkg/core';
-import {Descriptor, Locator, Package}                                                          from '@yarnpkg/core';
+import {ReportError, MessageName, Resolver, ResolveOptions, MinimalResolveOptions, TAG_REGEXP} from '@orta/yarn-core';
+import {structUtils}                                                                           from '@orta/yarn-core';
+import {Descriptor, Locator, Package}                                                          from '@orta/yarn-core';
 
 import {NpmSemverFetcher}                                                                      from './NpmSemverFetcher';
 import {PROTOCOL}                                                                              from './constants';

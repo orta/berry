@@ -1,4 +1,4 @@
-import {npath, xfs} from '@yarnpkg/fslib';
+import {npath, xfs} from '@orta/yarn-fslib';
 
 describe(`Commands`, () => {
   describe(`config get`, () => {

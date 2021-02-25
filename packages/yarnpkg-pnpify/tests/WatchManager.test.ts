@@ -1,4 +1,4 @@
-import {npath, toFilename} from '@yarnpkg/fslib';
+import {npath, toFilename} from '@orta/yarn-fslib';
 
 import {WatchManager}      from '../sources/WatchManager';
 

@@ -1,5 +1,5 @@
 {
-  "name": "@yarnpkg/esbuild-plugin-pnp",
+  "name": "@orta/yarn-esbuild-plugin-pnp",
   "version": "0.0.1",
   "license": "BSD-2-Clause",
   "main": "./sources/index.ts",
@@ -10,7 +10,7 @@
     "esbuild": "^0.8.36"
   },
   "devDependencies": {
-    "@yarnpkg/pnp": "workspace:^2.3.2",
+    "@orta/yarn-pnp": "workspace:^2.3.2",
     "esbuild": "npm:esbuild-wasm@^0.8.36"
   },
   "scripts": {

@@ -1,6 +1,6 @@
-import {Hooks as CoreHooks, Plugin, Project, SettingsType} from '@yarnpkg/core';
-import {Filename, PortablePath, npath, ppath, xfs}         from '@yarnpkg/fslib';
-import {Hooks as StageHooks}                               from '@yarnpkg/plugin-stage';
+import {Hooks as CoreHooks, Plugin, Project, SettingsType} from '@orta/yarn-core';
+import {Filename, PortablePath, npath, ppath, xfs}         from '@orta/yarn-fslib';
+import {Hooks as StageHooks}                               from '@orta/yarn-plugin-stage';
 import semver                                              from 'semver';
 
 import {PnpLinker}                                         from './PnpLinker';
@@ -50,7 +50,7 @@ async function populateYarnPaths(project: Project, definePath: (path: PortablePa
   definePath(project.configuration.get(`pnpUnpluggedFolder`));
 }
 
-declare module '@yarnpkg/core' {
+declare module '@orta/yarn-core' {
   interface ConfigurationValueMap {
     nodeLinker: string;
     pnpMode: string;

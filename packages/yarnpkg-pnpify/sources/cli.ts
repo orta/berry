@@ -9,7 +9,7 @@ import SdkCommand       from './commands/SdkCommand';
 const cli = new Cli({
   binaryLabel: `Yarn PnPify`,
   binaryName: `pnpify`,
-  binaryVersion: require(`@yarnpkg/pnpify/package.json`).version,
+  binaryVersion: require(`@orta/yarn-pnpify/package.json`).version,
 });
 
 cli.register(RunCommand);

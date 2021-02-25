@@ -1,4 +1,4 @@
-import {Path, npath} from '@yarnpkg/fslib';
+import {Path, npath} from '@orta/yarn-fslib';
 
 export enum ErrorCode {
   API_ERROR = `API_ERROR`,

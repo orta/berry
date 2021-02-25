@@ -74,7 +74,7 @@ In [#448](https://github.com/yarnpkg/berry/issues/448), running `pnpify --sdk` u
 ```js
 await packageJsonAndInstall({
   devDependencies: {
-    [`@yarnpkg/pnpify`]: `^2.0.0-rc.3`,
+    [`@orta/yarn-pnpify`]: `^2.0.0-rc.3`,
     [`typescript`]: `^3.6.3`
   }
 });

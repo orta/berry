@@ -1,5 +1,5 @@
-import {Plugin}            from '@yarnpkg/core';
-import {Hooks as GitHooks} from '@yarnpkg/plugin-git';
+import {Plugin}            from '@orta/yarn-core';
+import {Hooks as GitHooks} from '@orta/yarn-plugin-git';
 
 import {GithubFetcher}     from './GithubFetcher';
 

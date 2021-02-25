@@ -1,4 +1,4 @@
-# `@yarnpkg/plugin-version`
+# `@orta/yarn-plugin-version`
 
 This plugin adds support for the new [release workflow](https://yarnpkg.com/features/release-workflow).
 

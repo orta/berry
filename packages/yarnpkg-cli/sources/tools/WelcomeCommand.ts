@@ -1,4 +1,4 @@
-import {Configuration, formatUtils} from '@yarnpkg/core';
+import {Configuration, formatUtils} from '@orta/yarn-core';
 
 import {BaseCommand}                from './BaseCommand';
 

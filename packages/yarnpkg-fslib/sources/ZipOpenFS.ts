@@ -1,4 +1,4 @@
-import {Libzip}                                                                                                                                      from '@yarnpkg/libzip';
+import {Libzip}                                                                                                                                      from '@orta/yarn-libzip';
 import {BigIntStats, constants, Stats}                                                                                                               from 'fs';
 
 import {WatchOptions, WatchCallback, Watcher}                                                                                                        from './FakeFS';

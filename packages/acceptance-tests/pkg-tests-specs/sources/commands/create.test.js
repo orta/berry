@@ -1,5 +1,5 @@
 const {join} = require(`path`);
-const {xfs} = require(`@yarnpkg/fslib`);
+const {xfs} = require(`@orta/yarn-fslib`);
 
 describe(`Commands`, () => {
   describe(`create`, () => {

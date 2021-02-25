@@ -1,5 +1,5 @@
-import {Workspace, structUtils} from '@yarnpkg/core';
-import {packUtils}              from '@yarnpkg/plugin-pack';
+import {Workspace, structUtils} from '@orta/yarn-core';
+import {packUtils}              from '@orta/yarn-plugin-pack';
 import {createHash}             from 'crypto';
 import ssri                     from 'ssri';
 import {URL}                    from 'url';

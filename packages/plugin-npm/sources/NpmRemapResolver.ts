@@ -1,5 +1,5 @@
-import {Descriptor, Locator, MinimalResolveOptions, ResolveOptions, Resolver, DescriptorHash, Package} from '@yarnpkg/core';
-import {structUtils}                                                                                   from '@yarnpkg/core';
+import {Descriptor, Locator, MinimalResolveOptions, ResolveOptions, Resolver, DescriptorHash, Package} from '@orta/yarn-core';
+import {structUtils}                                                                                   from '@orta/yarn-core';
 
 import {PROTOCOL}                                                                                      from './constants';
 

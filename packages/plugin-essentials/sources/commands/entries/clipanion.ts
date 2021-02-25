@@ -1,4 +1,4 @@
-import {CommandContext, Configuration} from '@yarnpkg/core';
+import {CommandContext, Configuration} from '@orta/yarn-core';
 import {Command, Cli}                  from 'clipanion';
 
 type ClipanionDefinition = ReturnType<Cli['definitions']>[number];
@@ -33,7 +33,7 @@ export default class ClipanionCommand extends Command<CommandContext> {
     const arePathsEqual = (path1: string, path2: string) =>
       path1.split(` `).slice(1).join() === path2.split(` `).slice(1).join();
 
-    const defaultPlugins: Array<string> = require(`@yarnpkg/cli/package.json`)[`@yarnpkg/builder`].bundles.standard;
+    const defaultPlugins: Array<string> = require(`@orta/yarn-cli/package.json`)[`@orta/yarn-builder`].bundles.standard;
 
     for (const pluginDefinition of pluginDefinitions) {
       const definitions = pluginDefinition[1];

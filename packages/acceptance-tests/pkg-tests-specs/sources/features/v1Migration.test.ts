@@ -1,4 +1,4 @@
-import {Filename, ppath, xfs} from '@yarnpkg/fslib';
+import {Filename, ppath, xfs} from '@orta/yarn-fslib';
 
 describe(`Features`, () => {
   describe(`V1 Migration`, () => {

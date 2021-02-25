@@ -1,5 +1,5 @@
-import {BaseCommand}                 from '@yarnpkg/cli';
-import {Configuration, StreamReport} from '@yarnpkg/core';
+import {BaseCommand}                 from '@orta/yarn-cli';
+import {Configuration, StreamReport} from '@orta/yarn-core';
 import {Command, Option, Usage}      from 'clipanion';
 
 // eslint-disable-next-line arca/no-default-export

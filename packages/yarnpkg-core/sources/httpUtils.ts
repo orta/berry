@@ -1,5 +1,5 @@
-import {ConfigurationValueMap}           from '@yarnpkg/core';
-import {PortablePath, xfs}               from '@yarnpkg/fslib';
+import {ConfigurationValueMap}           from '@orta/yarn-core';
+import {PortablePath, xfs}               from '@orta/yarn-fslib';
 import {ExtendOptions, Response}         from 'got';
 import {Agent as HttpsAgent}             from 'https';
 import {Agent as HttpAgent}              from 'http';

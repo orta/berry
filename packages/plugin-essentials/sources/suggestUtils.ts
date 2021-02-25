@@ -1,6 +1,6 @@
-import {Cache, DescriptorHash, Descriptor, Ident, Locator, Manifest, Project, ThrowReport, Workspace, FetchOptions, ResolveOptions, Configuration} from '@yarnpkg/core';
-import {formatUtils, structUtils}                                                                                                                  from '@yarnpkg/core';
-import {PortablePath, ppath, xfs}                                                                                                                  from '@yarnpkg/fslib';
+import {Cache, DescriptorHash, Descriptor, Ident, Locator, Manifest, Project, ThrowReport, Workspace, FetchOptions, ResolveOptions, Configuration} from '@orta/yarn-core';
+import {formatUtils, structUtils}                                                                                                                  from '@orta/yarn-core';
+import {PortablePath, ppath, xfs}                                                                                                                  from '@orta/yarn-fslib';
 import semver                                                                                                                                      from 'semver';
 
 export type Suggestion = {

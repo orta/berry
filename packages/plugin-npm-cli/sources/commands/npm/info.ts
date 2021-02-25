@@ -1,8 +1,8 @@
 import * as npm                                                       from '@npm/types';
-import {BaseCommand}                                                  from '@yarnpkg/cli';
-import {Project, Configuration, structUtils, ReportError, Descriptor} from '@yarnpkg/core';
-import {StreamReport, MessageName}                                    from '@yarnpkg/core';
-import {npmHttpUtils}                                                 from '@yarnpkg/plugin-npm';
+import {BaseCommand}                                                  from '@orta/yarn-cli';
+import {Project, Configuration, structUtils, ReportError, Descriptor} from '@orta/yarn-core';
+import {StreamReport, MessageName}                                    from '@orta/yarn-core';
+import {npmHttpUtils}                                                 from '@orta/yarn-plugin-npm';
 import {Command, Option, Usage, UsageError}                           from 'clipanion';
 import path                                                           from 'path';
 import semver                                                         from 'semver';

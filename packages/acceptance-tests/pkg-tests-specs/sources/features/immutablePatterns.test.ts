@@ -1,4 +1,4 @@
-import {xfs, ppath, Filename} from '@yarnpkg/fslib';
+import {xfs, ppath, Filename} from '@orta/yarn-fslib';
 
 describe(`Features`, () => {
   describe(`immutablePatterns`, () => {

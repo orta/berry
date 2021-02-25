@@ -1,8 +1,8 @@
-import {BaseCommand, WorkspaceRequiredError}            from '@yarnpkg/cli';
-import {Cache, Configuration, IdentHash, StreamReport}  from '@yarnpkg/core';
-import {ThrowReport, structUtils, Project, LocatorHash} from '@yarnpkg/core';
-import {xfs, ppath}                                     from '@yarnpkg/fslib';
-import {parseSyml}                                      from '@yarnpkg/parsers';
+import {BaseCommand, WorkspaceRequiredError}            from '@orta/yarn-cli';
+import {Cache, Configuration, IdentHash, StreamReport}  from '@orta/yarn-core';
+import {ThrowReport, structUtils, Project, LocatorHash} from '@orta/yarn-core';
+import {xfs, ppath}                                     from '@orta/yarn-fslib';
+import {parseSyml}                                      from '@orta/yarn-parsers';
 import {Command, Option, Usage}                         from 'clipanion';
 
 // eslint-disable-next-line arca/no-default-export

@@ -32,7 +32,7 @@ for (const name of folders) {
 
   const defs = cli.definitions();
 
-  output += `  [\`${manifest.name.replace(/^@yarnpkg\/plugin-/, ``)}\`, [\n`;
+  output += `  [\`${manifest.name.replace(/^@orta\/plugin-/, ``)}\`, [\n`;
 
   for (const {path} of defs)
     output += `    [${path.replace(/^\.\.\.\s+/, ``).split(/\s+/).map(p => `\`${p}\``).join(`, `)}],\n`;

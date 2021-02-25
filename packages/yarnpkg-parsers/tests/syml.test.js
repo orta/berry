@@ -1,4 +1,4 @@
-import {parseSyml} from '@yarnpkg/parsers';
+import {parseSyml} from '@orta/yarn-parsers';
 
 describe(`Syml parser`, () => {
   it(`shouldn't confuse old-style values with new-style keys`, () => {

@@ -1,7 +1,7 @@
-import {Resolver, ResolveOptions, MinimalResolveOptions} from '@yarnpkg/core';
-import {miscUtils, structUtils}                          from '@yarnpkg/core';
-import {LinkType}                                        from '@yarnpkg/core';
-import {Descriptor, Locator, Manifest}                   from '@yarnpkg/core';
+import {Resolver, ResolveOptions, MinimalResolveOptions} from '@orta/yarn-core';
+import {miscUtils, structUtils}                          from '@orta/yarn-core';
+import {LinkType}                                        from '@orta/yarn-core';
+import {Descriptor, Locator, Manifest}                   from '@orta/yarn-core';
 
 import * as gitUtils                                     from './gitUtils';
 

@@ -24,7 +24,7 @@ How it works is simple: when a non-PnP-compliant project tries to access the `no
 1. Add PnPify to your dependencies:
 
 ```bash
-yarn add @yarnpkg/pnpify
+yarn add @orta/yarn-pnpify
 ```
 
 2. Use pnpify to run the incompatible tool:

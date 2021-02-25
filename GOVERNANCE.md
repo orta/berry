@@ -26,7 +26,7 @@ Candidates must be privately nominated by an existing core contributors, which w
 
 Stewards establish the project vision, have a full control over the code and its assets, and assume the right to speak for the project in public. In practical terms, stewards' privileges include:
 
-- Access to the @yarnpkg Twitter account
+- Access to the @orta Twitter account
 - Administration privileges on the Yarnpkg GitHub org
 - Administration privileges on the Yarnpkg Discord server
 - Publish access to the `yarn` npm package (which we don't plan to use much)

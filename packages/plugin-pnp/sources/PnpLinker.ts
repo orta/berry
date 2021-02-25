@@ -1,8 +1,8 @@
-import {miscUtils, structUtils, formatUtils, Descriptor, LocatorHash}                                        from '@yarnpkg/core';
-import {FetchResult, Locator, Package}                                                                       from '@yarnpkg/core';
-import {Linker, LinkOptions, MinimalLinkOptions, Manifest, MessageName, DependencyMeta, LinkType, Installer} from '@yarnpkg/core';
-import {CwdFS, PortablePath, VirtualFS, npath, ppath, xfs, Filename}                                         from '@yarnpkg/fslib';
-import {generateInlinedScript, generateSplitScript, PackageRegistry, PnpSettings}                            from '@yarnpkg/pnp';
+import {miscUtils, structUtils, formatUtils, Descriptor, LocatorHash}                                        from '@orta/yarn-core';
+import {FetchResult, Locator, Package}                                                                       from '@orta/yarn-core';
+import {Linker, LinkOptions, MinimalLinkOptions, Manifest, MessageName, DependencyMeta, LinkType, Installer} from '@orta/yarn-core';
+import {CwdFS, PortablePath, VirtualFS, npath, ppath, xfs, Filename}                                         from '@orta/yarn-fslib';
+import {generateInlinedScript, generateSplitScript, PackageRegistry, PnpSettings}                            from '@orta/yarn-pnp';
 import {UsageError}                                                                                          from 'clipanion';
 
 import {getPnpPath}                                                                                          from './index';

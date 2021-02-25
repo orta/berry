@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-import {getPluginConfiguration}                                                                                                                                                                            from '@yarnpkg/cli';
-import {Cache, Configuration, Project, Report, Workspace, structUtils, ProjectLookup, Manifest, Descriptor, HardDependencies, ThrowReport, StreamReport, MessageName, Ident, ResolveOptions, FetchOptions} from '@yarnpkg/core';
-import {PortablePath, npath, ppath, xfs}                                                                                                                                                                   from '@yarnpkg/fslib';
+import {getPluginConfiguration}                                                                                                                                                                            from '@orta/yarn-cli';
+import {Cache, Configuration, Project, Report, Workspace, structUtils, ProjectLookup, Manifest, Descriptor, HardDependencies, ThrowReport, StreamReport, MessageName, Ident, ResolveOptions, FetchOptions} from '@orta/yarn-core';
+import {PortablePath, npath, ppath, xfs}                                                                                                                                                                   from '@orta/yarn-fslib';
 import {Cli, Command, Builtins, Option}                                                                                                                                                                    from 'clipanion';
 import globby                                                                                                                                                                                              from 'globby';
 import micromatch                                                                                                                                                                                          from 'micromatch';
@@ -415,8 +415,8 @@ class EntryCommand extends Command {
 
 const cli = new Cli({
   binaryLabel: `Yarn Doctor`,
-  binaryName: `yarn dlx @yarnpkg/doctor`,
-  binaryVersion: require(`@yarnpkg/doctor/package.json`).version,
+  binaryName: `yarn dlx @orta/yarn-doctor`,
+  binaryVersion: require(`@orta/yarn-doctor/package.json`).version,
 });
 
 cli.register(EntryCommand);

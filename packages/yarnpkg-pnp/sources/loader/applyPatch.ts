@@ -1,4 +1,4 @@
-import {FakeFS, PosixFS, npath, patchFs, PortablePath, NativePath} from '@yarnpkg/fslib';
+import {FakeFS, PosixFS, npath, patchFs, PortablePath, NativePath} from '@orta/yarn-fslib';
 import fs                                                          from 'fs';
 import {Module}                                                    from 'module';
 import {URL, fileURLToPath}                                        from 'url';

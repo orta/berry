@@ -1,4 +1,4 @@
-# `@yarnpkg/plugin-http`
+# `@orta/yarn-plugin-http`
 
 This plugin adds support for downloading packages through HTTP.
 

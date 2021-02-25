@@ -1,13 +1,13 @@
-import {structUtils, Project}                                                 from '@yarnpkg/core';
-import {NativePath, PortablePath, Filename}                                   from '@yarnpkg/fslib';
-import {toFilename, npath, ppath}                                             from '@yarnpkg/fslib';
-import {PnpApi, PhysicalPackageLocator, PackageInformation, DependencyTarget} from '@yarnpkg/pnp';
+import {structUtils, Project}                                                 from '@orta/yarn-core';
+import {NativePath, PortablePath, Filename}                                   from '@orta/yarn-fslib';
+import {toFilename, npath, ppath}                                             from '@orta/yarn-fslib';
+import {PnpApi, PhysicalPackageLocator, PackageInformation, DependencyTarget} from '@orta/yarn-pnp';
 
 import {hoist, HoisterTree, HoisterResult}                                    from './hoist';
 
-// Babel doesn't support const enums, thats why we use non-const enum for LinkType in @yarnpkg/pnp
-// But because of this TypeScript requires @yarnpkg/pnp during runtime
-// To prevent this we redeclare LinkType enum here, to not depend on @yarnpkg/pnp during runtime
+// Babel doesn't support const enums, thats why we use non-const enum for LinkType in @orta/yarn-pnp
+// But because of this TypeScript requires @orta/yarn-pnp during runtime
+// To prevent this we redeclare LinkType enum here, to not depend on @orta/yarn-pnp during runtime
 export enum LinkType {
   HARD = `HARD`,
   SOFT = `SOFT`,

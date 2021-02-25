@@ -1,5 +1,5 @@
-import {xfs}           from '@yarnpkg/fslib';
-import {stringifySyml} from '@yarnpkg/parsers';
+import {xfs}           from '@orta/yarn-fslib';
+import {stringifySyml} from '@orta/yarn-parsers';
 
 describe(`Protocols`, () => {
   describe(`exec:`, () => {
@@ -11,7 +11,7 @@ describe(`Protocols`, () => {
         },
       }, async ({path, run, source}) => {
         await xfs.writeFilePromise(`${path}/.yarnrc.yml`, stringifySyml({
-          plugins: [require.resolve(`@yarnpkg/monorepo/scripts/plugin-exec.js`)],
+          plugins: [require.resolve(`@orta/yarn-monorepo/scripts/plugin-exec.js`)],
         }));
 
         await xfs.writeFilePromise(`${path}/genpkg.js`, `
@@ -34,7 +34,7 @@ describe(`Protocols`, () => {
         },
       }, async ({path, run, source}) => {
         await xfs.writeFilePromise(`${path}/.yarnrc.yml`, stringifySyml({
-          plugins: [require.resolve(`@yarnpkg/monorepo/scripts/plugin-exec.js`)],
+          plugins: [require.resolve(`@orta/yarn-monorepo/scripts/plugin-exec.js`)],
         }));
 
         await xfs.writeFilePromise(`${path}/genpkg.js`, `
@@ -61,7 +61,7 @@ describe(`Protocols`, () => {
         },
       }, async ({path, run, source}) => {
         await xfs.writeFilePromise(`${path}/.yarnrc.yml`, stringifySyml({
-          plugins: [require.resolve(`@yarnpkg/monorepo/scripts/plugin-exec.js`)],
+          plugins: [require.resolve(`@orta/yarn-monorepo/scripts/plugin-exec.js`)],
         }));
 
         await xfs.writeFilePromise(`${path}/genpkg.js`, `
@@ -88,7 +88,7 @@ describe(`Protocols`, () => {
         },
       }, async ({path, run, source}) => {
         await xfs.writeFilePromise(`${path}/.yarnrc.yml`, stringifySyml({
-          plugins: [require.resolve(`@yarnpkg/monorepo/scripts/plugin-exec.js`)],
+          plugins: [require.resolve(`@orta/yarn-monorepo/scripts/plugin-exec.js`)],
         }));
 
         await xfs.writeFilePromise(`${path}/genpkg.js`, `

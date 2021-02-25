@@ -1,4 +1,4 @@
-import {PortablePath, Filename} from '@yarnpkg/fslib';
+import {PortablePath, Filename} from '@orta/yarn-fslib';
 
 import * as stageUtils          from '../stageUtils';
 

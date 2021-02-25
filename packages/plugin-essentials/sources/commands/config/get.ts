@@ -1,5 +1,5 @@
-import {BaseCommand}                            from '@yarnpkg/cli';
-import {Configuration, StreamReport, miscUtils} from '@yarnpkg/core';
+import {BaseCommand}                            from '@orta/yarn-cli';
+import {Configuration, StreamReport, miscUtils} from '@orta/yarn-core';
 import {Command, Option, Usage, UsageError}     from 'clipanion';
 import getPath                                  from 'lodash/get';
 import {inspect}                                from 'util';

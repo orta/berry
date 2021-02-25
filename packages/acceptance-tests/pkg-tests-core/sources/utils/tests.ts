@@ -1,4 +1,4 @@
-import {PortablePath, npath, toFilename} from '@yarnpkg/fslib';
+import {PortablePath, npath, toFilename} from '@orta/yarn-fslib';
 import crypto                            from 'crypto';
 import finalhandler                      from 'finalhandler';
 import https                             from 'https';

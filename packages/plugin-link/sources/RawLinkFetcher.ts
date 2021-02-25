@@ -1,7 +1,7 @@
-import {Fetcher, FetchOptions, MinimalFetchOptions} from '@yarnpkg/core';
-import {Locator}                                    from '@yarnpkg/core';
-import {structUtils}                                from '@yarnpkg/core';
-import {CwdFS, JailFS, ppath, PortablePath}         from '@yarnpkg/fslib';
+import {Fetcher, FetchOptions, MinimalFetchOptions} from '@orta/yarn-core';
+import {Locator}                                    from '@orta/yarn-core';
+import {structUtils}                                from '@orta/yarn-core';
+import {CwdFS, JailFS, ppath, PortablePath}         from '@orta/yarn-fslib';
 
 import {RAW_LINK_PROTOCOL}                          from './constants';
 

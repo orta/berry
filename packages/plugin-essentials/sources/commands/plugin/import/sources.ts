@@ -1,7 +1,7 @@
-import {BaseCommand}                                                    from '@yarnpkg/cli';
-import {structUtils, hashUtils}                                         from '@yarnpkg/core';
-import {Configuration, MessageName, Project, ReportError, StreamReport} from '@yarnpkg/core';
-import {PortablePath, npath, ppath, xfs, Filename}                      from '@yarnpkg/fslib';
+import {BaseCommand}                                                    from '@orta/yarn-cli';
+import {structUtils, hashUtils}                                         from '@orta/yarn-core';
+import {Configuration, MessageName, Project, ReportError, StreamReport} from '@orta/yarn-core';
+import {PortablePath, npath, ppath, xfs, Filename}                      from '@orta/yarn-fslib';
 import {Command, Option, Usage}                                         from 'clipanion';
 import {tmpdir}                                                         from 'os';
 
@@ -28,10 +28,10 @@ export default class PluginDlSourcesCommand extends BaseCommand {
       The plugins can be referenced by their short name if sourced from the official Yarn repository.
     `,
     examples: [[
-      `Build and activate the "@yarnpkg/plugin-exec" plugin`,
-      `$0 plugin import from sources @yarnpkg/plugin-exec`,
+      `Build and activate the "@orta/yarn-plugin-exec" plugin`,
+      `$0 plugin import from sources @orta/yarn-plugin-exec`,
     ], [
-      `Build and activate the "@yarnpkg/plugin-exec" plugin (shorthand)`,
+      `Build and activate the "@orta/yarn-plugin-exec" plugin (shorthand)`,
       `$0 plugin import from sources exec`,
     ]],
   });
@@ -71,7 +71,7 @@ export default class PluginDlSourcesCommand extends BaseCommand {
     }, async report => {
       const {project} = await Project.find(configuration, this.context.cwd);
 
-      const ident = structUtils.parseIdent(this.name.replace(/^((@yarnpkg\/)?plugin-)?/, `@yarnpkg/plugin-`));
+      const ident = structUtils.parseIdent(this.name.replace(/^((@orta\/)?plugin-)?/, `@orta/yarn-plugin-`));
       const identStr = structUtils.stringifyIdent(ident);
       const data = await getAvailablePlugins(configuration);
 
@@ -79,7 +79,7 @@ export default class PluginDlSourcesCommand extends BaseCommand {
         throw new ReportError(MessageName.PLUGIN_NAME_NOT_FOUND, `Couldn't find a plugin named "${identStr}" on the remote registry. Note that only the plugins referenced on our website (https://github.com/yarnpkg/berry/blob/master/plugins.yml) can be built and imported from sources.`);
 
       const pluginSpec = identStr;
-      const pluginName = pluginSpec.replace(/@yarnpkg\//, ``);
+      const pluginName = pluginSpec.replace(/@orta\//, ``);
 
       await prepareRepo(this, {configuration, report, target});
 

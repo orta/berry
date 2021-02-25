@@ -1,4 +1,4 @@
-import {AliasFS, VirtualFS, ppath}          from '@yarnpkg/fslib';
+import {AliasFS, VirtualFS, ppath}          from '@orta/yarn-fslib';
 
 import {Fetcher, FetchOptions, FetchResult} from './Fetcher';
 import * as structUtils                     from './structUtils';

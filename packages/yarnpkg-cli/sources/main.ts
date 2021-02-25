@@ -1,5 +1,5 @@
-import {Configuration, CommandContext, PluginConfiguration, TelemetryManager, semverUtils} from '@yarnpkg/core';
-import {PortablePath, npath, xfs}                                                          from '@yarnpkg/fslib';
+import {Configuration, CommandContext, PluginConfiguration, TelemetryManager, semverUtils} from '@orta/yarn-core';
+import {PortablePath, npath, xfs}                                                          from '@orta/yarn-fslib';
 import {execFileSync}                                                                      from 'child_process';
 import {isCI}                                                                              from 'ci-info';
 import {Cli, UsageError}                                                                   from 'clipanion';
@@ -106,7 +106,7 @@ export async function main({binaryVersion, pluginConfiguration}: {binaryVersion:
       Configuration.telemetry?.reportVersion(binaryVersion);
 
       for (const [name, plugin] of configuration.plugins.entries()) {
-        if (pluginCommands.has(name.match(/^@yarnpkg\/plugin-(.*)$/)?.[1] ?? ``))
+        if (pluginCommands.has(name.match(/^@orta\/plugin-(.*)$/)?.[1] ?? ``))
           Configuration.telemetry?.reportPluginName(name);
 
         for (const command of plugin.commands || []) {

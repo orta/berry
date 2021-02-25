@@ -1,7 +1,7 @@
-import {execUtils, scriptUtils, structUtils, tgzUtils}         from '@yarnpkg/core';
-import {Locator}                                               from '@yarnpkg/core';
-import {Fetcher, FetchOptions, MinimalFetchOptions}            from '@yarnpkg/core';
-import {Filename, PortablePath, npath, ppath, xfs, NativePath} from '@yarnpkg/fslib';
+import {execUtils, scriptUtils, structUtils, tgzUtils}         from '@orta/yarn-core';
+import {Locator}                                               from '@orta/yarn-core';
+import {Fetcher, FetchOptions, MinimalFetchOptions}            from '@orta/yarn-core';
+import {Filename, PortablePath, npath, ppath, xfs, NativePath} from '@orta/yarn-fslib';
 
 import {PROTOCOL}                                              from './constants';
 import {loadGeneratorFile}                                     from './execUtils';

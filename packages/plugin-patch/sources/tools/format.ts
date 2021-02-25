@@ -1,4 +1,4 @@
-import {miscUtils, Report, formatUtils, MessageName, Configuration} from '@yarnpkg/core';
+import {miscUtils, Report, formatUtils, MessageName, Configuration} from '@orta/yarn-core';
 
 import {Hunk, PatchMutationType}                                    from './parse';
 

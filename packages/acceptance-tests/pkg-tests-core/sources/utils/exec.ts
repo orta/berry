@@ -1,4 +1,4 @@
-import {PortablePath, npath} from '@yarnpkg/fslib';
+import {PortablePath, npath} from '@orta/yarn-fslib';
 import cp                    from 'child_process';
 
 interface Options {

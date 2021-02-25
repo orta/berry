@@ -1,4 +1,4 @@
-import {PortablePath}                                    from '@yarnpkg/fslib';
+import {PortablePath}                                    from '@orta/yarn-fslib';
 
 import {Resolver, ResolveOptions, MinimalResolveOptions} from './Resolver';
 import {Descriptor, Locator}                             from './types';

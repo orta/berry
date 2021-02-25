@@ -1,5 +1,5 @@
-import {CommandContext, structUtils} from '@yarnpkg/core';
-import {npath, ppath}                from '@yarnpkg/fslib';
+import {CommandContext, structUtils} from '@orta/yarn-core';
+import {npath, ppath}                from '@orta/yarn-fslib';
 import {Command, Option}             from 'clipanion';
 
 // eslint-disable-next-line arca/no-default-export

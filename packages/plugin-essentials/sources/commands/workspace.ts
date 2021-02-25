@@ -1,6 +1,6 @@
-import {WorkspaceRequiredError}                            from "@yarnpkg/cli";
-import {CommandContext, Configuration, Project, Workspace} from "@yarnpkg/core";
-import {structUtils}                                       from "@yarnpkg/core";
+import {WorkspaceRequiredError}                            from "@orta/yarn-cli";
+import {CommandContext, Configuration, Project, Workspace} from "@orta/yarn-core";
+import {structUtils}                                       from "@orta/yarn-core";
 import {Command, Option, Usage, UsageError}                from "clipanion";
 
 // eslint-disable-next-line arca/no-default-export

@@ -1,5 +1,5 @@
-import {miscUtils, semverUtils}                              from '@yarnpkg/core';
-import {FakeFS, ppath, NodeFS, PortablePath}                 from '@yarnpkg/fslib';
+import {miscUtils, semverUtils}                              from '@orta/yarn-core';
+import {FakeFS, ppath, NodeFS, PortablePath}                 from '@orta/yarn-fslib';
 
 import {UnmatchedHunkError}                                  from './UnmatchedHunkError';
 import {ParsedPatchFile, FilePatch, Hunk, PatchMutationType} from './parse';

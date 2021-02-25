@@ -1,4 +1,4 @@
-import {PortablePath}     from '@yarnpkg/fslib';
+import {PortablePath}     from '@orta/yarn-fslib';
 
 import {Installer}        from './Installer';
 import {Project}          from './Project';

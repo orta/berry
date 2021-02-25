@@ -1,6 +1,6 @@
-import {PortablePath, ppath, xfs, normalizeLineEndings, Filename}       from '@yarnpkg/fslib';
-import {npath}                                                          from '@yarnpkg/fslib';
-import {parseSyml, stringifySyml}                                       from '@yarnpkg/parsers';
+import {PortablePath, ppath, xfs, normalizeLineEndings, Filename}       from '@orta/yarn-fslib';
+import {npath}                                                          from '@orta/yarn-fslib';
+import {parseSyml, stringifySyml}                                       from '@orta/yarn-parsers';
 import {UsageError}                                                     from 'clipanion';
 import {createHash}                                                     from 'crypto';
 import {structuredPatch}                                                from 'diff';

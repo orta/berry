@@ -1,7 +1,7 @@
-import {miscUtils, structUtils, hashUtils}               from '@yarnpkg/core';
-import {LinkType}                                        from '@yarnpkg/core';
-import {Descriptor, Locator, Manifest}                   from '@yarnpkg/core';
-import {Resolver, ResolveOptions, MinimalResolveOptions} from '@yarnpkg/core';
+import {miscUtils, structUtils, hashUtils}               from '@orta/yarn-core';
+import {LinkType}                                        from '@orta/yarn-core';
+import {Descriptor, Locator, Manifest}                   from '@orta/yarn-core';
+import {Resolver, ResolveOptions, MinimalResolveOptions} from '@orta/yarn-core';
 
 import {FILE_REGEXP, PROTOCOL}                           from './constants';
 import * as fileUtils                                    from './fileUtils';

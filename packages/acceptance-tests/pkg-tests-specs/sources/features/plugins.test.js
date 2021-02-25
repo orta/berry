@@ -1,15 +1,15 @@
-import {xfs}           from '@yarnpkg/fslib';
-import {stringifySyml} from '@yarnpkg/parsers';
+import {xfs}           from '@orta/yarn-fslib';
+import {stringifySyml} from '@orta/yarn-parsers';
 
 const PLUGIN_A = `
 const factory = () => { console.log('Hello world A'); return {default:{}}; };
-const name = '@yarnpkg/plugin-a';
+const name = '@orta/yarn-plugin-a';
 module.exports = {factory, name};
 `;
 
 const PLUGIN_B = `
 const factory = () => { console.log('Hello world B'); return {default:{}}; };
-const name = '@yarnpkg/plugin-b';
+const name = '@orta/yarn-plugin-b';
 module.exports = {factory, name};
 `;
 

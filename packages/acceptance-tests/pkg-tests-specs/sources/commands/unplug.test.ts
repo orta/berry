@@ -1,4 +1,4 @@
-import {xfs, ppath, PortablePath} from '@yarnpkg/fslib';
+import {xfs, ppath, PortablePath} from '@orta/yarn-fslib';
 import {yarn}                     from 'pkg-tests-core';
 
 const {readManifest} = yarn;

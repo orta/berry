@@ -1,7 +1,7 @@
-import {BaseCommand, WorkspaceRequiredError}                          from '@yarnpkg/cli';
-import {Configuration, LocatorHash, Package, formatUtils, Descriptor} from '@yarnpkg/core';
-import {IdentHash, Project}                                           from '@yarnpkg/core';
-import {miscUtils, structUtils, treeUtils}                            from '@yarnpkg/core';
+import {BaseCommand, WorkspaceRequiredError}                          from '@orta/yarn-cli';
+import {Configuration, LocatorHash, Package, formatUtils, Descriptor} from '@orta/yarn-core';
+import {IdentHash, Project}                                           from '@orta/yarn-core';
+import {miscUtils, structUtils, treeUtils}                            from '@orta/yarn-core';
 import {Command, Option, Usage}                                       from 'clipanion';
 
 // eslint-disable-next-line arca/no-default-export

@@ -1,7 +1,7 @@
-import {getDynamicLibs}                                                     from '@yarnpkg/cli';
-import {StreamReport, MessageName, Configuration, formatUtils, structUtils} from '@yarnpkg/core';
-import {pnpPlugin}                                                          from '@yarnpkg/esbuild-plugin-pnp';
-import {npath}                                                              from '@yarnpkg/fslib';
+import {getDynamicLibs}                                                     from '@orta/yarn-cli';
+import {StreamReport, MessageName, Configuration, formatUtils, structUtils} from '@orta/yarn-core';
+import {pnpPlugin}                                                          from '@orta/yarn-esbuild-plugin-pnp';
+import {npath}                                                              from '@orta/yarn-fslib';
 import chalk                                                                from 'chalk';
 import cp                                                                   from 'child_process';
 import {Command, Option, Usage}                                             from 'clipanion';

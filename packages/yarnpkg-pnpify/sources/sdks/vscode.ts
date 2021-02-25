@@ -1,5 +1,5 @@
-import {PortablePath, npath, ppath}                                                   from '@yarnpkg/fslib';
-import {PnpApi}                                                                       from '@yarnpkg/pnp';
+import {PortablePath, npath, ppath}                                                   from '@orta/yarn-fslib';
+import {PnpApi}                                                                       from '@orta/yarn-pnp';
 
 import {Wrapper, GenerateIntegrationWrapper, GenerateDefaultWrapper, IntegrationSdks} from '../generateSdk';
 import * as sdkUtils                                                                  from '../sdkUtils';

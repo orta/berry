@@ -1,5 +1,5 @@
-import {Plugin, Project, SettingsType} from '@yarnpkg/core';
-import {PortablePath}                  from '@yarnpkg/fslib';
+import {Plugin, Project, SettingsType} from '@orta/yarn-core';
+import {PortablePath}                  from '@orta/yarn-fslib';
 
 import {PatchFetcher}                  from './PatchFetcher';
 import {PatchResolver}                 from './PatchResolver';
@@ -16,7 +16,7 @@ export interface Hooks {
   ) => Promise<string | null | void>,
 }
 
-declare module '@yarnpkg/core' {
+declare module '@orta/yarn-core' {
   interface ConfigurationValueMap {
     enableInlineHunks: boolean;
     patchFolder: PortablePath;

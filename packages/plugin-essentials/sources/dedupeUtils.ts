@@ -1,5 +1,5 @@
-import {Project, ResolveOptions, ThrowReport, Resolver, miscUtils, Descriptor, Package, Report, Cache} from '@yarnpkg/core';
-import {formatUtils, structUtils, IdentHash, LocatorHash, MessageName, Fetcher, FetchOptions}          from '@yarnpkg/core';
+import {Project, ResolveOptions, ThrowReport, Resolver, miscUtils, Descriptor, Package, Report, Cache} from '@orta/yarn-core';
+import {formatUtils, structUtils, IdentHash, LocatorHash, MessageName, Fetcher, FetchOptions}          from '@orta/yarn-core';
 import micromatch                                                                                      from 'micromatch';
 
 export type Algorithm = (project: Project, patterns: Array<string>, opts: {

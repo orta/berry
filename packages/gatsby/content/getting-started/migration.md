@@ -56,7 +56,7 @@ This step is completely optional - while we recommend to use Plug'n'Play for mos
 
 Plug'n'Play enforces strict dependency rules. In particular, you'll hit problems if you (or your dependencies) rely on unlisted dependencies (the reasons for that are detailed in our [Rulebook](/advanced/rulebook)), but the gist is that it was the cause of many "project doesn't work on my computer" issues, both in Yarn and other package managers).
 
-To quickly detect which places may rely on unsafe patterns run `yarn dlx @yarnpkg/doctor` in your project - it'll statically analyze your sources to try to locate the most common issues that could result in a subpar experience. For example here's what `webpack-dev-server` would reveal:
+To quickly detect which places may rely on unsafe patterns run `yarn dlx @orta/yarn-doctor` in your project - it'll statically analyze your sources to try to locate the most common issues that could result in a subpar experience. For example here's what `webpack-dev-server` would reveal:
 
 ```
 ➤ YN0000: Found 1 package(s) to process
@@ -94,7 +94,7 @@ We have a [dedicated documentation](/getting-started/editor-sdks), but if you're
 
 1. Install the [ZipFS](https://marketplace.visualstudio.com/items?itemName=arcanis.vscode-zipfs) VSCode extension
 2. Make sure that `typescript`, `eslint`, `prettier`, ... all dependencies typically used by your IDE extensions are listed at the *top level* of the project (rather than in a random workspace)
-3. Run `yarn dlx @yarnpkg/pnpify --sdk vscode`
+3. Run `yarn dlx @orta/yarn-pnpify --sdk vscode`
 4. Commit the changes - this way contributors won't have to follow the same procedure
 5. For TypeScript, don't forget to select [Use Workspace Version](https://code.visualstudio.com/docs/typescript/typescript-compiling#_using-the-workspace-version-of-typescript) in VSCode
 

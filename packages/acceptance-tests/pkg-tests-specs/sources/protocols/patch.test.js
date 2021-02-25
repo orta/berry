@@ -1,4 +1,4 @@
-import {xfs, ppath} from '@yarnpkg/fslib';
+import {xfs, ppath} from '@orta/yarn-fslib';
 
 const NO_DEPS_PATCH = `diff --git a/index.js b/index.js
 index a6bf8f58..629b6aa8 100644

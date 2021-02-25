@@ -1,5 +1,5 @@
 {
-  "name": "@yarnpkg/libui",
+  "name": "@orta/yarn-libui",
   "version": "2.1.1",
   "license": "BSD-2-Clause",
   "sideEffects": false,

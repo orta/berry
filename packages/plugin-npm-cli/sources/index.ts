@@ -1,4 +1,4 @@
-import {Plugin, SettingsType} from '@yarnpkg/core';
+import {Plugin, SettingsType} from '@orta/yarn-core';
 
 import npmAudit               from './commands/npm/audit';
 import npmInfo                from './commands/npm/info';
@@ -10,7 +10,7 @@ import npmTagList             from './commands/npm/tag/list';
 import npmTagRemove           from './commands/npm/tag/remove';
 import npmWhoami              from './commands/npm/whoami';
 
-declare module '@yarnpkg/core' {
+declare module '@orta/yarn-core' {
   interface ConfigurationValueMap {
     npmPublishAccess: string|null;
   }

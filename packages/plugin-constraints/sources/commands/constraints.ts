@@ -1,7 +1,7 @@
-import {BaseCommand}                                                    from '@yarnpkg/cli';
-import {Configuration, IdentHash, Ident, Project, Workspace, miscUtils} from '@yarnpkg/core';
-import {MessageName, StreamReport, AllDependencies}                     from '@yarnpkg/core';
-import {formatUtils, structUtils}                                       from '@yarnpkg/core';
+import {BaseCommand}                                                    from '@orta/yarn-cli';
+import {Configuration, IdentHash, Ident, Project, Workspace, miscUtils} from '@orta/yarn-core';
+import {MessageName, StreamReport, AllDependencies}                     from '@orta/yarn-core';
+import {formatUtils, structUtils}                                       from '@orta/yarn-core';
 import {Command, Option, Usage}                                         from 'clipanion';
 import getPath                                                          from 'lodash/get';
 import setPath                                                          from 'lodash/set';

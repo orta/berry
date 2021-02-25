@@ -1,4 +1,4 @@
-import {DescriptorHash, Project, Workspace, formatUtils, structUtils, treeUtils, Descriptor, miscUtils} from '@yarnpkg/core';
+import {DescriptorHash, Project, Workspace, formatUtils, structUtils, treeUtils, Descriptor, miscUtils} from '@orta/yarn-core';
 
 import * as npmAuditTypes                                                                               from './npmAuditTypes';
 

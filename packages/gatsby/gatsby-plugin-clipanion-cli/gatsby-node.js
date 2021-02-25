@@ -34,7 +34,7 @@ exports.sourceNodes = ({actions, createNodeId, createContentDigest}, opts) => {
       ].join(``));
 
       if (command.plugin && !command.plugin.isDefault) {
-        const [, pluginName] = /^@yarnpkg\/plugin-(.+)$/.exec(command.plugin.name);
+        const [, pluginName] = /^@orta\/plugin-(.+)$/.exec(command.plugin.name);
 
         sections.push([
           `> **Plugin**\n`,

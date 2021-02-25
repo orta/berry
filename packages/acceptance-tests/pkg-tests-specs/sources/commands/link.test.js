@@ -1,4 +1,4 @@
-import {npath} from '@yarnpkg/fslib';
+import {npath} from '@orta/yarn-fslib';
 
 const {
   fs: {createTemporaryFolder, readJson, writeJson},

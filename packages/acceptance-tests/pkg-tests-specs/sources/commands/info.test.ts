@@ -1,4 +1,4 @@
-import {PortablePath, ppath, xfs} from '@yarnpkg/fslib';
+import {PortablePath, ppath, xfs} from '@orta/yarn-fslib';
 
 describe(`Commands`, () => {
   describe(`info`, () => {
