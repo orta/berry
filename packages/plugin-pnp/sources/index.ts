@@ -72,12 +72,12 @@ const plugin: Plugin<CoreHooks & StageHooks> = {
     nodeLinker: {
       description: `The linker used for installing Node packages, one of: "pnp", "node-modules"`,
       type: SettingsType.STRING,
-      default: `pnp`,
+      default: `node-modules`,
     },
     pnpMode: {
       description: `If 'strict', generates standard PnP maps. If 'loose', merges them with the n_m resolution.`,
       type: SettingsType.STRING,
-      default: `strict`,
+      default: `loose`,
     },
     pnpShebang: {
       description: `String to prepend to the generated PnP script`,
