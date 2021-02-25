@@ -47,9 +47,9 @@
   "scripts": {
     "postpack": "rm -rf lib",
     "prepack": "run build:compile \"$(pwd)\"",
-    "build:cli+hook": "run build:pnp:hook && builder build bundle",
-    "build:cli": "builder build bundle",
-    "run:cli": "builder run",
+    "build:cli+hook": "run build:pnp:hook && yarn-builder build bundle",
+    "build:cli": "yarn-builder build bundle",
+    "run:cli": "yarn-builder run",
     "update-local": "run build:cli --no-git-hash && rsync -a --delete bundles/ bin/"
   },
   "publishConfig": {

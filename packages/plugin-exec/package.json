@@ -16,7 +16,7 @@
     "typescript": "4.1.0-beta"
   },
   "scripts": {
-    "build:plugin-exec": "builder build plugin",
+    "build:plugin-exec": "yarn-builder build plugin",
     "update-local": "yarn build:plugin-exec && rsync -a --delete bundles/ bin/",
     "postpack": "rm -rf lib",
     "prepack": "run build:compile \"$(pwd)\""
