@@ -2,14 +2,14 @@ import {Hooks as CoreHooks, Plugin, structUtils} from '@orta/yarn-core';
 import {Hooks as PatchHooks}                     from '@orta/yarn-plugin-patch';
 
 import {packageExtensions}                       from './extensions';
-import {getPatch as getFseventsPatch}            from './patches/fsevents.patch';
-import {getPatch as getResolvePatch}             from './patches/resolve.patch';
-import {getPatch as getTypescriptPatch}          from './patches/typescript.patch';
+// import {getPatch as getFseventsPatch}            from './patches/fsevents.patch';
+// import {getPatch as getResolvePatch}             from './patches/resolve.patch';
+// import {getPatch as getTypescriptPatch}          from './patches/typescript.patch';
 
 const PATCHES = new Map([
-  [structUtils.makeIdent(null, `fsevents`).identHash, getFseventsPatch],
-  [structUtils.makeIdent(null, `resolve`).identHash, getResolvePatch],
-  [structUtils.makeIdent(null, `typescript`).identHash, getTypescriptPatch],
+  // [structUtils.makeIdent(null, `fsevents`).identHash, getFseventsPatch],
+  // [structUtils.makeIdent(null, `resolve`).identHash, getResolvePatch],
+  // [structUtils.makeIdent(null, `typescript`).identHash, getTypescriptPatch],
 ]);
 
 const plugin: Plugin<CoreHooks & PatchHooks> = {
